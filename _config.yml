@@ -1,5 +1,5 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+title: Akash Soti
+description: Personal website
 
 url: http://brianmaierjr.github.com/long-haul
 baseurl: ""
@@ -20,9 +20,9 @@ navigation:
    url: /contact
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: https://github.com/akashsoti
+   twitter: https://twitter.com/akashsoti
+   facebook: https://www.facebook.com/akash.soti
+   email: akashsoti@gmail.com
 
 google_analytics: "UA-58263416-1"
