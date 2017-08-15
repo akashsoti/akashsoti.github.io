@@ -187,7 +187,7 @@ HEADER STYLING
 
 	.container {
 		padding: 0;
-    max-width: 100%;
+    	max-width: 100%;
 	}
 
 	h1 {
@@ -217,21 +217,27 @@ POST STYLING
 	.postTitle {
 		text-align: center;
 		margin-top: 2rem;
-		margin-bottom: 1rem;
+	}
+	h1.postTitle{
+		margin-bottom: 0;
 	}
 
 	blockquote {
 		clear: both;
-		margin: 2.5em 0;
+		margin: 4em 0;
 		padding: 0;
 		line-height: 1.8;
 		position: relative;
+		color: rgba(0,0,0,.6);
+		font-weight: 400;
+		font-size: 24px;
+		text-align: center;
 
 		&:before {
 			content: "";
 			position: absolute;
 			top: -1.25em;
-			background: $background-color;
+			background: rgba(0,0,0,.6);
 			display: block;
 			height: 2px;
 			width: 150px;
@@ -242,7 +248,7 @@ POST STYLING
 			content: "";
 			position: absolute;
 			bottom: -1.25em;
-			background: $background-color;
+			background: rgba(0,0,0,.6);
 			display: block;
 			height: 2px;
 			width: 150px;

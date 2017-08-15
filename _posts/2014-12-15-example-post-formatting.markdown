@@ -1,55 +1,147 @@
 ---
 layout: post
-title:  "Example Post Formatting"
-date:   2014-12-15
+title:  "Ola Shuttle"
+subtitle: "A case study"
+date:   2017-7-15
+image: "olashuttle.png"
+excerpt: hello
 ---
 
-<p class="intro"><span class="dropcap">C</span>urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+<h3>
+    The problem
+</h3>
+<p>
+    Daily commute in India is a challenge where existing transportation systems are already running beyond their capacity. People go through rigmarole of catching different types of transportation mediums to get to their destinations.
+</p>
+<p>
+    It’s easy for users to feel overwhelmed while switching between multiple transportation mediums. When coupled with the inconvenience caused due to delays, overfilled buses and no place to sit it becomes stressful and reduces productivity.
+</p>
 
-# Heading 1
+<h3>
+    User study
+</h3>
+<p>
+    Our users are those who travel to work on a daily basis, ocassionally using multiple modes of transportation.
+</p>
+<p>
+    Here are a few questions that we asked our users to chart down their existing user journey:
+</p>
+<ul>
+    <li>How do you identify your nearest pickup point?</li>
+    <li>If you have a destination in mind, how do you decide which bus to 	take?</li>
+    <li>Do you have any concerns while travelling?</li>
+    <li>Do you care about getting a seat in the bus?</li>
+    <li>How do you explore different routes?</li>
+    <li>Do you care about the quality of transportation you are travelling in?</li>
+</ul>
+<p><b>The above set of questions helped us map the current user journey and its challenges.</b></p>
 
-## Heading 2
+<p class="full-width"><img src="{{ '/assets/img/userjourney.jpg' | prepend: site.baseurl }}" alt=""></p>
 
-### Heading 3
+<h3>
+    Top user concerns during the journey
+</h3>
+<ul>
+    <li>When is the bus arriving at my stop?</li>
+    <li>Where is the nearest pickup?</li>
+    <li>Where will I be dropped off?</li>
+    <li>Will I get a seat?</li>
+    <li>What is the schedule of the bus?</li>
+    <li>When will I reach my destination?</li>
+</ul>
 
-#### Heading 4
+<h3>
+    What are the desired outcomes
+</h3>
+<ul>
+    <li>Reduce anxiety about bus location</li>
+    <li>Provide real time tracking</li>
+    <li>Guarantee a seat</li>
+    <li>Exploration of routes and pickup/drop off points</li>
+    <li>Provide comfortable travel with air-conditioned buses</li>
+    <li>Make sure users reaches their destination safely</li>
+</ul>
+<blockquote>
+    We obsessed over making Shuttle easy and intuitive to use. To come up with a clear vision and flow was a challenge, and to make sure we hadn’t left out any idea, we went through twenty end to end prototypes of the app, exploring different flows thoroughly and picking out the best solution to make the final product.
+</blockquote>
+<h3>
+    UX process
+</h3>
+<p>
+    When you work on a product like Shuttle, that has to be built from scratch, there are thousands of ideas floating and you have to make a well informed decision, articulate and justify it too. It's a critical situation, because the success of the product depends on the direction you take it into.
+</p>
 
-##### Heading 5
+<p class="full-width"><img src="{{ '/assets/img/process1.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width"><img src="{{ '/assets/img/process2.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width"><img src="{{ '/assets/img/artboards.jpg' | prepend: site.baseurl }}" alt=""></p>
+<h3>
+    Shuttle V.1, MVP
+</h3>
+<p>
+    After spending countless hours on building end to end flows, debating over thousands of design challenges, we came to a consensus. We went ahead with the easiset flow possible, one that helps user book quickly, track the bus and get on it effortlessly. It takes a lot to build a product. Building a service that would go on to serve a billion people was nerve wracking. 
+<p>
+    We were proud to ship out a well thought product with the following features.
+</p>
+</p>
+<ul>
+    <li>Route discovery</li>
+    <li>Stop selection</li>
+    <li>Schedule of the buses</li>
+    <li>Route directions</li>
+    <li>Comfortable seats</li>
+    <li>A/C in the shuttle</li>
+    <li>Tracking of the shuttle in real time</li>
+    <li>Information of the pickup and drop stops</li>
+    <li>Ability for users to buy passes and travel without making a booking daily</li>
+</ul>
 
-###### Heading 6
+<p class="full-width"><img src="{{ '/assets/img/mvp.png' | prepend: site.baseurl }}" alt=""></p>
 
-<blockquote>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</blockquote>
+<h3>
+    Usability testing
+</h3>
+<p>
+    We wanted to make sure that the on-ground experience was as good as the in-app experience. The entire journey had four important states. We wanted to do a usability testing around those states and ask the right questions. We flew down to Gurgaon and did usability testing. We observed how users were interacting with the service. 
+</p>
+<p>
+    The results weren’t obvious, there was a lot of scope for improvement.
+</p>
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+<p class="full-width"><img src="{{ '/assets/img/usability1.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width"><img src="{{ '/assets/img/usability2.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width"><img src="{{ '/assets/img/usability3.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width"><img src="{{ '/assets/img/stages.png' | prepend: site.baseurl }}" alt=""></p>
 
-## Unordered List
-* List Item
-* Longer List Item
-  * Nested List Item
-  * Nested Item
-* List Item
+<blockquote>
+    Our on ground experience helped us understand our product better. There were a lot of shortcomings that needed to be fixed. With our assumptions and findings we went ahead and articulated a flow and shipped version 2.
+</blockquote>
 
-## Ordered List
-1. List Item
-2. Longer List Item
-    1. Nested OL Item
-    2. Another Nested Item
-3. List Item
+<h3>
+    1. Pre-Journey
+</h3>
+<p>
+    Most of our users were booking an Ola shuttle from the pickup stop and were not concerned about the maps while booking a Shuttle.Therefore we removed the map, and asked a simple question, “Where do you want to go?”.
+</p>
+<p>
+    Additionally, we solved the problem for route discovery. Earlier people couldn’t discover different routes. Now, they are able to see all nearby routes along with when the next shuttle is arriving and the nearest stop they can board from.
+</p>
+<p class="full-width"><img src="{{ '/assets/img/final1.png' | prepend: site.baseurl }}" alt=""></p>
 
-## Definition List
-<dl>
-  <dt>Coffee</dt>
-  <dd>Black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>White cold drink</dd>
-</dl>
+<h3>
+    2. Booking
+</h3>
+<p>
+    Users can easily pick their desired type of ticket. They can go for a regular ticket or a pass. To motivate users to go for the pass we had the pricing comparison upfront with the value they will get out of it. Upon scrolling down they can see the map as well.
+</p>
+<p class="full-width"><img src="{{ '/assets/img/final2.png' | prepend: site.baseurl }}" alt=""></p>
 
-Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-
-Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-
-Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.
-
-Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-
-Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+<h3>
+    3. Boarding
+</h3>
+<p>
+    We realized people wanted the shuttle to be flexible, i.e if they can’t make it to their scheduled shuttle, then there should be a convenient way to see the upcoming shuttle and re-schedule the ride.
+</p>
+<p>
+    Also it should be easy enough for users to cancel, track and scan their ticket upon boarding the shuttle, hence, we added the actions right on their pass.
+</p>
+<p class="full-width"><img src="{{ '/assets/img/final3.png' | prepend: site.baseurl }}" alt=""></p>
