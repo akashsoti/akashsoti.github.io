@@ -145,3 +145,16 @@ excerpt: hello
     Also it should be easy enough for users to cancel, track and scan their ticket upon boarding the shuttle, hence, we added the actions right on their pass.
 </p>
 <p class="full-width"><img src="{{ '/assets/img/final3.png' | prepend: site.baseurl }}" alt=""></p>
+
+<h3>
+    4. Return travel
+</h3>
+<p>
+    We realized people wanted the shuttle to be flexible, i.e if they can’t make it to their scheduled shuttle, then there should be a convenient way to see the upcoming shuttle and re-schedule the ride.
+</p>
+<p>
+    Also it should be easy enough for users to cancel, track and scan their ticket upon boarding the shuttle, hence, we added the actions right on their pass.
+</p>
+<p class="full-width"><img src="{{ '/assets/img/final4.png' | prepend: site.baseurl }}" alt=""></p>
+
+<p class="full-width"><img src="{{ '/assets/img/impact.png' | prepend: site.baseurl }}" alt=""></p>
