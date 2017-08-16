@@ -110,11 +110,32 @@ excerpt: hello
 <p class="full-width"><img src="{{ '/assets/img/usability1.png' | prepend: site.baseurl }}" alt=""></p>
 <p class="full-width"><img src="{{ '/assets/img/usability2.png' | prepend: site.baseurl }}" alt=""></p>
 <p class="full-width"><img src="{{ '/assets/img/usability3.png' | prepend: site.baseurl }}" alt=""></p>
-<p class="full-width"><img src="{{ '/assets/img/stages.png' | prepend: site.baseurl }}" alt=""></p>
 
+<h1>User journey sketch will go here</h1>
+
+<h3>
+    Problems identified
+</h3>
+<ul>
+    <li>On a bad network users had to wait for the rate and review screen to come if they haven't rated yet, hence making booking process slow</li>
+    <li>Too many messages upon booking, 4 different types - 1 email & 3 text messages</li>
+    <li>Meta search was out of place. Users were unable to search for popular stops, ex - 'snapdeal' which is a popular stop was showing a different result</li>
+    <li>There was no feedback on tapping certain actions on the screen</li>
+    <li>Most people were travelling daily and booking a ticket daily was adding a task to there daily routine</li>
+    <li>On-spot booking users didn't care about the map, they knew their spots and wanted the system to match their speed</li>
+    <li>Discovery of different routes running in the city was an issue</li>
+    <li>Introductory screens didn't help, people went straight ahead into booking without noticing them</li>
+    <li>On slow speed networks app failed to respond</li>    
+</ul>
+<h1>add a video here</h1>
 <blockquote>
     Our on ground experience helped us understand our product better. There were a lot of shortcomings that needed to be fixed. With our assumptions and findings we went ahead and articulated a flow and shipped version 2.
 </blockquote>
+
+<p>think - explore - execute</p>
+<h1>explain design challenges</h1>
+
+<p class="full-width"><img src="{{ '/assets/img/stages.png' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>
     1. Pre-Journey
@@ -157,4 +178,22 @@ excerpt: hello
 </p>
 <p class="full-width"><img src="{{ '/assets/img/final4.png' | prepend: site.baseurl }}" alt=""></p>
 
-<p class="full-width"><img src="{{ '/assets/img/impact.png' | prepend: site.baseurl }}" alt=""></p>
+<h3>Impact</h3>
+<h4>Business Impact</h4>
+<p>
+    Shuttle created a great business market for Ola. It is an important part of the team as it 
+    helped to accquire a new segment of customers. The cab market did not address the problems
+     of connecting metro feeder routes for daily commuters.
+</p>
+<p> 
+    Shuttle created a market of its own and and solved daily commute for millions of users
+</p>
+
+<h4>User Impact</h4>
+<p>
+    Our users wanted a cheaper and 
+    reliable option that is comfortable and helps boost their productivity. In Gurgaon where traffic is beyond
+    limits, Ola Shuttle helped releave traffic congestion as more and more customers left their own transportation
+    mediums and travelled with us making commute easier for everyone.
+</p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/impactdata.png' | prepend: site.baseurl }}" alt=""></p>
