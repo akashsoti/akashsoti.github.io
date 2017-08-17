@@ -4,12 +4,13 @@ title: Akash Soti
 ---
 
 <div class="home" id="home">
-  <h1 class="pageTitle">Work</h1>
+  <!-- <h1 class="pageTitle">Work</h1> -->
   <ul class="posts noList">
     {% for post in paginator.posts %}
-      <div class="post-feature-image">
+
+      <a href="{{ post.url | prepend: site.baseurl }}"><div class="post-feature-image">
         <img src="{{ '/assets/img/' | prepend: site.baseurl | append: post.image }}" alt="" />
-      </div>
+      </div></a>
       <li>
         <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
