@@ -111,7 +111,7 @@ excerpt: hello
 <p class="full-width"><img src="{{ '/assets/img/usability2.png' | prepend: site.baseurl }}" alt=""></p>
 <p class="full-width"><img src="{{ '/assets/img/usability3.png' | prepend: site.baseurl }}" alt=""></p>
 
-<h1>User journey sketch will go here</h1>
+<p class="full-width"><img src="{{ '/assets/img/ujourney.jpg' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>
     Problems identified
