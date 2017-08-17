@@ -473,15 +473,16 @@ POST LIST STYLING
 		background-size: contain;
 		background-repeat: no-repeat;
 		position: relative;
+		overflow: hidden;
 		img{
 			height: 100%;
-			max-width: 100%;
 			display: block;
 			margin: auto;
+			max-width: initial;
 		}
 	}
 	li {
-		margin: 2rem 2rem 0rem 2rem;
+		margin: 1rem 1rem 0rem 1rem;
 		position: relative;
 
 		// &:before {
