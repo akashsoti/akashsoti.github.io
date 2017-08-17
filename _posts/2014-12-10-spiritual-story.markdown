@@ -59,7 +59,6 @@ date:   2013-5-5
             So, the most important person is the person you’re with. If you are own your own, you’re the most important person at that point of time. If you’re with someone, then that person is the most important person at that point of time.
         </li>
     </p>
-   
     <li>
         <b>What is the most important thing to do ?</b><br>
         Remember before the sage came, the king felt tremendous love and care for his kingdom.
