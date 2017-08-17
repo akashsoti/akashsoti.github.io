@@ -4,7 +4,7 @@ title:  "Ola Shuttle"
 subtitle: "A case study"
 date:   2017-7-15
 image: "olashuttle.png"
-excerpt: hello
+excerpt: "hello afhsakfhjkahjhfjkhkjhakjfhjakshkfahkjhf"
 ---
 
 <h3>
