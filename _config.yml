@@ -1,7 +1,7 @@
 title: Akash Soti
 description: Personal website
 
-url: "http://akashsoti.com"
+url: "https://akashsoti.com"
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -14,6 +14,10 @@ paginate: 5
 navigation:
  - title: Work
    url: /index.html
+ - title: Animations
+   url: /animations
+ - title: Writings
+   url: /writings
  - title: About
    url: /about
  - title: Contact

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Long Haul
+title: About Akash Soti
 ---
 
 <div class="post">
