@@ -127,7 +127,7 @@ excerpt: "hello afhsakfhjkahjhfjkhkjhakjfhjakshkfahkjhf"
     <li>Introductory screens didn't help, people went straight ahead into booking without noticing them</li>
     <li>On slow speed networks app failed to respond</li>    
 </ul>
-<h1>add a video here</h1>
+<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/oHs1IlX-lY4" frameborder="0" allowfullscreen></iframe></p>
 <blockquote>
     Our on ground experience helped us understand our product better. There were a lot of shortcomings that needed to be fixed. With our assumptions and findings we went ahead and articulated a flow and shipped version 2.
 </blockquote>
@@ -196,6 +196,6 @@ excerpt: "hello afhsakfhjkahjhfjkhkjhakjfhjakshkfahkjhf"
     limits, Ola Shuttle helped releave traffic congestion as more and more customers left their own transportation
     mediums and travelled with us making commute easier for everyone.
 </p>
-<p style="text-align:center;"><iframe width="660" height="415" src="https://www.youtube.com/embed/mieE3_OyuJI" frameborder="0" allowfullscreen></iframe></p>
+<p style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/mieE3_OyuJI" frameborder="0" allowfullscreen></iframe></p>
 <p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/impactdata.png' | prepend: site.baseurl }}" alt=""></p>
 
