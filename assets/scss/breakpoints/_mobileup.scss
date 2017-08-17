@@ -466,6 +466,9 @@ POST LIST STYLING
 .posts {
 	border: 1px solid rgba(0,0,0,.1);
 	border-radius: 0.3rem;
+	box-shadow: 3px 4px 10px rgba(136, 136, 136, 0.10);
+	-webkit-box-shadow: 3px 4px 10px rgba(136, 136, 136, 0.10);
+	-moz-box-shadow: 3px 4px 10px rgba(136, 136, 136, 0.10);
 
 	.post-feature-image{
 		width: 100%;
