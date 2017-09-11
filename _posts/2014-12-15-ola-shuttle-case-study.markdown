@@ -132,8 +132,8 @@ excerpt: "hello afhsakfhjkahjhfjkhkjhakjfhjakshkfahkjhf"
     Our on ground experience helped us understand our product better. There were a lot of shortcomings that needed to be fixed. With our assumptions and findings we went ahead and articulated a flow and shipped version 2.
 </blockquote>
 
-<p>think - explore - execute</p>
-<h1>explain design challenges</h1>
+<!-- <p>think - explore - execute</p>
+<h1>explain design challenges</h1> -->
 
 <p class="full-width"><img src="{{ '/assets/img/stages.png' | prepend: site.baseurl }}" alt=""></p>
 
@@ -196,6 +196,9 @@ excerpt: "hello afhsakfhjkahjhfjkhkjhakjfhjakshkfahkjhf"
     limits, Ola Shuttle helped releave traffic congestion as more and more customers left their own transportation
     mediums and travelled with us making commute easier for everyone.
 </p>
-<p style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/mieE3_OyuJI" frameborder="0" allowfullscreen></iframe></p>
+<!-- <p>
+    include twitter mumbai flood coverage
+</p> -->
+<p class="full-width" style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/mieE3_OyuJI" frameborder="0" allowfullscreen></iframe></p>
 <p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/impactdata.png' | prepend: site.baseurl }}" alt=""></p>
 
