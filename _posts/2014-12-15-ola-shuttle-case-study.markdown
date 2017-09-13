@@ -4,7 +4,7 @@ title:  "Ola Shuttle"
 subtitle: "A case study"
 date:   2017-7-15
 image: "olashuttle.png"
-excerpt: "hello afhsakfhjkahjhfjkhkjhakjfhjakshkfahkjhf"
+description: "Daily commute in India is a challenge where existing transportation systems are already running beyond their capacity. People go through rigmarole of catching different types of transportation mediums to get to their destinations.  It’s easy for users to feel overwhelmed while switching between multiple transportation mediums. When coupled with the inconvenience caused due to delays, overfilled buses and no place to sit it becomes stressful and reduces productivity."
 ---
 
 <h3>
@@ -178,27 +178,36 @@ excerpt: "hello afhsakfhjkahjhfjkhkjhakjfhjakshkfahkjhf"
 </p>
 <p class="full-width"><img src="{{ '/assets/img/final4.png' | prepend: site.baseurl }}" alt=""></p>
 
-<h3>Impact</h3>
-<h4>Business Impact</h4>
+<h3>Business Impact</h3>
 <p>
     Shuttle created a great business market for Ola. It is an important part of the team as it 
     helped to accquire a new segment of customers. The cab market did not address the problems
-     of connecting metro feeder routes for daily commuters.
+     of connecting Metro feeder routes for daily commuters.
 </p>
 <p> 
-    Shuttle created a market of its own and and solved daily commute for millions of users
+    Shuttle created a market of its own and and solved daily commute for millions of users. Currently operational in 6 cities.
 </p>
+<h4>Mumbai, Hyedrabad, Pune, Delhi-NCR, Calcutta, Chennai</h4>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/impactdata.png' | prepend: site.baseurl }}" alt=""></p>
 
-<h4>User Impact</h4>
+
+<h3>User Impact</h3>
 <p>
     Our users wanted a cheaper and 
     reliable option that is comfortable and helps boost their productivity. In Gurgaon where traffic is beyond
     limits, Ola Shuttle helped releave traffic congestion as more and more customers left their own transportation
     mediums and travelled with us making commute easier for everyone.
 </p>
-<!-- <p>
-    include twitter mumbai flood coverage
-</p> -->
-<p class="full-width" style="text-align:center;"><iframe width="100%" height="515" src="https://www.youtube.com/embed/mieE3_OyuJI" frameborder="0" allowfullscreen></iframe></p>
-<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/impactdata.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width"><img src="{{ '/assets/img/userimpacttweets.png' | prepend: site.baseurl }}" alt=""></p>
 
+<p class="full-width" style="text-align:center; margin-bottom: 60px;" ><iframe width="100%" height="515" src="https://www.youtube.com/embed/mieE3_OyuJI" frameborder="0" allowfullscreen></iframe></p>
+
+<h3>The Team Behined Ola Shuttle</h3>
+<ul>
+    <li>Akash Soti, Product Designer</li>
+    <li>Aditya Anand, Product Manager</li>
+    <li>Harsha Ravichandaran, Chief Data Scientist</li>
+    <li>Sundeep Sahani, VP product</li>
+    <li>Sunit Singh, VP Design</li>
+    <li>Prashant, Design Director</li>
+</ul>
