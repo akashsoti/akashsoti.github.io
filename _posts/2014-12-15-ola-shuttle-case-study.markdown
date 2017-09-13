@@ -36,7 +36,7 @@ excerpt: "hello afhsakfhjkahjhfjkhkjhakjfhjakshkfahkjhf"
 </ul>
 <p><b>The above set of questions helped us map the current user journey and its challenges.</b></p>
 
-<p class="full-width"><img src="{{ '/assets/img/userjourney.jpg' | prepend: site.baseurl }}" alt=""></p>
+<p class="hero-image"><img src="{{ '/assets/img/userjourney.jpg' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>
     Top user concerns during the journey
@@ -73,7 +73,7 @@ excerpt: "hello afhsakfhjkahjhfjkhkjhakjfhjakshkfahkjhf"
 
 <p class="full-width"><img src="{{ '/assets/img/process1.png' | prepend: site.baseurl }}" alt=""></p>
 <p class="full-width"><img src="{{ '/assets/img/process2.png' | prepend: site.baseurl }}" alt=""></p>
-<p class="full-width"><img src="{{ '/assets/img/artboards.jpg' | prepend: site.baseurl }}" alt=""></p>
+<p class="hero-image"><img src="{{ '/assets/img/artboards.jpg' | prepend: site.baseurl }}" alt=""></p>
 <h3>
     Shuttle V.1, MVP
 </h3>
@@ -127,7 +127,7 @@ excerpt: "hello afhsakfhjkahjhfjkhkjhakjfhjakshkfahkjhf"
     <li>Introductory screens didn't help, people went straight ahead into booking without noticing them</li>
     <li>On slow speed networks app failed to respond</li>    
 </ul>
-<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/oHs1IlX-lY4" frameborder="0" allowfullscreen></iframe></p>
+<p class="full-width" style="text-align:center;"><iframe width="100%" height="515" src="https://www.youtube.com/embed/oHs1IlX-lY4" frameborder="0" allowfullscreen></iframe></p>
 <blockquote>
     Our on ground experience helped us understand our product better. There were a lot of shortcomings that needed to be fixed. With our assumptions and findings we went ahead and articulated a flow and shipped version 2.
 </blockquote>
@@ -199,6 +199,6 @@ excerpt: "hello afhsakfhjkahjhfjkhkjhakjfhjakshkfahkjhf"
 <!-- <p>
     include twitter mumbai flood coverage
 </p> -->
-<p class="full-width" style="text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/mieE3_OyuJI" frameborder="0" allowfullscreen></iframe></p>
+<p class="full-width" style="text-align:center;"><iframe width="100%" height="515" src="https://www.youtube.com/embed/mieE3_OyuJI" frameborder="0" allowfullscreen></iframe></p>
 <p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/impactdata.png' | prepend: site.baseurl }}" alt=""></p>
 
