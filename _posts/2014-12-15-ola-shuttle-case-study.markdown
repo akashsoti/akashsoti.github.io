@@ -121,7 +121,7 @@ description: "Daily commute in India is a challenge where existing transportatio
     <li>Too many messages upon booking, 4 different types - 1 email & 3 text messages</li>
     <li>Meta search was out of place. Users were unable to search for popular stops, ex - 'snapdeal' which is a popular stop was showing a different result</li>
     <li>There was no feedback on tapping certain actions on the screen</li>
-    <li>Most people were travelling daily and booking a ticket daily was adding a task to there daily routine</li>
+    <li>Most people were travelling daily and booking a ticket daily was adding a task to their daily routine</li>
     <li>On-spot booking users didn't care about the map, they knew their spots and wanted the system to match their speed</li>
     <li>Discovery of different routes running in the city was an issue</li>
     <li>Introductory screens didn't help, people went straight ahead into booking without noticing them</li>
@@ -187,8 +187,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 <p> 
     Shuttle created a market of its own and and solved daily commute for millions of users. Currently operational in 6 cities.
 </p>
-<h4>Mumbai, Hyedrabad, Pune, Delhi-NCR, Calcutta, Chennai</h4>
-<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/impactdata.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/cityimagesimpact.png' | prepend: site.baseurl }}" alt=""></p>
 
 
 <h3>User Impact</h3>
