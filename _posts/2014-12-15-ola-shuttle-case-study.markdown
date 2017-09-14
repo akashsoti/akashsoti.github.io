@@ -146,7 +146,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 <p>
     Additionally, we solved the problem for route discovery. Earlier people couldn’t discover different routes. Now, they are able to see all nearby routes along with when the next shuttle is arriving and the nearest stop they can board from.
 </p>
-<p class="full-width"><img src="{{ '/assets/img/final1.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/final1.png' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>
     2. Booking
@@ -154,7 +154,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 <p>
     Users can easily pick their desired type of ticket. They can go for a regular ticket or a pass. To motivate users to go for the pass we had the pricing comparison upfront with the value they will get out of it. Upon scrolling down they can see the map as well.
 </p>
-<p class="full-width"><img src="{{ '/assets/img/final2.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/final2.png' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>
     3. Boarding
@@ -165,7 +165,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 <p>
     Also it should be easy enough for users to cancel, track and scan their ticket upon boarding the shuttle, hence, we added the actions right on their pass.
 </p>
-<p class="full-width"><img src="{{ '/assets/img/final3.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/final3.png' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>
     4. Return travel
@@ -176,7 +176,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 <p>
     Also it should be easy enough for users to cancel, track and scan their ticket upon boarding the shuttle, hence, we added the actions right on their pass.
 </p>
-<p class="full-width"><img src="{{ '/assets/img/final4.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/final4.png' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>Business Impact</h3>
 <p>
