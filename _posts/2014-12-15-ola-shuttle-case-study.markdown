@@ -201,7 +201,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 
 <p class="full-width" style="text-align:center; margin-bottom: 60px;" ><iframe width="100%" height="515" src="https://www.youtube.com/embed/mieE3_OyuJI" frameborder="0" allowfullscreen></iframe></p>
 
-<h3>The Team Behined Ola Shuttle</h3>
+<h3>The Team Behind Ola Shuttle</h3>
 <ul>
     <li>Akash Soti, Product Designer</li>
     <li>Aditya Anand, Product Manager</li>
