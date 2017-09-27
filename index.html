@@ -6,20 +6,24 @@ title: Akash Soti
 <div class="home" id="home">
   <!-- <h1 class="pageTitle">Work</h1> -->
   <ul class="noList">
+    <div class="row">
     {% for post in paginator.posts %}
-    <div class="posts ">
-      <a href="{{ post.url | prepend: site.baseurl }}">
-        <div class="post-feature-image">
-          <img src="{{ '/assets/img/' | prepend: site.baseurl | append: post.image }}" alt="" />
+      <div class="col-6">
+        <div class="posts ">
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            <div class="post-feature-image">
+              <img src="{{ '/assets/img/' | prepend: site.baseurl | append: post.image }}" alt="" />
+            </div>
+          </a>
+          <li>
+            <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+            <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            <a href="{{ post.url | prepend: site.baseurl }}"><p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p></a>
+          </li>
         </div>
-      </a>
-      <li>
-        <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <a href="{{ post.url | prepend: site.baseurl }}"><p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p></a>
-      </li>
-    </div>
+      </div>
     {% endfor %}
+    </div>
   </ul>
   <!-- Pagination links -->
   <div class="pagination">
