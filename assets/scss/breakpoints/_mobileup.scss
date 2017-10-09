@@ -471,6 +471,12 @@ POST LIST STYLING
 	-moz-box-shadow: 3px 4px 10px rgba(136, 136, 136, 0.10);
 	margin-bottom: 40px;
 
+	&:hover{
+		box-shadow: 3px 10px 10px rgba(136, 136, 136, 0.20);
+		-webkit-box-shadow: 3px 10px 10px rgba(136, 136, 136, 0.20);
+		-moz-box-shadow: 3px 10px 10px rgba(136, 136, 136, 0.20);
+	}
+
 	.post-feature-image{
 		width: 100%;
 		height: 300px;
