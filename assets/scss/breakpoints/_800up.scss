@@ -23,7 +23,7 @@ GLOBAL STYLES
 }
 
 .container {
-  max-width: 800px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 	padding: 0;
@@ -36,9 +36,9 @@ HOMEPAGE STYLING
 
 #home {
 	.posts, .pageTitle, .pagination {
-    width: 75%;
+    width: 100%;
 		float: none;
-		margin: 0 auto 1.5em;
+		margin: 0 auto 20px;
 	}
 
 	.pageTitle {
@@ -206,7 +206,7 @@ FOOTER STYLES
 
 	.container {
 		padding: 1rem 0;
-    max-width: 800px;
+    max-width: 1000px;
 	}
 }
 

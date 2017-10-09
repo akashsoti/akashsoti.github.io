@@ -36,7 +36,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 </ul>
 <p><b>The above set of questions helped us map the current user journey and its challenges.</b></p>
 
-<p class="hero-image"><img src="{{ '/assets/img/userjourney.jpg' | prepend: site.baseurl }}" alt=""></p>
+<p class="hero-image" style="text-align:center;"><img src="{{ '/assets/img/userjourney.jpg' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>
     Top user concerns during the journey
@@ -71,9 +71,9 @@ description: "Daily commute in India is a challenge where existing transportatio
     When you work on a product like Shuttle, that has to be built from scratch, there are thousands of ideas floating and you have to make a well informed decision, articulate and justify it too. It's a critical situation, because the success of the product depends on the direction you take it into.
 </p>
 
-<p class="full-width"><img src="{{ '/assets/img/process1.png' | prepend: site.baseurl }}" alt=""></p>
-<p class="full-width"><img src="{{ '/assets/img/process2.png' | prepend: site.baseurl }}" alt=""></p>
-<p class="hero-image"><img src="{{ '/assets/img/artboards.jpg' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/process1.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/process2.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="hero-image" style="text-align:center;"><img src="{{ '/assets/img/artboards.jpg' | prepend: site.baseurl }}" alt=""></p>
 <h3>
     Shuttle V.1, MVP
 </h3>
@@ -95,7 +95,7 @@ description: "Daily commute in India is a challenge where existing transportatio
     <li>Ability for users to buy passes and travel without making a booking daily</li>
 </ul>
 
-<p class="full-width"><img src="{{ '/assets/img/mvp.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/mvp.png' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>
     Usability testing
@@ -107,11 +107,11 @@ description: "Daily commute in India is a challenge where existing transportatio
     The results weren’t obvious, there was a lot of scope for improvement.
 </p>
 
-<p class="full-width"><img src="{{ '/assets/img/usability1.png' | prepend: site.baseurl }}" alt=""></p>
-<p class="full-width"><img src="{{ '/assets/img/usability2.png' | prepend: site.baseurl }}" alt=""></p>
-<p class="full-width"><img src="{{ '/assets/img/usability3.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/usability1.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/usability2.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/usability3.png' | prepend: site.baseurl }}" alt=""></p>
 
-<p class="full-width"><img src="{{ '/assets/img/ujourney.jpg' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/ujourney.jpg' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>
     Problems identified
@@ -127,7 +127,7 @@ description: "Daily commute in India is a challenge where existing transportatio
     <li>Introductory screens didn't help, people went straight ahead into booking without noticing them</li>
     <li>On slow speed networks app failed to respond</li>    
 </ul>
-<p class="full-width" style="text-align:center;"><iframe width="100%" height="515" src="https://www.youtube.com/embed/oHs1IlX-lY4" frameborder="0" allowfullscreen></iframe></p>
+<p style="text-align:center;"><iframe width="1000" height="515" src="https://www.youtube.com/embed/oHs1IlX-lY4" frameborder="0" allowfullscreen></iframe></p>
 <blockquote>
     Our on ground experience helped us understand our product better. There were a lot of shortcomings that needed to be fixed. With our assumptions and findings we went ahead and articulated a flow and shipped version 2.
 </blockquote>
@@ -135,7 +135,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 <!-- <p>think - explore - execute</p>
 <h1>explain design challenges</h1> -->
 
-<p class="full-width"><img src="{{ '/assets/img/stages.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align: center;"><img src="{{ '/assets/img/stages.png' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>
     1. Pre-Journey
@@ -197,9 +197,9 @@ description: "Daily commute in India is a challenge where existing transportatio
     limits, Ola Shuttle helped releave traffic congestion as more and more customers left their own transportation
     mediums and travelled with us making commute easier for everyone.
 </p>
-<p class="full-width"><img src="{{ '/assets/img/userimpacttweets.png' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/userimpacttweets.png' | prepend: site.baseurl }}" alt=""></p>
 
-<p class="full-width" style="text-align:center; margin-bottom: 60px;" ><iframe width="100%" height="515" src="https://www.youtube.com/embed/mieE3_OyuJI" frameborder="0" allowfullscreen></iframe></p>
+<p style="text-align:center; margin-bottom: 60px;" ><iframe width="1000" height="515" src="https://www.youtube.com/embed/mieE3_OyuJI" frameborder="0" allowfullscreen></iframe></p>
 
 <h3>The Team Behind Ola Shuttle</h3>
 <ul>
