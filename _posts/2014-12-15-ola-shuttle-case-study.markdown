@@ -7,6 +7,11 @@ image: "olashuttle.png"
 description: "Daily commute in India is a challenge where existing transportation systems are already running beyond their capacity. People go through rigmarole of catching different types of transportation mediums to get to their destinations.  It’s easy for users to feel overwhelmed while switching between multiple transportation mediums. When coupled with the inconvenience caused due to delays, overfilled buses and no place to sit it becomes stressful and reduces productivity."
 ---
 
+<!-- <div class="row">
+	<div class="col-6">
+		<h3>role</h3>
+	</div>
+</div> -->
 <h3>
     The problem
 </h3>
@@ -59,7 +64,7 @@ description: "Daily commute in India is a challenge where existing transportatio
     <li>Guarantee a seat</li>
     <li>Exploration of routes and pickup/drop off points</li>
     <li>Provide comfortable travel with air-conditioned buses</li>
-    <li>Make sure users reaches their destination safely</li>
+    <li>Make sure users reache their destination safely</li>
 </ul>
 <blockquote>
     We obsessed over making Shuttle easy and intuitive to use. To come up with a clear vision and flow was a challenge, and to make sure we hadn’t left out any idea, we went through twenty end to end prototypes of the app, exploring different flows thoroughly and picking out the best solution to make the final product.

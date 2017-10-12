@@ -2,5 +2,11 @@
 layout: default
 title: Animations
 ---
-
-<p class="full-width" style="text-align:center; background-color: grey;"><iframe width="100%" height="515" src="https://www.youtube.com/embed/1UfzlKRpKdo" frameborder="0" allowfullscreen></iframe></p>
+<div class="row">
+  <div class="col-6" style="text-align:center; background-color: #f2f2f2;"><iframe width="100%" height="300" src="https://www.youtube.com/embed/1UfzlKRpKdo" frameborder="0" allowfullscreen></iframe></div>
+  <div class="col-6" style="text-align:center; background-color: #f2f2f2;"><iframe width="100%" height="300" src="https://www.youtube.com/embed/j6ErGI-S_Jw" frameborder="0" allowfullscreen></iframe></div>  
+</div>
+<div class="row">
+  <div class="col-6" style="text-align:center; background-color: #f2f2f2;"><iframe width="100%" height="300" src="https://www.youtube.com/embed/S1-24yZ8EXQ" frameborder="0" allowfullscreen></iframe></div>
+  <div class="col-6" style="text-align:center; background-color: #f2f2f2;"><iframe width="100%" height="300" src="https://www.youtube.com/embed/9gqtEASDaTQ" frameborder="0" allowfullscreen></iframe></div>  
+</div>
