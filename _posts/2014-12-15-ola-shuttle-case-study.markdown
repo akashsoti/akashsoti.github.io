@@ -12,6 +12,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 		<h3>role</h3>
 	</div>
 </div> -->
+
 <h3>
     The problem
 </h3>
@@ -79,6 +80,11 @@ description: "Daily commute in India is a challenge where existing transportatio
 <p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/process1.png' | prepend: site.baseurl }}" alt=""></p>
 <p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/process2.png' | prepend: site.baseurl }}" alt=""></p>
 <p class="hero-image" style="text-align:center;"><img src="{{ '/assets/img/artboards.jpg' | prepend: site.baseurl }}" alt=""></p>
+<h3>
+ Prototype
+</h3>
+<p>We obssessed on making a perfect flow for our users, this is one of them divided into different tasks that a user will go through while interacting with the product.</p>
+<p class="full-width" style="text-align:center;"><iframe src="https://marvelapp.com/1853h31?emb=1" width="402" height="823" allowTransparency="true" frameborder="0"></iframe></p>
 <h3>
     Shuttle V.1, MVP
 </h3>

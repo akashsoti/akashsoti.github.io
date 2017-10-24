@@ -163,8 +163,13 @@ PAGE STYLES
 ***************/
 
 .pageTitle {
-	margin: 2rem auto 1em;
+	margin: 2rem auto 0.2em;
 	text-align: center;
+}
+.pageTitle-helper{
+	text-align: center;
+	color: $grey;
+	font-size: 18px;
 }
 
 .content {

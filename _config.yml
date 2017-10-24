@@ -14,8 +14,8 @@ paginate: 5
 navigation:
  - title: Case Studies
    url: /index.html
- - title: Animations
-   url: /animations
+ - title: Prototypes
+   url: /prototypes
  - title: About
    url: /about
  - title: Contact
