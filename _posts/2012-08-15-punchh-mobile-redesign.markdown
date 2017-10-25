@@ -27,7 +27,7 @@ People carry their phone at all times, and it’s a great opportunity to address
 As a designer it’s our responsibility that we see the world through our customers eyes and understand their problems as they experience them.
 People carry their phone at all times, and it’s a great opportunity to address and solve a problem.
 </p>
-<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/punchh/part1.jpg' | prepend: site.baseurl }}" alt=""></p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/punchh/part1.JPG' | prepend: site.baseurl }}" alt=""></p>
 
 <h3>Solution</h3>
 <p>The main purpose is quick redemptions and punching.</p>
