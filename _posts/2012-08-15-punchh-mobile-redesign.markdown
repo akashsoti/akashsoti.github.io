@@ -3,7 +3,7 @@ layout: post
 title:  "Punchh mobile app redesign"
 subtitle: "A case study"
 date:   2013-6-15
-image: "punchh/punchh_hero.png"
+image: "punchh/punchh_hero.jpg"
 description: "We obsessed over making life easier for the user. Users already have so much to handle when they enter in a restaurant. Punchh is built in a way so that the most essential things, punching and redeeming restaurant cards is fast and straight forward."
 ---
 
@@ -48,3 +48,4 @@ We didn’t want our users to stare at an empty screen. If something is coming b
 <h3>The way forward</h3>
 <p>We want to take our users experience forward with meaning full interactions and subtle animations. A little more fun and excitement that will make users open the app again, and when they do that they will visit more often to start punching and earn rewards.
 </p>
+<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/punchh/punchh_app_icon.png' | prepend: site.baseurl }}" alt=""></p>
