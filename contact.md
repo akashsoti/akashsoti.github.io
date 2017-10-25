@@ -2,7 +2,7 @@
 layout: default
 title: Contact Akash Soti
 ---
-
+<h1 class="pageTitle extra-space-bottom">Contact me</h1>
 <div id="contact">
   <div class="contactContent">
     <p class="intro">Would love to connect with you</p>
