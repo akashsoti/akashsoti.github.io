@@ -2,8 +2,7 @@
 layout: default
 title: Your New Jekyll Site
 ---
-<h1 class="pageTitle">Prototypes</h1>
-<div class="pageTitle-helper"><p>I love making prototypes and my favourite tools are Framer JS, Principle and Xcode</p></div>
+
 <div id="articles">
   <h1>Articles</h1>
   <ul class="posts noList">

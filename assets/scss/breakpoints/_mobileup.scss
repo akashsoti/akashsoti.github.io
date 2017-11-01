@@ -12,7 +12,7 @@ html {
 body {
 	font-family: $serif;
 	line-height: 1.75;
-	font-size: 112.5%; // 18px base font size
+	font-size: 120%; // 18px base font size
 	color: $black;
 	overflow-x: hidden;
   margin: 0;
@@ -171,6 +171,7 @@ PAGE STYLES
 	color: $grey;
 	font-size: 28px;
 	font-family: $sans-serif;
+	line-height: 1.5;
 }
 .extra-space-bottom{
 	margin-bottom: 60px;
