@@ -20,7 +20,7 @@ title: About Akash Soti
 	<div class="row">
 		<div class="col-12">
 			<blockquote>
-				If you’re not ashamed of yourself of how you were an year ago, you’re not growing.
+				If you’re not ashamed of yourself of how you were a year ago, you’re not growing.
 			</blockquote>
 		</div>
 	</div>
