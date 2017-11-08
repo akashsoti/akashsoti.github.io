@@ -4,7 +4,7 @@ title:  "Punchh website redesign"
 subtitle: "A design overhaul"
 date:   2013-1-14
 image: "punchh/home_punchh_website.jpg"
-description: "Design overhaul of the brand and website. The main objective was to establish brand presence and make it easier for users to understand what Punchh can do for their business."
+description: "Design overhaul of the brand and website. The main objective was..."
 ---
 
 <h3>Business Brief</h3>

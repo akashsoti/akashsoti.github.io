@@ -6,20 +6,6 @@ GLOBAL STYLES
 	padding-top: 0;
 	position: relative;
 	z-index: 1;
-
-	&:after {
-		z-index: -1; 
-		background: white;
-		content: ""; 
-		display: block;
-		width: 100%;
-		height: 10em;
-		position: absolute;
-		top: -2em;
-		left: 0;
-		transform: skewY(-2deg);
-		transform-origin: bottom left; 
-	}
 }
 
 .container {
@@ -37,12 +23,9 @@ HOMEPAGE STYLING
 #home {
 	.posts, .pageTitle, .pagination {
     width: 100%;
-		float: none;
-		margin: 0 auto 20px;
-	}
-
-	.pageTitle {
-		margin: 2rem auto 1em;
+		float: left;
+		margin: 0 auto 20px 0;
+		padding-bottom: 7px; 
 	}
 }
 
@@ -51,9 +34,9 @@ HEADER STYLING
 ***************/
 
 .header {
-	height: 15em;
+	height: 12em;
 	position: relative;
-	padding-bottom: 2em;
+	margin-bottom: 2em;
 
 	.container {
 		position: relative;
@@ -80,14 +63,18 @@ HEADER STYLING
 				display: inline;
 				line-height: 3em;
 				background: none;
-				padding: 0 5px;
+				padding: 0px 5px 0 13px;
 				border: none;
+
+				&:first-child{
+					padding: 0 10px 0 0;
+				}
 
 				a {
 					color: white;
 					font-size: .9em;
 					text-decoration: none;
-					padding: 0 .25em;
+					padding: 0 .25em 0 0;
 
 					&:hover {
 						color: darken(white, 20%);
@@ -227,4 +214,8 @@ CONTACT PAGE STYLING
     float: right;
     margin-right: 0;
 	}
+}
+
+ul.list-of-items li, ol.list-of-items li{
+	margin-bottom: 15px;
 }

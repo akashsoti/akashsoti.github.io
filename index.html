@@ -4,8 +4,11 @@ title: Akash Soti
 ---
 
 <div class="home" id="home">
-  <h1 class="pageTitle" style="margin-bottom: 0.2em;">Case studies</h1>
-  <div class="pageTitle-helper"><p>A collection of some of my best work ❤️</p></div>
+  <section class="section-bottom-margin">
+    <h1 class="pageTitle" style="margin-bottom: 0.2em;">Case studies</h1>
+    <div class="pageTitle-helper"><p>A collection of some of my best work ❤️</p></div>
+  </section>
+  
   <ul class="noList">
     <div class="row">
     {% for post in site.posts%}
@@ -18,8 +21,8 @@ title: Akash Soti
           </a>
           <li>
             <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-            <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-            <a href="{{ post.url | prepend: site.baseurl }}"><p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p></a>
+            <h3 style="margin-bottom: 0px;"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+            <a href="{{ post.url | prepend: site.baseurl }}"><p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 80 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p></a>
           </li>
         </div>
       </div>

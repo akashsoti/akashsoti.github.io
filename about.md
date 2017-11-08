@@ -4,9 +4,11 @@ title: About Akash Soti
 ---
 
 <div class="post">
-	<h1 class="pageTitle" style="margin-bottom: 15px;">About me</h1>
-	<div class="pageTitle-helper"><p>Product designer. I design things for people...ergo I am a developer.</p></div>
-	<p style="text-align:center;"><img src="{{ '/assets/img/aboutme/tools.png' | prepend: site.baseurl }}" alt="tools"></p>
+	<section class="section-bottom-margin">
+		<h1 class="pageTitle" style="margin-bottom: 15px;">About me</h1>
+		<div class="pageTitle-helper"><p>Product designer. I design things for people...ergo I am a developer.</p></div>
+		<p style="text-align:center;"><img src="{{ '/assets/img/aboutme/tools.png' | prepend: site.baseurl }}" alt="tools"></p>
+	</section>
 	<div class="row">
 		<div class="col-7">
 			<img src="{{ '/assets/img/forabout.jpg' | prepend: site.baseurl }}" alt="thatsme" style="margin-bottom: 0;"/>
