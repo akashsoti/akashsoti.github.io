@@ -19,6 +19,8 @@ body {
 
 	p , ul {
 		margin: 0 0 2rem;
+		color: #515e65;
+		font-weight: 300;
 	}
 }
 
@@ -154,7 +156,9 @@ dd {
 .post ul ol,
 .post ol ul,
 .post ol ol {
-  margin: 0;
+	margin: 0;
+	font-weight: 300;
+	color: #515e65;
 }
 
 
@@ -191,6 +195,7 @@ HEADER STYLING
 	background-image: url('../img/touring.jpg');
 	background-size: cover;
 	background-position: center center;
+	background-repeat: no-repeat;
 	color: white;
 	padding: 0;
 	height: 3em;
@@ -225,11 +230,11 @@ POST STYLING
 .post {
 
 	.postTitle {
-		text-align: center;
-		margin-top: 2rem;
+		text-align: left;
+		margin-top: 4rem;
 	}
 	h1.postTitle{
-		margin-bottom: 0;
+		margin: 5rem auto 0;
 	}
 
 	blockquote {
@@ -238,7 +243,7 @@ POST STYLING
 		padding: 0;
 		line-height: 1.8;
 		position: relative;
-		color: rgba(0,0,0,.6);
+		color:#515e65;
 		font-weight: 400;
 		font-size: 24px;
 		text-align: center;
@@ -267,10 +272,9 @@ POST STYLING
 	}
 
 	.meta {
-		text-align: center;
-		color: lighten(black, 50%);
+		color: lighten(black, 80%);
 		font-family: $sans-serif;
-		font-weight: 300;
+		font-weight: 100;
 	}
 
 	figure {
@@ -482,6 +486,7 @@ POST LIST STYLING
 	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.14);
 	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.14);
 	margin-bottom: 20px;
+	float: left;
 
 	&:hover{
 		-webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.12);
@@ -508,7 +513,7 @@ POST LIST STYLING
 	li {
 		margin: 1.4rem 1.4rem 1.4rem 1.4rem;
 		position: relative;
-
+		float: left;
 		// &:before {
 		// 	content: "";
 		// 	position: absolute;
@@ -519,7 +524,9 @@ POST LIST STYLING
 		// 	width: 60px;
 		// }
 		p{
-			margin-bottom: 0; 
+			margin-bottom: 0;
+			font-size: 0.8em;
+			font-weight: 300;
 		}
 		a {
 			text-decoration: none;
@@ -537,7 +544,7 @@ POST LIST STYLING
 		}
 
 		h3 {
-			margin: 0 0 .5em;
+			margin: 0 0 0.3em;
 		}
 	}
 }

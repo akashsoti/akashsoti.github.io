@@ -154,11 +154,9 @@ description: "Daily commute in India is a challenge where existing transportatio
 	<p>
 			The results weren’t obvious, there was a lot of scope for improvement.
 	</p>
-
 	<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/usability1.png' | prepend: site.baseurl }}" alt=""></p>
 	<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/usability2.png' | prepend: site.baseurl }}" alt=""></p>
 	<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/usability3.png' | prepend: site.baseurl }}" alt=""></p>
-
 	<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/ujourney.jpg' | prepend: site.baseurl }}" alt=""></p>
 </section>
 
@@ -246,6 +244,8 @@ description: "Daily commute in India is a challenge where existing transportatio
 	<p> 
 			Shuttle created a market of its own and and solved daily commute for millions of users. Currently operational in 6 cities.
 	</p>
+</section>
+<section class="section-bottom-margin">
 	<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/cityimagesimpact.png' | prepend: site.baseurl }}" alt=""></p>
 </section>	
 

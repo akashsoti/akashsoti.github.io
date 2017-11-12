@@ -37,6 +37,9 @@ HEADER STYLING
 	height: 12em;
 	position: relative;
 	margin-bottom: 2em;
+	background-attachment: fixed;
+	background-position: 0 -330px;
+	background-repeat: no-repeat;
 
 	.container {
 		position: relative;
@@ -138,17 +141,6 @@ POST STYLING
 	.featuredImage {
 		position: relative;
 		margin-top: 2rem;
-
-		&:before {
-			background: white;
-			content: "";
-			display: block;
-			width: 100%;
-			height: 4em;
-			position: absolute;
-			top: -2em;
-			left: 0;
-		}
 	}
 }
 
@@ -216,4 +208,6 @@ CONTACT PAGE STYLING
 
 ul.list-of-items li, ol.list-of-items li{
 	margin-bottom: 15px;
+	color: #515e65;
+	font-weight: 300;
 }
