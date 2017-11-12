@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ola Shuttle"
-subtitle: "A case study"
+subtitle: "Helping daily commuters reach their destination stress free"
 date:   2017-7-15
 image: "olashuttle.png"
 description: "Daily commute in India is a challenge where existing transportation..."
