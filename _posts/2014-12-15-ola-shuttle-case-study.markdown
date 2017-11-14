@@ -141,7 +141,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 			<li>Information of the pickup and drop stops</li>
 			<li>Ability for users to buy passes and travel without making a booking daily</li>
 	</ul>
-	<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/mvp.png' | prepend: site.baseurl }}" alt=""></p>
+	<p class="hero-image" style="text-align:center;"><img src="{{ '/assets/img/mvp.png' | prepend: site.baseurl }}" alt=""></p>
 </section>
 
 <section class="section-bottom-margin">
@@ -175,7 +175,11 @@ description: "Daily commute in India is a challenge where existing transportatio
 			<li>Introductory screens didn't help, people went straight ahead into booking without noticing them</li>
 			<li>On slow speed networks app failed to respond</li>    
 	</ol>
+</section>
+<section class="section-bottom-margin">
 	<p style="text-align:center;"><iframe width="1000" height="515" src="https://www.youtube.com/embed/oHs1IlX-lY4" frameborder="0" allowfullscreen></iframe></p>
+</section>
+<section class="section-bottom-margin">
 	<blockquote>
 			Our on ground experience helped us understand our product better. There were a lot of shortcomings that needed to be fixed. With our assumptions and findings we went ahead and articulated a flow and shipped version 2.
 	</blockquote>
