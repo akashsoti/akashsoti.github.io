@@ -15,7 +15,7 @@ title: About Akash Soti
 		</div>
 		<div class="col-5">
 			<p style="margin: 0 auto 0 0; width:100%;">
-				Building human-centered products from 2012, product designer but started off as a Ruby on Rails developer. Getting into product design for me was a natural transition because it felt like an extension of my abilities.
+				Building human-centered products from 2012, currently a product designer at Ola Cabs, but started off as a Ruby on Rails developer. Getting into product design for me was a natural transition because it felt like an extension of my abilities.
 			</p><br>
 			<p style="margin: 0 auto 0 0; width:100%;">
 				The ability to code and ship things enabled me to understand the intricacies of product design and helped me make better products with clear vision.
