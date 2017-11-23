@@ -273,7 +273,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 			<li>Aditya Anand, Product Manager</li>
 			<li>Harsha Ravichandaran, Chief Data Scientist</li>
 			<li>Sundeep Sahani, VP product</li>
-			<li>Sunit Singh, VP Design</li>
-			<li>Prashant, Design Director</li>
+			<li>Sunit Singh, SVP Design</li>
+			<li>Prashant Jain, Design Director</li>
 	</ul>
 </section>
