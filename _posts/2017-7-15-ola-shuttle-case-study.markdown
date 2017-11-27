@@ -30,14 +30,14 @@ description: "Daily commute in India is a challenge where existing transportatio
 		My role
 	</h3>
 	<p>
-		Ola shutlle is built for daily commuters. I studied existing transportation system and mapped out a user journey of potential consumers 
-		to identify their paint points and figure out what success means to them. This helped me in setting up mettings with stakeholders and understand
+		Ola Shuttle is built for daily commuters. I studied existing transportation system and mapped out a user journey of potential consumers.
+		to identify their paint points and figure out what success means to them. This helped me in setting up meetings with stakeholders and understand
 		how business will help address those concerns and what success means for business.
 	</p>
 	<p>
-		I then regualrly made end to end mockups and tested them with daily commuters to get clarity. After which
-		I showed best possible approch to stakeholders and senior designers and took feedback. This iterative approach helped me ship out
-		a world class product which is now being used by millions of users daily. 
+		I then regularly made end to end mockups and tested them with daily commuters to get clarity. After which
+		I showed best possible approach to stakeholders and senior designers and took feedback. This iterative approach helped me ship out
+		a world-class product which is now being used by millions of users daily. 
 	</p>
 	<p>
 		It took us 3 months to role out the MVP and another month to improve
@@ -50,7 +50,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 			User study
 	</h3>
 	<p>
-			Our users are those who travel to work on a daily basis, ocassionally using multiple modes of transportation.
+			Our users are those who travel to work on a daily basis, occasionally using multiple modes of transportation.
 	</p>
 	<p>
 			Here are a few questions that we asked our users to chart down their existing user journey:
@@ -92,7 +92,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 			<li>Guarantee a seat</li>
 			<li>Exploration of routes and pickup/drop off points</li>
 			<li>Provide comfortable travel with air-conditioned buses</li>
-			<li>Make sure users reache their destination safely</li>
+			<li>Make sure users reach their destination safely</li>
 	</ul>
 	<blockquote>
 			We obsessed over making Shuttle easy and intuitive to use. To come up with a clear vision and flow was a challenge, and to make sure we hadn’t left out any idea, we went through twenty end to end prototypes of the app, exploring different flows thoroughly and picking out the best solution to make the final product.
@@ -106,7 +106,6 @@ description: "Daily commute in India is a challenge where existing transportatio
 	<p>
 			When you work on a product like Shuttle, that has to be built from scratch, there are thousands of ideas floating and you have to make a well informed decision, articulate and justify it too. It's a critical situation, because the success of the product depends on the direction you take it into.
 	</p>
-
 	<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/process1.png' | prepend: site.baseurl }}" alt=""></p>
 	<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/process2.png' | prepend: site.baseurl }}" alt=""></p>
 	<p class="hero-image" style="text-align:center;"><img src="{{ '/assets/img/artboards.jpg' | prepend: site.baseurl }}" alt=""></p>
@@ -116,7 +115,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 	<h3>
 	Prototype
 	</h3>
-	<p>We obssessed on making a perfect flow for our users, this is one of them divided into different tasks that a user will go through while interacting with the product.</p>
+	<p>We obsessed on making a perfect flow for our users, this is one of them divided into different tasks that a user will go through while interacting with the product.</p>
 	<p class="full-width" style="text-align:center;"><iframe src="https://marvelapp.com/1853h31?emb=1" width="402" height="823" allowTransparency="true" frameborder="0"></iframe></p>
 </section>
 
@@ -125,7 +124,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 			Shuttle V.1, MVP
 	</h3>
 	<p>
-			After spending countless hours on building end to end flows, debating over thousands of design challenges, we came to a consensus. We went ahead with the easiset flow possible, one that helps user book quickly, track the bus and get on it effortlessly. It takes a lot to build a product. Building a service that would go on to serve a billion people was nerve wracking. 
+			After spending countless hours on building end to end flows, debating over thousands of design challenges, we came to a consensus. We went ahead with the easiest flow possible, one that helps user book quickly, track the bus and get on it effortlessly. It takes a lot to build a product. Building a service that would go on to serve a billion people was nerve wracking.
 	<p>
 			We were proud to ship out a well thought product with the following features.
 	</p>
@@ -149,7 +148,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 			Usability testing
 	</h3>
 	<p>
-			We wanted to make sure that the on-ground experience was as good as the in-app experience. The entire journey had four important states. We wanted to do a usability testing around those states and ask the right questions. We flew down to Gurgaon and did usability testing. We observed how users were interacting with the service. 
+			We wanted to make sure that the on-ground experience was as good as the in-app experience. The entire journey had four important states. We wanted to do a usability testing around those states and ask the right questions. We flew down to Gurgaon and did usability testing. We observed how users were interacting with the service.
 	</p>
 	<p>
 			The results weren’t obvious, there was a lot of scope for improvement.
@@ -167,13 +166,13 @@ description: "Daily commute in India is a challenge where existing transportatio
 	<ol class="list-of-items">
 			<li>On a bad network users had to wait for the rate and review screen to come if they haven't rated yet, hence making booking process slow</li>
 			<li>Too many messages upon booking, 4 different types - 1 email & 3 text messages</li>
-			<li>Meta search was out of place. Users were unable to search for popular stops, ex - 'snapdeal' which is a popular stop was showing a different result</li>
+			<li>Meta search was out of place. Users were unable to search for popular stops, ex - 'Snapdeal' which is a popular stop was showing a different result</li>
 			<li>There was no feedback on tapping certain actions on the screen</li>
 			<li>Most people were travelling daily and booking a ticket daily was adding a task to their daily routine</li>
 			<li>On-spot booking users didn't care about the map, they knew their spots and wanted the system to match their speed</li>
 			<li>Discovery of different routes running in the city was an issue</li>
 			<li>Introductory screens didn't help, people went straight ahead into booking without noticing them</li>
-			<li>On slow speed networks app failed to respond</li>    
+			<li>On slow speed networks app failed to respond</li>
 	</ol>
 </section>
 <section class="section-bottom-margin">
@@ -191,7 +190,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 	</h3>
 	<p>
 			All of our efforts helped us build a world class product which is helping millions of users
-			reach their destinations stress free. Here is how it evovled from a product that was built on assumptions
+			reach their destinations stress free. Here is how it evolved from a product that was built on assumptions
 			to a product that is well informed and future proof.
 	</p>
 	<p class="full-width" style="text-align: center;"><img src="{{ '/assets/img/stages.png' | prepend: site.baseurl }}" alt=""></p>
@@ -242,7 +241,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 	<h3>Business Impact</h3>
 	<p>
 			Shuttle created a great business market for Ola. It is an important part of the team as it 
-			helped to accquire a new segment of customers. The cab market did not address the problems
+			helped to acquire a new segment of customers. The cab market did not address the problems
 			of connecting Metro feeder routes for daily commuters.
 	</p>
 	<p> 
@@ -258,7 +257,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 	<p>
 			Our users wanted a cheaper and 
 			reliable option that is comfortable and helps boost their productivity. In Gurgaon where traffic is beyond
-			limits, Ola Shuttle helped releave traffic congestion as more and more customers left their own transportation
+			limits, Ola Shuttle helped relieve traffic congestion as more and more customers left their own transportation
 			mediums and travelled with us making commute easier for everyone.
 	</p>
 	<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/userimpacttweets.png' | prepend: site.baseurl }}" alt=""></p>
