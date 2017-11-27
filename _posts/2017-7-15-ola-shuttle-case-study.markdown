@@ -30,14 +30,11 @@ description: "Daily commute in India is a challenge where existing transportatio
 		My role
 	</h3>
 	<p>
-		Ola Shuttle is built for daily commuters. I studied existing transportation system and mapped out a user journey of potential consumers.
-		to identify their paint points and figure out what success means to them. This helped me in setting up meetings with stakeholders and understand
-		how business will help address those concerns and what success means for business.
+		Ola Shuttle is built for daily commuters. I studied existing transportation system and mapped out a user journey of potential consumers to identify their pain points and figure out what success means to them. This helped me in setting up meetings with stakeholders and understand how business will help address those concerns and what success means for business.
 	</p>
 	<p>
 		I then regularly made end to end mockups and tested them with daily commuters to get clarity. After which
-		I showed best possible approach to stakeholders and senior designers and took feedback. This iterative approach helped me ship out
-		a world-class product which is now being used by millions of users daily. 
+		I showed best possible approach to stakeholders and senior designers and took feedback. This iterative approach helped me ship out a world-class product which is now being used by millions of users daily. 
 	</p>
 	<p>
 		It took us 3 months to role out the MVP and another month to improve
