@@ -2,7 +2,7 @@
 layout: post
 title:  "Ola Shuttle"
 subtitle: "Helping daily commuters reach their destination stress free"
-date:   2017-7-15
+date:   2017-9-15
 image: "olashuttle.png"
 description: "Daily commute in India is a challenge where existing transportation..."
 ---

@@ -1,52 +1,53 @@
 ---
 layout: post
 title:  "Ola Outstation"
-subtitle: "A case study"
-date:   2017-6-15
+subtitle: "Helping people travel across cities hassle free"
+date:   2017-8-15
 image: "outstation/outstation.jpg"
 description: "An affordable way for intercity travel. A range of AC cabs driven by top partners, available in 1 hour or book upto 7 days in advance. We have you covered across India with presence in 90+ cities with over 500 one way routes."
 ---
 
-<!-- <div class="row">
-	<div class="col-6">
-		<h3>role</h3>
-	</div>
-</div> -->
 <section class="section-bottom-margin">
 	<h3>
-		The problem
+		The challenge
 	</h3>
 	<p>
-		Daily commute in India is a challenge where existing transportation systems are already running beyond their capacity. People go through rigmarole of catching different types of transportation mediums to get to their destinations.
-	</p>
-	<p>
-		It’s easy for users to feel overwhelmed while switching between multiple transportation mediums. When coupled with the inconvenience caused due to delays, overfilled buses and no place to sit it becomes stressful and reduces productivity.
+		Build a dependable inter-city commute solution which is affordable, safe and convenient. Existing transportation services fail to deliver upon the promises they make and the experience of booking a inter-city cab is below par. Existing services don't provide up front clarity on what user's travel expense would be and often people end up frustrated in dealing with local travel agencies. In case of a break down or emergencies local travel agencies fail to deliver.
 	</p>
 </section>
 
+<section class="section-bottom-margin">
+	<h3>
+		My role
+	</h3>
+	<p>
+		Ola Outstation is built for frequent commuters who travel inter-city for business or vacation purposes. I studied existing transportation systems and mapped out a user journey of potential consumers to identify their pain points and figure out what success means to them. This helped me in setting up meetings with stakeholders and understand how business will help address those concerns and what success means for business.
+	</p>
+	<p>
+		I then regularly made end to end mockups and tested them with daily commuters to get clarity. After which
+		I showed best possible approach to stakeholders and senior designers and took feedback. This iterative approach helped me ship out a world-class product which is now being used by millions of users daily. 
+	</p>
+	<p>
+		It took us 1 month to role out the MVP and another month to improve
+		upon our product. I was the sole designer on this and currently looking after it.
+	</p>
+</section>
+
+<section class="section-bottom-margin">
+	<h3>
+		Design planning
+	</h3>
+	<p>
+		To build a dependable service I laid out a proper plan that will guide me towards clarity. From my previous experience of building Ola Shuttle I learned that the earlier I get feedback from users and stakeholders the better it is. I kept everybody associate with Outstation in loop and navigated them through my plan to reach desired outcome.
+	</p>
+    <p class="hero-image" style="text-align:center;">
+        <img src="{{ '/assets/img/outstation/planning.jpg' | prepend: site.baseurl }}" alt="">
+    </p>
+</section>
+
+More coming soon...
 
 <!-- <h3>
-    User study
-</h3>
-<p>
-    Our users are those who travel to work on a daily basis, ocassionally using multiple modes of transportation.
-</p>
-<p>
-    Here are a few questions that we asked our users to chart down their existing user journey:
-</p>
-<ul>
-    <li>How do you identify your nearest pickup point?</li>
-    <li>If you have a destination in mind, how do you decide which bus to 	take?</li>
-    <li>Do you have any concerns while travelling?</li>
-    <li>Do you care about getting a seat in the bus?</li>
-    <li>How do you explore different routes?</li>
-    <li>Do you care about the quality of transportation you are travelling in?</li>
-</ul>
-<p><b>The above set of questions helped us map the current user journey and its challenges.</b></p>
-
-<p class="hero-image" style="text-align:center;"><img src="{{ '/assets/img/userjourney.jpg' | prepend: site.baseurl }}" alt=""></p>
-
-<h3>
     Top user concerns during the journey
 </h3>
 <ul>
@@ -222,4 +223,4 @@ description: "An affordable way for intercity travel. A range of AC cabs driven 
     <li>Sundeep Sahani, VP product</li>
     <li>Sunit Singh, VP Design</li>
     <li>Prashant, Design Director</li>
-</ul> --> -->
+</ul> -->
