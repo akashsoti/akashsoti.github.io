@@ -17,19 +17,16 @@ title: About Akash Soti
 	<div class="row">
 		<div class="col-12">
 			<p style="margin: 0 auto 0 0; width:100%;">
-				Building human-centered products from 2012, currently a UX designer at Amazon India where I am leading the user experience for Amazon Business Marketplace and the India Retail Wholesale, Amazon Distribution. 
+				With close to 11 years of experience in design and a track record of working with notable startups like Punchh.com and Ola Cabs, my focus since 2012 has been on building human-centered products. Currently, as a Sr. UX designer at Amazon India, I lead the user experience for Alexa experiences and help the India central design team with new initiatives.
 			</p><br>
 			<p style="margin: 0 auto 0 0; width:100%;">
-				I started off as a Ruby on Rails developer and soon realised I am missing an important piece in building human-centered products. Product design for me was a natural transition as it enabled me to design and make apps which are truly customer backwards. 
+				My journey began as a Ruby on Rails developer, but I soon realized that I was missing a critical aspect of building products that centered around the user. This realization led me to transition to product design, which allowed me to create experiences that were truly customer-focused. 
 			</p><br>
 			<p style="margin: 0 auto 0 0; width:100%;">
-				For me, design is a marriage of creative and technical, these two are not separate. Design leads development and development informs design.
+				In my view, design is a harmonious blend of creativity and technical knowledge. These two elements are not mutually exclusive. Instead, design guides development, while development informs design. My ability to code and ship products has given me a better understanding of product design, enabling me to create better products with a clear vision.
 			</p><br>
 			<p style="margin: 0 auto 0 0; width:100%;">
-				The ability to code and ship things enabled me to understand the intricacies of product design and helped me make better products with clear vision.
-			</p><br>
-			<p style="margin: 0 auto 0 0; width:100%;" >
-				My mission is to make things that are obvious in nature and help people achieve their goals. 
+				My ultimate goal is to design products that are intuitive and user-friendly, helping people achieve their objectives with ease.
 			</p>
 		</div>
 	</div>
