@@ -2,9 +2,12 @@
 TABLE STYLES
 ***************/
 
+@use "sass:color";
+@use "../config" as *;
+
 table {
 	width: 100%;
-	border: 1px solid lighten($grey, 15%);
+	border: 1px solid color.scale($grey, $lightness: 15%);
 	margin-bottom: 1.5em;
 
 	caption {
@@ -17,16 +20,16 @@ table {
 }
 
 tr {
-	border-bottom: 1px solid lighten($grey, 15%);
+	border-bottom: 1px solid color.scale($grey, $lightness: 15%);
 
 	&:nth-child(even) {
-		background-color: lighten($grey, 30%);
+		background-color: color.scale($grey, $lightness: 30%);
 	}
 }
 
 td {
 	padding: 7px;
-	border-right: 1px solid lighten($grey, 15%);
+	border-right: 1px solid color.scale($grey, $lightness: 15%);
 
 	&:last-child {
 		border-right: 0;
@@ -34,9 +37,9 @@ td {
 }
 
 th {
-	background-color: lighten($grey, 30%);
-	border-bottom: 1px solid lighten($grey, 15%);
-	border-right: 1px solid lighten($grey, 15%);
+	background-color: color.scale($grey, $lightness: 30%);
+	border-bottom: 1px solid color.scale($grey, $lightness: 15%);
+	border-right: 1px solid color.scale($grey, $lightness: 15%);
 
 	&:last-child {
 		border-right: 0;

@@ -1,50 +1,19 @@
-// Reset using Normalize
-@import "normalize";
+@use "sass:math";
+@use "sass:color";
+@use "config" as *;
+@use "partials/mixins";
+@use "partials/simple-grid";
+@use "partials/typography";
+@use "modules/buttons";
+@use "modules/forms";
+@use "modules/tables";
+@use "normalize";
+@use "breakpoints/mobileup";
+@use "breakpoints/800up" as *;  // or @use "breakpoints/800up" as breakpoints800;
 
-// Import fonts from Google
+// Then, any @import statements for external resources
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
 @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i);
 
-// Site configuration
-@import "config"; 
-
-// Import Partials
-@import "partials/typography";
-@import "partials/mixins";
-@import "partials/simple-grid";
-
-// Modules
-@import "modules/buttons";
-@import "modules/forms"; 
-@import "modules/tables";
-@import "modules/syntax"; 
-
-// Mobile up base styles
-@import "breakpoints/mobileup";
-
-// Import media queries add more as you desire
-@media only screen and (min-width: 800px) { @import "breakpoints/800up";} 
-
-// If IE support is needed you can add them here or create another stylesheet for specific IE fixes
-
-p.full-width{
-    width: 100%;
-    margin-bottom: 0;
-}
-
-p.hero-image{
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    img{
-        width: 100%;
-    }
-}
-
-.section-bottom-margin{
-    margin-bottom: 80px;
-}
+// Your custom styles can go here

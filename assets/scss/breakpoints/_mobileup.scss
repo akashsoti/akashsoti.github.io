@@ -1,3 +1,6 @@
+@use "../config" as *;
+@use "sass:color";
+
 /***************
 GLOBAL STYLES
 ***************/
@@ -57,7 +60,7 @@ a {
 	color: $link-color;
 
 	&:hover {
-		color: darken($link-color, 15%);
+		color: color.scale($link-color, $lightness: -15%);
 	}
 }
 
@@ -80,7 +83,7 @@ MENU STYLING
 		  width: 100%;
 		  display: block;
 		  background: $background-color;
-		  border-bottom: 2px solid lighten($background-color, 5%);
+		  border-bottom: 2px solid color.scale($background-color, $lightness: 5%);
 
 		  a {
 		  	color: white;
@@ -129,7 +132,7 @@ MENU STYLING
 
   &:hover {
   	color: white;
-  	background-color: darken($background-color, 10%);
+  	background-color: color.scale($background-color, $lightness: -10%);
   }
 }
 
@@ -192,13 +195,9 @@ HEADER STYLING
 
 .header {
 	background-color: $background-color;
-	background-image: url('../img/touring.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	color: white;
-	padding: 0;
-	height: 3em;
 
 	.container {
 		padding: 0;
@@ -284,7 +283,7 @@ POST STYLING
 	}
 
 	.meta {
-		color: lighten(black, 60%);
+		color: color.scale(black, $lightness: 60%);
 		font-family: $sans-serif;
 		font-weight: 100;
 		margin-bottom: 10px;
@@ -298,7 +297,7 @@ POST STYLING
 			text-align: center;
 			font-size: .9em;
 			font-style: italic;
-			color: lighten($black, 30%);
+			color: color.scale($black, $lightness: 30%);
 		}
 
 		img {
@@ -337,8 +336,8 @@ POST NAV STYLING
 ***************/
 
 .postNav {
-	border-top: 1px solid darken(white, 10%);
-	border-bottom: 1px solid darken(white, 10%);
+	border-top: 1px solid color.scale(white, $lightness: -10%);
+	border-bottom: 1px solid color.scale(white, $lightness: -10%);
 	overflow: hidden;
 
 	.prev, .next {
@@ -415,7 +414,7 @@ FOOTER STYLING
 	clear: both;
 
 	.container {
-		border-top: 1px solid darken(white, 15%);
+		border-top: 1px solid color.scale(white, $lightness: -15%);
 		padding-top: .5em;
     max-width: 90%;
 	}
@@ -461,7 +460,7 @@ FOOTER STYLING
 					a {
 						svg {
 							.outer-shape {
-								fill: darken($primary-color, 10%);
+								fill: color.scale($primary-color, $lightness: -10%);
 							}
 						}
 					}
@@ -551,7 +550,7 @@ POST LIST STYLING
 		}
 
 		.date {
-			color: lighten(black, 50%);
+			color: color.scale($black, $lightness: 50%);
 			font-family: $sans-serif;
 			font-weight: 300;
 			font-size: .8em;

@@ -1,3 +1,6 @@
+@use "../config" as *;
+@use "sass:color";
+
 /***************
 GLOBAL STYLES
 ***************/
@@ -79,7 +82,7 @@ HEADER STYLING
 					padding: 0 .25em 0 0;
 
 					&:hover {
-						color: darken(white, 20%);
+						color: color.scale(white, $lightness: -20%);
 					}
 				}
 
