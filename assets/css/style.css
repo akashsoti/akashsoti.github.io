@@ -30,13 +30,6 @@ html.theme-dark .highlight{background:#101826}
   html.theme-dark .nav-collapse ul li{background:none;border-bottom:none}
 }
 
-/* Phosphor icon styles */
-.footer-links ul li a{line-height:30px;border-radius:50%;background:rgba(0,0,0,.9);color:#fff;text-align:center}
-.footer-links ul li a i{font-size:18px;line-height:30px}
-.footer-links ul li:hover a{background:rgba(0,0,0,.95)}
-.theme-toggle__icon{font-size:16px;vertical-align:text-bottom;margin-right:6px}
-html.theme-dark .footer-links ul li a{background:#2a3948;color:#e6edf3}
-html.theme-dark .footer-links ul li:hover a{background:#3a4d61}
 .sr-only{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
 
 /* Dark mode palette v2: material-style neutral dark */
@@ -132,3 +125,47 @@ html.theme-dark .top-nav__link.is-current{background:rgba(255,255,255,.16)}
 /* Header left align v4: logo aligns with nav links */
 .header .container{align-items:stretch}
 .header .logo{text-align:left}
+
+/* Phosphor icons v2: clean implementation */
+.footer-links ul li a{display:inline-flex;align-items:center;justify-content:center;width:2.125rem;height:2.125rem;border-radius:9999px;background:rgba(0,0,0,.9);color:#fff;transition:background-color .2s ease-in-out,color .2s ease-in-out}
+.footer-links ul li a i{display:block;font-size:1.1rem;line-height:1}
+.footer-links ul li:hover a{background:rgba(0,0,0,.95)}
+.theme-toggle__icon{display:block;font-size:1.1rem;line-height:1;margin-right:0}
+html.theme-dark .footer-links ul li a{background:#2a2a2a;color:rgba(255,255,255,.92)}
+html.theme-dark .footer-links ul li:hover a{background:#3a3a3a}
+
+/* Footer icons v3: no underline/no background, theme-based colors */
+.footer-links ul li a,
+.footer-links ul li a:hover,
+.footer-links ul li a:focus{background:transparent!important;text-decoration:none!important;box-shadow:none!important}
+.footer-links ul li a{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;color:rgba(0,0,0,.9)}
+.footer-links ul li a i{font-size:1.2rem;line-height:1}
+html.theme-dark .footer-links ul li a{color:rgba(255,255,255,.92)}
+
+/* Logo typography v5: use body sans in all themes + remove gap above nav */
+.header .logo,.header h1,.header h1 a{font-family:"Google Sans Flex","Open Sans",Helvetica,Arial,sans-serif}
+.header .logo{margin:0!important}
+@media only screen and (min-width:800px){.header .logo{margin-bottom:0!important}}
+html.theme-dark .header h1,html.theme-dark .header h1 a{font-family:"Google Sans Flex","Open Sans",Helvetica,Arial,sans-serif;color:#fff}
+
+/* Logo-nav spacing v6: reduce gap by ~50% */
+.header h1{line-height:1.5em}
+.header .logo a{height:auto;line-height:1.2}
+@media only screen and (min-width:800px){.header h1{line-height:1}}
+
+/* Logo-nav spacing v7: hard tighten after cascade conflicts */
+.header .logo,.header h1{margin:0!important;padding:0!important;line-height:1!important}
+.header .logo a{height:auto!important;line-height:1!important;padding:0!important;margin:0!important}
+.top-nav{margin-top:-0.2rem!important}
+@media only screen and (min-width:800px){.top-nav{margin-top:-0.3rem!important}}
+
+/* Nav selected/link spacing v8: roomier horizontal + vertical padding */
+.top-nav__link{height:2.45rem;padding:.2rem 1rem}
+.top-nav__link.is-current{padding:.2rem 1rem}
+
+/* Nav hover spacing v9: keep padding fixed on hover/focus */
+.top-nav__link:hover,.top-nav__link:focus,.top-nav__link:active{height:2.45rem;padding:.2rem 1rem}
+
+/* Nav stability v10: prevent any hover movement */
+.top-nav__item{margin:0!important;padding:0!important;line-height:1!important;border:0!important}
+.top-nav__link,.top-nav__link:hover,.top-nav__link:focus,.top-nav__link:active{box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;height:2.45rem!important;padding:.2rem 1rem!important;margin:0!important;line-height:1!important;border:1px solid transparent!important;transform:none!important;top:auto!important;text-decoration:none!important}

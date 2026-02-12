@@ -274,7 +274,9 @@ CONTACT PAGE STYLING
 /* Header/nav layout v2 desktop refinement */
 .header {
 	.logo {
-		margin-bottom: .75rem;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		line-height: 1;
 	}
 
 	.top-nav__row {

@@ -221,7 +221,7 @@ HEADER STYLING
 		float: left;
 		padding-left: 0;
 		font-size: 1em;
-		line-height: 3em;
+		line-height: 1.5em;
 		font-family: $sans-serif;
 		font-weight: 800;
 		text-transform: none;
@@ -447,26 +447,29 @@ FOOTER STYLING
 				display: inline-block;
 
 				a {
-					display: inline-block;
-					width: 30px;
-					height: 30px;
-					line-height: 30px;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					width: 2.125rem;
+					height: 2.125rem;
 					border-radius: 50%;
-					background: $primary-color;
-					color: white;
-					text-align: center;
+					background: transparent;
+					color: rgba(0, 0, 0, 0.9);
+					text-decoration: none;
 					transition: all 0.2s ease-in-out;
 
 					i {
-						font-size: 18px;
-						line-height: 30px;
+						font-size: 1.1rem;
+						line-height: 1;
+						display: block;
 					}
 				}
 
 
 				&:hover {
 					a {
-						background: darken($primary-color, 10%);
+						background: transparent;
+						text-decoration: none;
 					}
 				}
 			}
@@ -618,7 +621,7 @@ html.theme-dark {
 
 	.header h1,
 	.header h1 a {
-		font-family: $serif;
+		font-family: $sans-serif;
 		color: #fff;
 	}
 
@@ -727,12 +730,12 @@ html.theme-dark {
 	}
 
 	.footer-links ul li a {
-		background: #2a2a2a;
+		background: transparent;
 		color: rgba(255, 255, 255, 0.87);
 	}
 
 	.footer-links ul li:hover a {
-		background: #3a3a3a;
+		background: transparent;
 	}
 }
 
@@ -753,7 +756,8 @@ html.theme-dark {
 .header .logo a {
 	display: inline-flex;
 	align-items: center;
-	height: 2.2rem;
+	height: auto;
+	line-height: 1.2;
 }
 
 .top-nav {
@@ -778,8 +782,8 @@ html.theme-dark {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	height: 2.15rem;
-	padding: 0 .7rem;
+	height: 2.45rem;
+	padding: .2rem 1rem;
 	border-radius: .5rem;
 	font-family: $sans-serif;
 	font-size: .82rem;
@@ -797,6 +801,7 @@ html.theme-dark {
 
 .top-nav__link.is-current {
 	background: rgba(255,255,255,.2);
+	padding: .2rem 1rem;
 }
 
 .theme-toggle-item {
@@ -832,11 +837,14 @@ html.theme-dark {
 	display: block;
 	float: none;
 	text-align: left;
-	margin: 0 0 .55rem 0;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
 }
 
 .top-nav {
 	margin-left: 0;
+	margin-top: -0.2rem;
 }
 
 .top-nav__row {
