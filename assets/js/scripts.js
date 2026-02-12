@@ -8,9 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Theme toggle
-  var themeToggle = document.getElementById("theme-toggle");
-  var themeToggleText = themeToggle ? themeToggle.querySelector(".theme-toggle__text") : null;
-  var themeToggleIcon = themeToggle ? themeToggle.querySelector(".theme-toggle__icon") : null;
+  var themeToggles = document.querySelectorAll(".theme-toggle");
   var mobileNavToggle = document.getElementById("mobile-nav-toggle");
   var topNav = document.querySelector(".top-nav");
 
@@ -18,20 +16,23 @@ document.addEventListener("DOMContentLoaded", function () {
     var isDark = theme === "dark";
     document.documentElement.classList.toggle("theme-dark", isDark);
 
-    if (!themeToggle) return;
-
     var toggleLabel = isDark ? "Switch to light mode" : "Switch to dark mode";
-    themeToggle.setAttribute("aria-pressed", isDark ? "true" : "false");
-    themeToggle.setAttribute("aria-label", toggleLabel);
+    themeToggles.forEach(function (toggle) {
+      toggle.setAttribute("aria-pressed", isDark ? "true" : "false");
+      toggle.setAttribute("aria-label", toggleLabel);
 
-    if (themeToggleText) {
-      themeToggleText.textContent = toggleLabel;
-    }
+      var toggleText = toggle.querySelector(".theme-toggle__text");
+      var toggleIcon = toggle.querySelector(".theme-toggle__icon");
 
-    if (themeToggleIcon) {
-      themeToggleIcon.classList.remove("ph-moon", "ph-sun");
-      themeToggleIcon.classList.add(isDark ? "ph-sun" : "ph-moon");
-    }
+      if (toggleText) {
+        toggleText.textContent = toggleLabel;
+      }
+
+      if (toggleIcon) {
+        toggleIcon.classList.remove("ph-moon", "ph-sun");
+        toggleIcon.classList.add(isDark ? "ph-sun" : "ph-moon");
+      }
+    });
   }
 
   var storedTheme = null;
@@ -43,17 +44,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
   applyTheme(storedTheme === "dark" ? "dark" : "light");
 
-  if (themeToggle) {
-    themeToggle.addEventListener("click", function () {
-      var isDark = document.documentElement.classList.contains("theme-dark");
-      var nextTheme = isDark ? "light" : "dark";
-      applyTheme(nextTheme);
+  if (themeToggles.length) {
+    themeToggles.forEach(function (toggle) {
+      toggle.addEventListener("click", function () {
+        var isDark = document.documentElement.classList.contains("theme-dark");
+        var nextTheme = isDark ? "light" : "dark";
+        applyTheme(nextTheme);
 
-      try {
-        localStorage.setItem("theme", nextTheme);
-      } catch (e) {
-        // no-op when storage is unavailable
-      }
+        try {
+          localStorage.setItem("theme", nextTheme);
+        } catch (e) {
+          // no-op when storage is unavailable
+        }
+      });
     });
   }
 

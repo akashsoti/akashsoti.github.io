@@ -7,7 +7,7 @@
 			</button>
 			<h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
 			<div class="theme-toggle-container">
-				<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+				<button class="theme-toggle theme-toggle--mobile" type="button" aria-label="Toggle dark mode" aria-pressed="false">
 					<i class="ph ph-moon theme-toggle__icon" aria-hidden="true"></i>
 					<span class="sr-only theme-toggle__text">Switch to dark mode</span>
 				</button>
@@ -34,6 +34,12 @@
 					<a class="top-nav__link" href="https://medium.com/@akashsoti" target="_blank" rel="noopener noreferrer">Writings</a>
 				</li>
 			</ul>
+			<div class="theme-toggle-container theme-toggle-container--desktop">
+				<button class="theme-toggle theme-toggle--desktop" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+					<i class="ph ph-moon theme-toggle__icon" aria-hidden="true"></i>
+					<span class="sr-only theme-toggle__text">Switch to dark mode</span>
+				</button>
+			</div>
 		</nav>
 	</div>
  </div><!-- end .header -->

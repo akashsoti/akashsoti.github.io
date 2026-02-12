@@ -226,3 +226,65 @@ html.theme-dark .mobile-nav-toggle:hover{background:#2a2a2a;border-color:rgba(25
 /* Header icon scale v15: smaller icons, no container stroke */
 .mobile-nav-toggle,.theme-toggle{width:1.9rem!important;height:1.9rem!important;border:0!important}
 .mobile-nav-toggle i,.theme-toggle__icon{font-size:.95rem!important}
+
+/* Header layout v16: mobile row toggle + desktop nav-row toggle */
+.theme-toggle-container--desktop{display:none}
+@media only screen and (max-width:799px){
+  .header{padding:0!important;min-height:5.75rem!important}
+  .header .container{min-height:5.75rem!important;height:auto!important;display:flex!important;flex-direction:column!important;justify-content:center!important;overflow:visible!important}
+  .header__top-row{min-height:2.2rem;display:flex;align-items:center;justify-content:space-between}
+  .theme-toggle--desktop,.theme-toggle-container--desktop{display:none!important}
+  .theme-toggle--mobile{display:inline-flex!important}
+  .top-nav{margin-top:.3rem!important}
+}
+@media only screen and (min-width:800px){
+  .header__top-row{display:block}
+  .header__top-row .mobile-nav-toggle,.header__top-row .theme-toggle-container{display:none!important}
+  .theme-toggle-container--desktop{display:flex!important;align-items:center;margin-left:auto}
+  .theme-toggle--desktop{display:inline-flex!important}
+  .top-nav{display:flex!important;align-items:center;justify-content:space-between;margin-top:0!important}
+  .top-nav__list{display:flex!important;flex-direction:row!important;align-items:center}
+}
+
+/* Header order fix v17: keep desktop theme toggle after nav links */
+@media only screen and (min-width:800px){
+  .top-nav{display:flex!important;align-items:center!important;justify-content:flex-start!important}
+  .top-nav__list{order:1!important;flex:1 1 auto!important;justify-content:flex-start!important}
+  .theme-toggle-container--desktop{order:2!important;flex:0 0 auto!important;margin-left:auto!important}
+  .theme-toggle-container--desktop .theme-toggle{margin-left:.4rem!important}
+}
+
+/* Mobile header sizing v18: 30% shorter + vertically centered */
+@media only screen and (max-width:799px){
+  .header{min-height:4rem!important;padding:0!important}
+  .header .container{
+    min-height:4rem!important;
+    height:4rem!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:center!important;
+    overflow:visible!important
+  }
+  .header__top-row{
+    min-height:4rem!important;
+    height:4rem!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important
+  }
+  .top-nav{margin-top:0!important;min-height:0!important}
+  .top-nav__list{margin-top:0!important}
+  .top-nav.is-open .top-nav__list{margin-top:.35rem!important}
+  .header__top-row .logo,
+  .header__top-row .mobile-nav-toggle,
+  .header__top-row .theme-toggle-container{
+    align-self:center!important
+  }
+  .header__top-row .logo,
+  .header__top-row .logo a{
+    display:flex!important;
+    align-items:center!important;
+    height:100%!important;
+    line-height:1!important
+  }
+}
