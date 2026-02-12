@@ -1,28 +1,11 @@
 {
-  "name": "long-haul",
-  "version": "0.0.0",
-  "description": "A minimal, type-focused Jekyll theme. ",
-  "main": "gulpfile.js",
+  "name": "akashsoti.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal site powered by Jekyll",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve --host 127.0.0.1 --port 4000"
   },
-  "author": "Brian Maier Jr.",
-  "license": "MIT",
-  "devDependencies": {
-    "browser-sync": "^1.3.7",
-    "gulp": "^3.8.8",
-    "gulp-autoprefixer": "1.0.0",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-sass": "^2.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/brianmaierjr/long-haul.git"
-  },
-  "keywords": [
-    "jekyll",
-    "gulp",
-    "sass",
-    "browsersync"
-  ]
+  "license": "MIT"
 }

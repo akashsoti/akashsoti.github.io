@@ -1,7 +1,5 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem "jekyll"
-gem "jekyll-paginate"
-gem "support-for"
-
+gem "jekyll", "~> 4.3"
+gem "jekyll-paginate", "~> 1.1"
 gem "webrick", "~> 1.8"
