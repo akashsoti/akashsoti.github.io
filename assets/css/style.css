@@ -219,6 +219,39 @@ html.theme-dark .mobile-nav-toggle:hover{background:#2a2a2a;border-color:rgba(25
   .header__top-row .logo a{height:auto!important;line-height:1.1!important}
   .top-nav{margin-top:.35rem!important}
 }
+
+/* Post nav readability v22: camel case labels + dark readable overlay */
+.postNav .next,
+.postNav .prev{
+  text-transform:none!important;
+  background:rgba(0,0,0,.86)!important;
+}
+.postNav .next span,
+.postNav .prev span{
+  color:#fff!important;
+  background:transparent!important;
+  padding:.5rem .65rem!important;
+}
+
+/* Post nav overlay v23: full-panel dark layer behind text */
+.postNav .next.image,
+.postNav .prev.image{
+  text-transform:none!important;
+}
+.postNav .next.image::after,
+.postNav .prev.image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.86);
+  z-index:2;
+  pointer-events:none;
+}
+.postNav .next.image span,
+.postNav .prev.image span{
+  z-index:3!important;
+  color:#fff!important;
+}
 @media only screen and (min-width:800px){
   .header__top-row{display:flex;align-items:center;justify-content:space-between}
 }
