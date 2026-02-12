@@ -1,19 +1,19 @@
  <div class="header">
 	<div class="container">
-		<h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-		<nav class="top-nav" aria-label="Primary">
-			<div class="top-nav__row">
-				<button id="mobile-nav-toggle" class="mobile-nav-toggle" type="button" aria-controls="primary-nav-links" aria-expanded="false" aria-label="Toggle menu">
-					<i class="ph ph-list" aria-hidden="true"></i>
-					<span class="sr-only">Toggle menu</span>
+		<div class="header__top-row">
+			<button id="mobile-nav-toggle" class="mobile-nav-toggle" type="button" aria-controls="primary-nav-links" aria-expanded="false" aria-label="Toggle menu">
+				<i class="ph ph-list" aria-hidden="true"></i>
+				<span class="sr-only">Toggle menu</span>
+			</button>
+			<h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+			<div class="theme-toggle-container">
+				<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+					<i class="ph ph-moon theme-toggle__icon" aria-hidden="true"></i>
+					<span class="sr-only theme-toggle__text">Switch to dark mode</span>
 				</button>
-				<div class="theme-toggle-container">
-					<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
-						<i class="ph ph-moon theme-toggle__icon" aria-hidden="true"></i>
-						<span class="sr-only theme-toggle__text">Switch to dark mode</span>
-					</button>
-				</div>
 			</div>
+		</div>
+		<nav class="top-nav" aria-label="Primary">
 			<ul id="primary-nav-links" class="top-nav__list">
 				{% for link in site.navigation %}
 				{% assign current = nil %}

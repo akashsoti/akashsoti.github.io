@@ -198,3 +198,31 @@ html.theme-dark .mobile-nav-toggle:hover{background:#2a2a2a;border-color:rgba(25
   .header .container{justify-content:center!important;align-items:stretch!important}
   .top-nav{margin-top:0!important}
 }
+
+/* Mobile Safari nav hardening v13 */
+@media only screen and (max-width:799px){
+  .header{background-attachment:scroll!important}
+  .header .container{height:auto!important;overflow:visible!important}
+  .top-nav{position:relative;z-index:5}
+  .top-nav__row{position:relative;z-index:6}
+  .mobile-nav-toggle{-webkit-appearance:none;appearance:none;touch-action:manipulation}
+  .top-nav__list{display:block!important;max-height:0;overflow:hidden;-webkit-overflow-scrolling:touch;opacity:0;transform:translateY(-4px);transition:max-height .24s ease,opacity .18s ease,transform .18s ease;margin-top:.45rem}
+  .top-nav.is-open .top-nav__list{max-height:70vh;opacity:1;transform:translateY(0)}
+}
+
+/* Mobile header row v14: menu, logo, theme toggle on same row */
+.header__top-row{display:flex;align-items:center;gap:.5rem;width:100%}
+@media only screen and (max-width:799px){
+  .header__top-row .mobile-nav-toggle{order:1;flex:0 0 auto}
+  .header__top-row .logo{order:2;flex:1 1 auto;margin:0!important;text-align:left}
+  .header__top-row .theme-toggle-container{order:3;flex:0 0 auto;margin-left:0!important}
+  .header__top-row .logo a{height:auto!important;line-height:1.1!important}
+  .top-nav{margin-top:.35rem!important}
+}
+@media only screen and (min-width:800px){
+  .header__top-row{display:flex;align-items:center;justify-content:space-between}
+}
+
+/* Header icon scale v15: smaller icons, no container stroke */
+.mobile-nav-toggle,.theme-toggle{width:1.9rem!important;height:1.9rem!important;border:0!important}
+.mobile-nav-toggle i,.theme-toggle__icon{font-size:.95rem!important}
