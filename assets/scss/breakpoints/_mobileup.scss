@@ -48,6 +48,17 @@ img,video,audio,iframe,object{
 	margin-right: auto;
 }
 
+.sr-only {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
 
 /***************
 LINK STYLING
@@ -201,19 +212,19 @@ HEADER STYLING
 	height: 3em;
 
 	.container {
-		padding: 0;
-    	max-width: 100%;
+		padding: 0 1.4rem;
+		max-width: 900px;
 	}
 
 	h1 {
 		margin: 0;
 		float: left;
-		padding-left: 2rem;
+		padding-left: 0;
 		font-size: 1em;
 		line-height: 3em;
 		font-family: $sans-serif;
 		font-weight: 800;
-		text-transform: uppercase;
+		text-transform: none;
 
 		a {
 			color: white;
@@ -439,31 +450,23 @@ FOOTER STYLING
 					display: inline-block;
 					width: 30px;
 					height: 30px;
+					line-height: 30px;
+					border-radius: 50%;
+					background: $primary-color;
+					color: white;
+					text-align: center;
 					transition: all 0.2s ease-in-out;
 
-					svg {
-						display: block;
-						width: 100%;
-						height: 100%;
-
-						.outer-shape {
-							fill: $primary-color;
-						}
-
-						.inner-shape {
-							fill: white;
-						}
+					i {
+						font-size: 18px;
+						line-height: 30px;
 					}
 				}
 
 
 				&:hover {
 					a {
-						svg {
-							.outer-shape {
-								fill: darken($primary-color, 10%);
-							}
-						}
+						background: darken($primary-color, 10%);
 					}
 				}
 			}
@@ -561,4 +564,299 @@ POST LIST STYLING
 			margin: 0 0 0.3em;
 		}
 	}
+}
+
+.theme-toggle-item {
+	border-bottom: 0 !important;
+	display: flex !important;
+	justify-content: flex-end;
+	padding: .45rem 1rem !important;
+}
+
+.theme-toggle {
+	width: 2.15rem;
+	height: 2.15rem;
+	margin: 0;
+	padding: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.5rem;
+	border: 1px solid rgba(255,255,255,.35);
+	background: rgba(255,255,255,.12);
+	color: white;
+	line-height: 1;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+	&:hover {
+		background: rgba(255,255,255,.2);
+		border-color: rgba(255,255,255,.5);
+		transform: translateY(-1px);
+	}
+}
+
+.theme-toggle__icon {
+	font-size: 1.1rem;
+	line-height: 1;
+	margin-right: 0;
+}
+
+html.theme-dark {
+	color-scheme: dark;
+
+	body {
+		background: #000;
+		color: rgba(255, 255, 255, 0.87);
+	}
+
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6,
+	.pageTitle {
+		color: #fff;
+	}
+
+	.header h1,
+	.header h1 a {
+		font-family: $serif;
+		color: #fff;
+	}
+
+	body p,
+	body ul,
+	.post ul ul,
+	.post ul ol,
+	.post ol ul,
+	.post ol ol,
+	ul.list-of-items li,
+	ol.list-of-items li {
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+	a {
+		color: #a8c7fa;
+
+		&:hover {
+			color: #d2e3fc;
+		}
+	}
+
+	.header {
+		background-color: #000;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/touring.jpg');
+	}
+
+	.nav-collapse ul li {
+		background: #121212;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.12);
+	}
+
+	.nav-toggle {
+		background-color: #121212;
+	}
+
+	.posts {
+		background: #1a1a1a;
+		box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05), 0 8px 20px rgba(255, 255, 255, 0.04), 0 2px 6px rgba(0, 0, 0, 0.6);
+		transition: transform 180ms ease, box-shadow 220ms ease;
+
+		&:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12), 0 14px 30px rgba(255, 255, 255, 0.08), 0 6px 16px rgba(0, 0, 0, 0.75);
+		}
+
+		.post-feature-image {
+			background-color: #2a2a2a;
+		}
+
+		li h3 a,
+		li h3 a:hover {
+			color: #fff;
+		}
+	}
+
+	.post .postTitle-subTitle,
+	.post blockquote {
+		color: rgba(255, 255, 255, 0.87);
+	}
+
+	.post .meta,
+	.posts li .date,
+	.pageTitle-helper {
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	.postNav {
+		border-top-color: rgba(255, 255, 255, 0.12);
+		border-bottom-color: rgba(255, 255, 255, 0.12);
+	}
+
+	.footer .container {
+		border-top-color: rgba(255, 255, 255, 0.12);
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="phone"],
+	textarea {
+		background: #171717;
+		color: rgba(255, 255, 255, 0.87);
+		border: 1px solid rgba(255, 255, 255, 0.18);
+	}
+
+	table {
+		border-color: rgba(255, 255, 255, 0.18);
+	}
+
+	th,
+	td,
+	tr {
+		border-color: rgba(255, 255, 255, 0.18);
+	}
+
+	th,
+	tr:nth-child(even) {
+		background-color: #1f1f1f;
+	}
+
+	.highlight {
+		background: #141414;
+	}
+
+	.footer-links ul li a {
+		background: #2a2a2a;
+		color: rgba(255, 255, 255, 0.87);
+	}
+
+	.footer-links ul li:hover a {
+		background: #3a3a3a;
+	}
+}
+
+/* Shadcn-style top navigation */
+.header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: .75rem;
+	height: 100%;
+}
+
+.header .logo {
+	line-height: 1;
+	flex: 0 0 auto;
+}
+
+.header .logo a {
+	display: inline-flex;
+	align-items: center;
+	height: 2.2rem;
+}
+
+.top-nav {
+	margin-left: auto;
+}
+
+.top-nav__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	gap: .35rem;
+}
+
+.top-nav__item {
+	display: flex;
+	align-items: center;
+}
+
+.top-nav__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 2.15rem;
+	padding: 0 .7rem;
+	border-radius: .5rem;
+	font-family: $sans-serif;
+	font-size: .82rem;
+	font-weight: 520;
+	letter-spacing: .01em;
+	color: white;
+	text-decoration: none;
+	transition: background-color .18s ease, color .18s ease;
+
+	&:hover {
+		background: rgba(255,255,255,.14);
+		color: white;
+	}
+}
+
+.top-nav__link.is-current {
+	background: rgba(255,255,255,.2);
+}
+
+.theme-toggle-item {
+	padding: 0 !important;
+	margin-left: .15rem;
+}
+
+html.theme-dark {
+	.top-nav__link {
+		color: rgba(255,255,255,.92);
+	}
+
+	.top-nav__link:hover {
+		background: rgba(255,255,255,.12);
+		color: #fff;
+	}
+
+	.top-nav__link.is-current {
+		background: rgba(255,255,255,.16);
+	}
+}
+
+/* Header/nav layout v2: logo on first row, links left + toggle right on second row */
+.header .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	height: 100%;
+}
+
+.header .logo {
+	display: block;
+	float: none;
+	text-align: left;
+	margin: 0 0 .55rem 0;
+}
+
+.top-nav {
+	margin-left: 0;
+}
+
+.top-nav__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: .6rem;
+}
+
+.top-nav__list {
+	flex: 1;
+	justify-content: flex-start;
+}
+
+.theme-toggle-container {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+
+.theme-toggle-item {
+	margin-left: 0;
 }
