@@ -1,0 +1,26 @@
+/* Footer icons */
+.footer-links ul li a,
+.footer-links ul li a:hover,
+.footer-links ul li a:focus {
+  background: transparent;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.footer-links ul li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.footer-links ul li a i {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+html.theme-dark .footer-links ul li a {
+  color: rgba(255, 255, 255, 0.92);
+}

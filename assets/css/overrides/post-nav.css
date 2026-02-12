@@ -1,0 +1,28 @@
+/* Post nav readability */
+.postNav .next,
+.postNav .prev,
+.postNav .next.image,
+.postNav .prev.image {
+  text-transform: none;
+}
+
+.postNav .next.image,
+.postNav .prev.image {
+  position: relative;
+}
+
+.postNav .next.image::after,
+.postNav .prev.image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.86);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.postNav .next.image span,
+.postNav .prev.image span {
+  z-index: 3;
+  color: #fff;
+}
