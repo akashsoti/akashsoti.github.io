@@ -12,7 +12,7 @@ description: "An affordable way for intercity travel. A range of AC cabs driven 
 		The challenge
 	</h3>
 	<p>
-		Build a dependable inter-city commute solution which is affordable, safe and convenient. Existing transportation services fail to deliver upon the promises they make and the experience of booking a inter-city cab is below par. Existing services don't provide up front clarity on what user's travel expense would be and often people end up frustrated in dealing with local travel agencies. In case of a break down or emergencies local travel agencies fail to deliver.
+		Build a dependable inter-city commute solution that is affordable, safe, and convenient. Existing transportation services fail to deliver on the promises they make, and the experience of booking an inter-city cab is below par. Existing services don't provide upfront clarity on what a user's travel expense would be, and people often end up frustrated when dealing with local travel agencies. In case of a breakdown or emergency, local travel agencies fail to deliver.
 	</p>
 </section>
 
@@ -28,7 +28,7 @@ description: "An affordable way for intercity travel. A range of AC cabs driven 
 		I showed best possible approach to stakeholders and senior designers and took feedback. This iterative approach helped me ship out a world-class product which is now being used by millions of users daily. 
 	</p>
 	<p>
-		It took us 1 month to role out the MVP and another month to improve
+		It took us 1 month to roll out the MVP and another month to improve
 		upon our product. I was the sole designer on this and currently looking after it.
 	</p>
 </section>
@@ -38,7 +38,7 @@ description: "An affordable way for intercity travel. A range of AC cabs driven 
 		Design planning
 	</h3>
 	<p>
-		To build a dependable service I laid out a proper plan that will guide me towards clarity. From my previous experience of building Ola Shuttle I learned that the earlier I get feedback from users and stakeholders the better it is. I kept everybody associate with Outstation in loop and navigated them through my plan to reach desired outcome.
+		To build a dependable service, I laid out a proper plan that would guide me toward clarity. From my previous experience of building Ola Shuttle, I learned that the earlier I get feedback from users and stakeholders, the better it is. I kept everybody associated with Outstation in the loop and navigated them through my plan to reach the desired outcome.
 	</p>
     <p class="hero-image" style="text-align:center;">
       <img src="{{ '/assets/img/outstation/planning.jpg' | prepend: site.baseurl }}" alt="">
@@ -50,7 +50,7 @@ description: "An affordable way for intercity travel. A range of AC cabs driven 
 		User study
 	</h3>
 	<p>
-		I did some primary research to figure out who are customers are and what are their goals and concerns. What is their
+		I did some primary research to figure out who our customers are and what their goals and concerns are. What is their
 		motivation to use a cab service for inter-city travel.
 	</p>
 	<p>
@@ -60,13 +60,13 @@ description: "An affordable way for intercity travel. A range of AC cabs driven 
 		Here are a few questions that I asked our users to chart down their existing user journey:
 	</p>
 	<ul class="list-of-items">
-		<li>How do you find out about a outstation service in your city?</li>
+		<li>How do you find out about an outstation service in your city?</li>
 		<li>How do you figure out about pricing and its details?</li>
 		<li>Do you compare prices with other services?</li>
 		<li>Do you care about a car type; luxury, sedan or SUV?</li>
 		<li>Do you care about additional services like, A/C and Wi-Fi?</li>
 		<li>Do you have any concerns while traveling?</li>
-		<li>Do you travel one ways or return?</li>
+		<li>Do you travel one-way or return?</li>
 		<li>How do you pay for your travel?</li>
 	</ul>
 
@@ -98,7 +98,7 @@ description: "An affordable way for intercity travel. A range of AC cabs driven 
 		<li>Reduce anxiety around booking confirmation</li>
 		<li>Provide clarity on travel estimates</li>
 		<li>Provide choices for cab type</li>
-		<li>Provide good support in case of a break down</li>
+		<li>Provide good support in case of a breakdown</li>
 		<li>Provide comfortable travel with air-conditioned, entertainment & WiFi</li>
 		<li>Provide clarity on inclusions and exclusions and ease the payment process</li>
 	</ul>
@@ -145,7 +145,7 @@ description: "An affordable way for intercity travel. A range of AC cabs driven 
 	</h3>
 	<p>
 			All of our efforts helped us build a world class product which is now helping millions of users
-			reach their destinations stress free.
+			reach their destinations stress-free.
 	</p>
 	<p class="full-width hero-image" style="text-align: center;"><img src="{{ '/assets/img/outstation/os-final-flow.png' | prepend: site.baseurl }}" alt=""></p>
 </section>

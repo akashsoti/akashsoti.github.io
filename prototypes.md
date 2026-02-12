@@ -4,7 +4,7 @@ title: Animations
 ---
 <section class="section-bottom-margin">
   <h1 class="pageTitle">Prototypes</h1>
-  <div class="pageTitle-helper"><p>High fidelity prototypes made using Framer</p></div>
+  <div class="pageTitle-helper"><p>High-fidelity prototypes made using Framer</p></div>
 </section>
 <section class="section-bottom-margin">
   <div class="row">

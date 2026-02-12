@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ola Shuttle"
-subtitle: "Helping daily commuters reach their destination stress free"
+subtitle: "Helping daily commuters reach their destination stress-free"
 date:   2017-9-15
 image: "olashuttle.png"
 description: "Daily commute in India is a challenge where existing transportation..."
@@ -37,7 +37,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 		I showed best possible approach to stakeholders and senior designers and took feedback. This iterative approach helped me ship out a world-class product which is now being used by millions of users daily. 
 	</p>
 	<p>
-		It took us 3 months to role out the MVP and another month to improve
+		It took us 3 months to roll out the MVP and another month to improve
 		upon our product. I was the sole designer on this and currently looking after it.
 	</p>
 </section>
@@ -177,7 +177,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 </section>
 <section class="section-bottom-margin">
 	<blockquote>
-			Our on ground experience helped us understand our product better. There were a lot of shortcomings that needed to be fixed. With our assumptions and findings we went ahead and articulated a flow and shipped version 2.
+			Our on-ground experience helped us understand our product better. There were a lot of shortcomings that needed to be fixed. With our assumptions and findings, we went ahead, articulated a flow, and shipped version 2.
 	</blockquote>
 </section>
 
@@ -187,8 +187,8 @@ description: "Daily commute in India is a challenge where existing transportatio
 	</h3>
 	<p>
 			All of our efforts helped us build a world class product which is helping millions of users
-			reach their destinations stress free. Here is how it evolved from a product that was built on assumptions
-			to a product that is well informed and future proof.
+			reach their destinations stress-free. Here is how it evolved from a product that was built on assumptions
+			to a product that is well-informed and future-proof.
 	</p>
 	<p class="full-width" style="text-align: center;"><img src="{{ '/assets/img/stages.png' | prepend: site.baseurl }}" alt=""></p>
 
@@ -196,7 +196,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 			1. Pre-Journey
 	</h3>
 	<p>
-			Most of our users were booking an Ola shuttle from the pickup stop and were not concerned about the maps while booking a Shuttle.Therefore we removed the map, and asked a simple question, “Where do you want to go?”.
+			Most of our users were booking an Ola shuttle from the pickup stop and were not concerned about maps while booking a shuttle. Therefore, we removed the map and asked a simple question: “Where do you want to go?”
 	</p>
 	<p>
 			Additionally, we solved the problem for route discovery. Earlier people couldn’t discover different routes. Now, they are able to see all nearby routes along with when the next shuttle is arriving and the nearest stop they can board from.

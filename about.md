@@ -17,10 +17,10 @@ title: About Akash Soti
 	<div class="row">
 		<div class="col-12">
 			<p style="margin: 0 auto 0 0; width:100%;">
-				Building human-centered products from 2012, currently a UX designer at Amazon India where I am leading the user experience for Amazon Business Marketplace and the India Retail Wholesale, Amazon Distribution. 
+				Building human-centered products since 2012, currently a UX designer at Amazon India, where I am leading the user experience for Amazon Business Marketplace and India Retail Wholesale, Amazon Distribution.
 			</p><br>
 			<p style="margin: 0 auto 0 0; width:100%;">
-				I started off as a Ruby on Rails developer and soon realised I am missing an important piece in building human-centered products. Product design for me was a natural transition as it enabled me to design and make apps which are truly customer backwards. 
+				I started off as a Ruby on Rails developer and soon realised I was missing an important piece in building human-centered products. Product design, for me, was a natural transition, as it enabled me to design and make apps that are truly customer-backward.
 			</p><br>
 			<p style="margin: 0 auto 0 0; width:100%;">
 				For me, design is a marriage of creative and technical, these two are not separate. Design leads development and development informs design.
@@ -36,7 +36,7 @@ title: About Akash Soti
 	<div class="row">
 		<div class="col-12">
 			<blockquote>
-				If you’re not ashamed of yourself of how you were a year ago, you’re not growing.
+				If you’re not ashamed of how you were a year ago, you’re not growing.
 			</blockquote>
 		</div>
 	</div>

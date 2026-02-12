@@ -4,13 +4,13 @@ title:  "Punchh mobile app redesign"
 subtitle: "A case study"
 date:   2013-6-15
 image: "punchh/punchh_hero.jpg"
-description: "We obsessed over making life easier for the user. Users already have so much to handle when they enter in a restaurant. Punchh is built in a way so that the most essential things, punching and redeeming restaurant cards is fast and straight forward."
+description: "We obsessed over making life easier for the user. Users already have so much to handle when they enter a restaurant. Punchh is built in a way so that the most essential things, punching and redeeming restaurant cards, are fast and straightforward."
 ---
 
 <h3>Business Goal</h3>
 <p>Enable people to redeem and earn rewards in the most obvious way possible when they pay for their meal.</p>
 <p>
-  Make life easier for the users. Users already have so much to handle when they enter in a restaurant. Punchh app should be built in a way so that the most essential things, punching and redeeming restaurant cards is fast and straight forward.
+  Make life easier for users. Users already have so much to handle when they enter a restaurant. The Punchh app should be built in a way so that the most essential things, punching and redeeming restaurant cards, are fast and straightforward.
 </p>
 <p>
   For us it’s important to realise that we are just there to help the user get his free meal. We don’t want to force design to make the user feel it’s presence. It’s better if the user doesn’t even notice the design and work his way to his goal, FREE MEAL!
@@ -46,6 +46,6 @@ People carry their phone at all times, and it’s a great opportunity to address
 We didn’t want our users to stare at an empty screen. If something is coming blank it should be helpful even then too.</p>
 
 <h3>The way forward</h3>
-<p>We want to take our users experience forward with meaning full interactions and subtle animations. A little more fun and excitement that will make users open the app again, and when they do that they will visit more often to start punching and earn rewards.
+<p>We want to take our users' experience forward with meaningful interactions and subtle animations. A little more fun and excitement will make users open the app again, and when they do that, they will visit more often to start punching and earn rewards.
 </p>
 <p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/punchh/punchh_app_icon.png' | prepend: site.baseurl }}" alt=""></p>
