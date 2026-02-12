@@ -8,17 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Theme toggle
-  var themeToggles = document.querySelectorAll(".theme-toggle");
   var mobileNavToggle = document.getElementById("mobile-nav-toggle");
   var topNav = document.querySelector(".top-nav");
   var header = document.querySelector(".header");
+
+  function getThemeToggles() {
+    return document.querySelectorAll(".theme-toggle");
+  }
 
   function applyTheme(theme) {
     var isDark = theme === "dark";
     document.documentElement.classList.toggle("theme-dark", isDark);
 
     var toggleLabel = isDark ? "Switch to light mode" : "Switch to dark mode";
-    themeToggles.forEach(function (toggle) {
+    getThemeToggles().forEach(function (toggle) {
       toggle.setAttribute("aria-pressed", isDark ? "true" : "false");
       toggle.setAttribute("aria-label", toggleLabel);
 
@@ -45,21 +48,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   applyTheme(storedTheme === "dark" ? "dark" : "light");
 
-  if (themeToggles.length) {
-    themeToggles.forEach(function (toggle) {
-      toggle.addEventListener("click", function () {
-        var isDark = document.documentElement.classList.contains("theme-dark");
-        var nextTheme = isDark ? "light" : "dark";
-        applyTheme(nextTheme);
+  document.addEventListener("click", function (event) {
+    var toggle = event.target.closest(".theme-toggle");
+    if (!toggle) {
+      return;
+    }
 
-        try {
-          localStorage.setItem("theme", nextTheme);
-        } catch (e) {
-          // no-op when storage is unavailable
-        }
-      });
-    });
-  }
+    var isDark = document.documentElement.classList.contains("theme-dark");
+    var nextTheme = isDark ? "light" : "dark";
+    applyTheme(nextTheme);
+
+    try {
+      localStorage.setItem("theme", nextTheme);
+    } catch (e) {
+      // no-op when storage is unavailable
+    }
+  });
 
   // Mobile nav toggle
   if (mobileNavToggle && topNav) {
