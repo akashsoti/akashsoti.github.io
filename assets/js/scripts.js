@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var themeToggles = document.querySelectorAll(".theme-toggle");
   var mobileNavToggle = document.getElementById("mobile-nav-toggle");
   var topNav = document.querySelector(".top-nav");
+  var header = document.querySelector(".header");
 
   function applyTheme(theme) {
     var isDark = theme === "dark";
@@ -64,6 +65,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (mobileNavToggle && topNav) {
     mobileNavToggle.addEventListener("click", function () {
       var isOpen = topNav.classList.toggle("is-open");
+      if (header) {
+        header.classList.toggle("menu-open", isOpen);
+      }
       mobileNavToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
       var icon = mobileNavToggle.querySelector("i");
       if (icon) {
