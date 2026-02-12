@@ -169,3 +169,32 @@ html.theme-dark .header h1,html.theme-dark .header h1 a{font-family:"Google Sans
 /* Nav stability v10: prevent any hover movement */
 .top-nav__item{margin:0!important;padding:0!important;line-height:1!important;border:0!important}
 .top-nav__link,.top-nav__link:hover,.top-nav__link:focus,.top-nav__link:active{box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;height:2.45rem!important;padding:.2rem 1rem!important;margin:0!important;line-height:1!important;border:1px solid transparent!important;transform:none!important;top:auto!important;text-decoration:none!important}
+
+/* Mobile nav restore v11: hamburger + dropdown menu */
+.header{height:auto!important;min-height:5.75rem!important;padding:.7rem 0 .75rem}
+.header .container{justify-content:flex-start!important}
+.top-nav{width:100%}
+.top-nav__row{display:flex;align-items:center;justify-content:flex-end;gap:.5rem}
+.mobile-nav-toggle{display:inline-flex;align-items:center;justify-content:center;width:2.15rem;height:2.15rem;border:1px solid rgba(255,255,255,.35);border-radius:.5rem;background:rgba(255,255,255,.12);color:#fff;cursor:pointer}
+.mobile-nav-toggle i{font-size:1.1rem;line-height:1}
+.top-nav__list{display:none;flex-direction:column;align-items:stretch;gap:.35rem;width:100%;margin-top:.55rem}
+.top-nav.is-open .top-nav__list{display:flex}
+.top-nav__item{width:100%}
+.top-nav__link{width:100%;justify-content:flex-start}
+html.theme-dark .mobile-nav-toggle{background:#1f1f1f;border-color:rgba(255,255,255,.22);color:#fff}
+html.theme-dark .mobile-nav-toggle:hover{background:#2a2a2a;border-color:rgba(255,255,255,.38)}
+@media only screen and (min-width:800px){
+  .header{height:12em!important;padding:0}
+  .top-nav{display:flex;align-items:center;justify-content:space-between}
+  .top-nav__row{order:2;justify-content:flex-end}
+  .mobile-nav-toggle{display:none}
+  .top-nav__list{order:1;display:flex!important;flex-direction:row;align-items:center;width:auto;margin-top:0}
+  .top-nav__item{width:auto}
+  .top-nav__link{width:auto;justify-content:center}
+}
+
+/* Header desktop center fix v12: undo mobile top alignment */
+@media only screen and (min-width:800px){
+  .header .container{justify-content:center!important;align-items:stretch!important}
+  .top-nav{margin-top:0!important}
+}

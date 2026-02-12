@@ -3,26 +3,10 @@
 		<h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
 		<nav class="top-nav" aria-label="Primary">
 			<div class="top-nav__row">
-				<ul class="top-nav__list">
-					{% for link in site.navigation %}
-					{% assign current = nil %}
-					{% assign page_url = page.url | replace: '/index.html', '/' %}
-					{% assign link_url = link.url | replace: '/index.html', '/' %}
-					{% if link_url == '/' %}
-						{% if page_url == '/' %}
-							{% assign current = 'is-current' %}
-						{% endif %}
-					{% elsif page_url contains link_url %}
-						{% assign current = 'is-current' %}
-					{% endif %}
-					<li class="top-nav__item">
-						<a class="top-nav__link {{ current }}" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
-					</li>
-					{% endfor %}
-					<li class="top-nav__item">
-						<a class="top-nav__link" href="https://medium.com/@akashsoti" target="_blank" rel="noopener noreferrer">Writings</a>
-					</li>
-				</ul>
+				<button id="mobile-nav-toggle" class="mobile-nav-toggle" type="button" aria-controls="primary-nav-links" aria-expanded="false" aria-label="Toggle menu">
+					<i class="ph ph-list" aria-hidden="true"></i>
+					<span class="sr-only">Toggle menu</span>
+				</button>
 				<div class="theme-toggle-container">
 					<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
 						<i class="ph ph-moon theme-toggle__icon" aria-hidden="true"></i>
@@ -30,6 +14,26 @@
 					</button>
 				</div>
 			</div>
+			<ul id="primary-nav-links" class="top-nav__list">
+				{% for link in site.navigation %}
+				{% assign current = nil %}
+				{% assign page_url = page.url | replace: '/index.html', '/' %}
+				{% assign link_url = link.url | replace: '/index.html', '/' %}
+				{% if link_url == '/' %}
+					{% if page_url == '/' %}
+						{% assign current = 'is-current' %}
+					{% endif %}
+				{% elsif page_url contains link_url %}
+					{% assign current = 'is-current' %}
+				{% endif %}
+				<li class="top-nav__item">
+					<a class="top-nav__link {{ current }}" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+				</li>
+				{% endfor %}
+				<li class="top-nav__item">
+					<a class="top-nav__link" href="https://medium.com/@akashsoti" target="_blank" rel="noopener noreferrer">Writings</a>
+				</li>
+			</ul>
 		</nav>
 	</div>
  </div><!-- end .header -->

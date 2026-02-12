@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var themeToggle = document.getElementById("theme-toggle");
   var themeToggleText = themeToggle ? themeToggle.querySelector(".theme-toggle__text") : null;
   var themeToggleIcon = themeToggle ? themeToggle.querySelector(".theme-toggle__icon") : null;
+  var mobileNavToggle = document.getElementById("mobile-nav-toggle");
+  var topNav = document.querySelector(".top-nav");
 
   function applyTheme(theme) {
     var isDark = theme === "dark";
@@ -51,6 +53,19 @@ document.addEventListener("DOMContentLoaded", function () {
         localStorage.setItem("theme", nextTheme);
       } catch (e) {
         // no-op when storage is unavailable
+      }
+    });
+  }
+
+  // Mobile nav toggle
+  if (mobileNavToggle && topNav) {
+    mobileNavToggle.addEventListener("click", function () {
+      var isOpen = topNav.classList.toggle("is-open");
+      mobileNavToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      var icon = mobileNavToggle.querySelector("i");
+      if (icon) {
+        icon.classList.remove("ph-list", "ph-x");
+        icon.classList.add(isOpen ? "ph-x" : "ph-list");
       }
     });
   }
