@@ -37,5 +37,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Libre Caslon Display", PT Serif, Georgia, Times, serif;
+  font-family: "EB Garamond", "PT Serif", Georgia, Times, serif;
+  letter-spacing: -0.02em;
 }
