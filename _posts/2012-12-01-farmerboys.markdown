@@ -4,7 +4,7 @@ title:  "Farmerboys restaurant app"
 subtitle: "Loyalty app design proposal for Farmerboys"
 date:   2013-02-15
 image: "punchh/main-visual-baby-shoulders.jpg"
-description: "Designs for ShakeShack's loyalty app program. The brand is well known in the US, especially in New York, where it first started its journey from a hot dog cart in Madison Square Park"
+description: "Designs for Farmerboys loyalty app program which made use of modern UI components and was received well with stakeholders in the US."
 ---
 
 <section class="section-bottom-margin">

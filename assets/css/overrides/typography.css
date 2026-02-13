@@ -18,11 +18,56 @@ body,
 .button-tertiary,
 .button__outline,
 .pageTitle-helper,
-.posts li .date,
+.posts .date,
 .post .meta,
 .postNav .next,
 .postNav .prev {
-  font-family: "Google Sans Flex", "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Google Sans Flex", sans-serif;
+}
+
+body,
+body p,
+body ul,
+.post p,
+.posts .post-card-content p,
+.posts .description,
+.post ul ul,
+.post ul ol,
+.post ol ul,
+.post ol ol,
+ul.list-of-items li,
+ol.list-of-items li,
+.post .meta,
+.posts .date,
+.pageTitle-helper {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.posts .post-card-link,
+.posts .post-card-link:hover,
+.posts .post-card-link:focus,
+.posts .post-card-link:active {
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+}
+
+.posts .post-card-link {
+  display: block;
+  height: 100%;
+}
+
+.posts .post-card-content {
+  padding: 1.4rem;
+}
+
+.posts .post-card-content h3 {
+  margin: 0 0 0.3em;
+}
+
+.posts .post-card-content p {
+  margin-bottom: 0;
+  font-size: 0.8em;
+  font-weight: 300;
 }
 
 .h1,
@@ -37,6 +82,22 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "EB Garamond", "PT Serif", Georgia, Times, serif;
-  letter-spacing: -0.02em;
+  font-family: "EB Garamond", serif;
+  letter-spacing: -0.03em;
+}
+
+.post .postTitle-subTitle {
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.75;
+}
+
+.post .meta,
+.posts .date {
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  font-style: normal;
 }

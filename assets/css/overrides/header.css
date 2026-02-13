@@ -23,7 +23,7 @@
 .header .logo,
 .header h1,
 .header h1 a {
-  font-family: "Google Sans Flex", "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Google Sans Flex", sans-serif;
 }
 
 .header .logo {
