@@ -1,3 +1,19 @@
+/* Match the visible card grid, which sits inside the theme's row gutters. */
+.footer .container {
+  width: 100%;
+  max-width: 900px;
+  padding: 0.5em 20px 0;
+  border-top-color: #e3e3e3;
+}
+
+@media only screen and (min-width: 800px) {
+  .footer .container {
+    width: 96%;
+    max-width: 921.6px;
+    padding: 1rem 0;
+  }
+}
+
 /* Footer icons */
 .footer-links ul li a,
 .footer-links ul li a:hover,
