@@ -1,0 +1,38 @@
+.post figure.wide-image {
+  width: calc(100vw - 24px);
+  max-width: none;
+  margin: 3rem 0 2rem;
+  overflow-x: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-overflow-scrolling: touch;
+}
+
+.wide-image img {
+  display: block;
+  width: 100%;
+  min-width: 720px;
+  max-width: none;
+  height: auto;
+  margin: 0 auto;
+}
+
+.wide-image figcaption {
+  margin-top: .75rem;
+  text-align: center;
+  font-size: .9em;
+  font-style: italic;
+  color: rgba(77, 77, 77, .9);
+}
+
+@media only screen and (min-width: 800px) {
+  .post figure.wide-image {
+    width: 80vw;
+    overflow-x: visible;
+  }
+
+  .wide-image img {
+    min-width: 0;
+  }
+}

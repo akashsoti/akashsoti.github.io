@@ -1,6 +1,6 @@
 /* Header layout */
 .header {
-  background-position: 56% 55%;
+  background-position: 62% 45%;
 }
 
 .header .container {
@@ -34,6 +34,7 @@
   display: inline-flex;
   align-items: center;
   height: auto;
+  letter-spacing: -1px;
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -145,7 +146,8 @@
     position: relative;
     margin-bottom: 2em;
     padding: 0;
-    background-attachment: fixed;
+    background-attachment: scroll;
+    background-position: 62% 45%;
     background-repeat: no-repeat;
   }
 
@@ -323,6 +325,6 @@
 /* Header image focal points */
 @media only screen and (min-width: 1200px) {
   .header {
-    background-position: 57% 58%;
+    background-position: 62% 45%;
   }
 }

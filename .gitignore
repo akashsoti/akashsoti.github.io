@@ -1,5 +1,6 @@
 _site
 .sass-cache
 .DS_Store
+.claude/
 .ruby-version
 node_modules

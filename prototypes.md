@@ -2,7 +2,7 @@
 layout: default
 title: Animations
 ---
-<section class="section-bottom-margin">
+<section class="section-bottom-margin page-title-block">
   <h1 class="pageTitle">Prototypes</h1>
   <div class="pageTitle-helper"><p>High-fidelity prototypes made using Framer</p></div>
 </section>

@@ -83,7 +83,7 @@ h4,
 h5,
 h6 {
   font-family: "EB Garamond", serif;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .post .postTitle-subTitle {
@@ -92,6 +92,18 @@ h6 {
   font-weight: 300;
   font-style: normal;
   line-height: 1.75;
+}
+
+.page-title-block .pageTitle {
+  margin: 2rem auto 0;
+}
+
+.page-title-block .pageTitle-helper {
+  margin-top: 0;
+}
+
+.pageTitle-helper p {
+  margin-bottom: 0;
 }
 
 .post .meta,

@@ -1,0 +1,12 @@
+{% assign wide_image_src = include.src %}
+{% assign first_char = wide_image_src | slice: 0, 1 %}
+{% if first_char != "/" %}
+  {% assign wide_image_src = wide_image_src | prepend: "/" %}
+{% endif %}
+
+<figure class="wide-image{% if include.class %} {{ include.class }}{% endif %}">
+  <img src="{{ wide_image_src | prepend: site.baseurl }}" alt="{{ include.alt | default: '' | escape }}" />
+  {% if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

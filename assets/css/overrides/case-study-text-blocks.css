@@ -1,0 +1,125 @@
+.post .case-study-split {
+  width: 75%;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.65fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.post .case-study-split__content {
+  min-width: 0;
+}
+
+.post .case-study-split__content p {
+  width: 100%;
+  margin: 0 0 1.5rem;
+}
+
+.post .case-study-split__content p:last-child {
+  margin-bottom: 0;
+}
+
+.post .case-study-split__content ul {
+  width: 100%;
+  margin: 0;
+  padding-left: 1.1rem;
+  list-style-position: outside;
+  text-align: left;
+}
+
+.post .case-study-split__content li {
+  padding-left: 0.2rem;
+}
+
+.post .case-study-split__content li + li {
+  margin-top: 0.5rem;
+}
+
+.post .case-study-split__media {
+  width: 100%;
+  margin: 0;
+}
+
+.post .case-study-split--image-right .case-study-split__media {
+  justify-self: center;
+}
+
+.post .case-study-split__media img {
+  width: min(100%, 320px);
+  margin: 0 auto;
+  display: block;
+}
+
+.post .case-study-split--design-step {
+  margin-bottom: 2.5rem;
+}
+
+.post .case-study-impact-metrics {
+  width: 100%;
+  max-width: 960px;
+  margin: 4rem auto;
+  font-family: "Google Sans Flex", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.case-study-impact-metrics__item dt {
+  margin: 0 0 1.25rem;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.case-study-impact-metrics__item dd {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+html.theme-dark .case-study-impact-metrics__item dt,
+html.theme-dark .case-study-impact-metrics__item dd {
+  color: #ECE7E2;
+}
+
+@media only screen and (max-width: 799px) {
+  .post .case-study-split {
+    width: 100%;
+    margin: 0 auto 2.5rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .post .case-study-split__media img {
+    width: min(100%, 280px);
+  }
+
+  .post .case-study-impact-metrics {
+    margin: 3rem auto;
+  }
+
+  .post .case-study-impact-metrics {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+    padding: 2.5rem 0;
+  }
+
+  .case-study-impact-metrics__item dt {
+    font-size: 3.5rem;
+  }
+
+  .case-study-impact-metrics__item dd {
+    font-size: 0.85rem;
+  }
+}
