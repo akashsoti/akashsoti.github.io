@@ -4,10 +4,6 @@ title: About Akash Soti
 ---
 
 <div class="post">
-	<section class="section-bottom-margin page-title-block">
-		<h1 class="pageTitle">About me</h1>
-		<div class="pageTitle-helper"><p>I design things for people...ergo I am a developer.</p></div>
-	</section>
 	<div class="row">
 		<div class="col-12">
 			<img src="{{ '/assets/img/forabout.jpg' | prepend: site.baseurl }}" alt="thatsme" style="margin-bottom: 0;"/>

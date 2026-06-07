@@ -69,14 +69,14 @@ html.theme-dark .posts {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-  transition: transform 180ms ease, box-shadow 220ms ease;
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 html.theme-dark .posts:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 0 1px rgba(22, 22, 22, 0.9), 0 4px 12px rgba(11, 11, 11, 0.55), 0 2px 4px rgba(0, 0, 0, 0.35);
-  -webkit-box-shadow: 0 0 0 1px rgba(22, 22, 22, 0.9), 0 4px 12px rgba(11, 11, 11, 0.55), 0 2px 4px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0 0 0 1px rgba(22, 22, 22, 0.9), 0 4px 12px rgba(11, 11, 11, 0.55), 0 2px 4px rgba(0, 0, 0, 0.35);
+  transform: none;
+  box-shadow: 0 0 0 1px rgba(236, 231, 226, 0.1), 0 4px 12px rgba(0, 0, 0, 0.32), 0 2px 4px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0 0 0 1px rgba(236, 231, 226, 0.1), 0 4px 12px rgba(0, 0, 0, 0.32), 0 2px 4px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0 0 0 1px rgba(236, 231, 226, 0.1), 0 4px 12px rgba(0, 0, 0, 0.32), 0 2px 4px rgba(0, 0, 0, 0.22);
 }
 
 html.theme-dark .posts .post-feature-image {
@@ -111,7 +111,7 @@ html.theme-dark .post blockquote:after {
 
 html.theme-dark .postNav,
 html.theme-dark .footer .container {
-  border-color: rgba(255, 255, 255, 0.12);
+  border-color: #242424;
 }
 
 html.theme-dark input[type=text],
@@ -130,7 +130,7 @@ html.theme-dark table,
 html.theme-dark th,
 html.theme-dark td,
 html.theme-dark tr {
-  border-color: rgba(255, 255, 255, 0.18);
+  border-color: #242424;
 }
 
 html.theme-dark th,

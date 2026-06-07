@@ -81,6 +81,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Prototype videos
+  document.querySelectorAll(".prototype-list__thumbnail[data-video-id]").forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+        return;
+      }
+
+      var videoId = link.getAttribute("data-video-id");
+      if (!videoId) {
+        return;
+      }
+
+      event.preventDefault();
+
+      var title = link.getAttribute("data-video-title") || "Prototype video";
+      var embed = document.createElement("div");
+      var iframe = document.createElement("iframe");
+
+      embed.className = link.className + " is-playing";
+      embed.setAttribute("aria-label", "Playing " + title);
+
+      iframe.className = "prototype-list__embed";
+      iframe.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(videoId) + "?autoplay=1&rel=0";
+      iframe.title = title;
+      iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+      iframe.allowFullscreen = true;
+
+      embed.appendChild(iframe);
+      link.replaceWith(embed);
+    });
+  });
+
   // Round reading time
   var times = document.querySelectorAll(".time");
   times.forEach(function (node) {

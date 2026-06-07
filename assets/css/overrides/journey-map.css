@@ -103,7 +103,7 @@
 }
 
 html.theme-dark .retailer-journey-map__scroller {
-  border-color: rgba(236, 231, 226, 0.18);
+  border-color: #242424;
   background: #111;
 }
 
@@ -113,7 +113,7 @@ html.theme-dark .retailer-journey-map__table {
 
 html.theme-dark .retailer-journey-map__table th,
 html.theme-dark .retailer-journey-map__table td {
-  border-color: rgba(236, 231, 226, 0.16);
+  border-color: #242424;
 }
 
 html.theme-dark .retailer-journey-map__table thead th {

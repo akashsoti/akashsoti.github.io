@@ -110,7 +110,8 @@ const defaultResult = await send("Runtime.evaluate", {
     return {
       found: true,
       cardBackground: getComputedStyle(card).backgroundColor,
-      cardBoxShadow: getComputedStyle(card).boxShadow
+      cardBoxShadow: getComputedStyle(card).boxShadow,
+      cardTransition: getComputedStyle(card).transition
     };
   })()`,
   awaitPromise: true,
@@ -147,7 +148,8 @@ const hoverResult = await send("Runtime.evaluate", {
     if (!card) return { found: false };
     return {
       found: true,
-      cardHoverBoxShadow: getComputedStyle(card).boxShadow
+      cardHoverBoxShadow: getComputedStyle(card).boxShadow,
+      cardHoverTransform: getComputedStyle(card).transform
     };
   })()`,
   awaitPromise: true,
@@ -173,7 +175,17 @@ if (actual.cardBoxShadow !== expectedCardBoxShadow) {
   throw new Error(`Expected dark-mode default card drop shadow ${expectedCardBoxShadow}, got ${actual.cardBoxShadow}.`);
 }
 
-const expectedCardHoverBoxShadow = "rgba(22, 22, 22, 0.9) 0px 0px 0px 1px, rgba(11, 11, 11, 0.55) 0px 4px 12px 0px, rgba(0, 0, 0, 0.35) 0px 2px 4px 0px";
+const expectedCardTransition = "0.2s cubic-bezier(0.25, 0.8, 0.25, 1)";
+if (actual.cardTransition !== expectedCardTransition) {
+  throw new Error(`Expected dark-mode card transition to match light-mode timing ${expectedCardTransition}, got ${actual.cardTransition}.`);
+}
+
+const expectedCardHoverTransform = "none";
+if (actual.cardHoverTransform !== expectedCardHoverTransform) {
+  throw new Error(`Expected dark-mode hover card to avoid a transform lift like light mode, got ${actual.cardHoverTransform}.`);
+}
+
+const expectedCardHoverBoxShadow = "rgba(236, 231, 226, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.32) 0px 4px 12px 0px, rgba(0, 0, 0, 0.22) 0px 2px 4px 0px";
 if (actual.cardHoverBoxShadow !== expectedCardHoverBoxShadow) {
   throw new Error(`Expected dark-mode hover card shadow ${expectedCardHoverBoxShadow}, got ${actual.cardHoverBoxShadow}.`);
 }
