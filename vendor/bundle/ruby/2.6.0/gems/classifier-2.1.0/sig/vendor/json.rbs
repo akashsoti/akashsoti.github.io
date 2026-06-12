@@ -1,4 +1,0 @@
-module JSON
-  def self.parse: (String source, ?symbolize_names: bool) -> untyped
-  def self.generate: (untyped obj) -> String
-end

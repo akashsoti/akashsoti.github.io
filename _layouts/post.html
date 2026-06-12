@@ -2,17 +2,35 @@
 layout: default
 ---
 <div class="post">
-  {% if page.image %}
-    <div class="featuredImage">
-      <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.image }}" alt="" />
-    </div>
-  {% endif %}
-  <section class="section-bottom-margin">
-    <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
-    <h1 class="postTitle">{{ page.title }}</h1>
-    <p class="postTitle-subTitle">{{page.subtitle}}</p>
-  </section>
-    {{ content }}
+  <div class="case-study-shell" data-case-study-shell>
+    <aside class="case-study-sidebar" aria-label="Case study sections">
+      <div class="case-study-sidebar__inner">
+        <a class="case-study-sidebar__back" href="{{ "/index.html" | prepend: site.baseurl }}">
+          <i class="ph ph-arrow-left" aria-hidden="true"></i>
+          <span>Back</span>
+        </a>
+        <nav class="case-study-section-nav" aria-label="Case study sections" data-case-study-nav>
+          <ol class="case-study-section-nav__list" data-case-study-nav-list></ol>
+          <span class="case-study-section-nav__dot" aria-hidden="true"></span>
+        </nav>
+      </div>
+    </aside>
+    <article class="case-study-main">
+      {% if page.image %}
+        <div class="featuredImage">
+          <img src="{{ '/assets/img/' | prepend: site.baseurl | append: page.image }}" alt="" />
+        </div>
+      {% endif %}
+      <section class="post-header section-bottom-margin">
+        <p class="meta">{{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read</p>
+        <h1>{{ page.title }}</h1>
+        <p>{{page.subtitle}}</p>
+      </section>
+      <div class="case-study-content" data-case-study-content>
+        {{ content }}
+      </div>
+    </article>
+  </div>
   <!-- POST NAVIGATION -->
   <div class="postNav clearfix">
     {% assign work_previous = page.next %}

@@ -12,7 +12,7 @@ html {
 body {
 	font-family: $sans-serif;
 	line-height: 1.75;
-	font-size: 120%; // 18px base font size
+	font-size: 16px; // 16px base font size
 	color: $black;
 	overflow-x: hidden;
   margin: 0;
@@ -240,15 +240,16 @@ POST STYLING
 
 .post {
 
-	.postTitle {
-		text-align: left;
-		margin: 0rem auto 0;
-	}
+		.post-header h1 {
+			text-align: left;
+			width: auto;
+			margin: .5rem 0 1.5rem;
+		}
 
-	.postTitle-subTitle{
-		font-size: 1.2em;
-		color:$black;
-		font-style: italic;
+		.post-header > p:last-child {
+			font-size: 1.2em;
+			color:$black;
+			font-style: italic;
 		// &:after {
 		// 	content: "";
 		// 	position: absolute;
@@ -678,10 +679,10 @@ html.theme-dark {
 		}
 	}
 
-	.post .postTitle-subTitle,
-	.post blockquote {
-		color: rgba(255, 255, 255, 0.87);
-	}
+		.post .post-header > p:last-child,
+		.post blockquote {
+			color: rgba(255, 255, 255, 0.87);
+		}
 
 	.post .meta,
 	.posts li .date,

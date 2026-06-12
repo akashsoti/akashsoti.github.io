@@ -106,13 +106,13 @@ if ! grep -q '.prototype-list__content h2' "$css"; then
   exit 1
 fi
 
-if ! grep -q 'font-size: 1.75em' "$css"; then
-  echo "Expected prototype titles to match the desktop home card title size." >&2
+if ! grep -q 'font-size: var(--type-section-title-size)' "$css"; then
+  echo "Expected prototype titles to match the shared section/card title size token." >&2
   exit 1
 fi
 
-if ! grep -q 'line-height: 1.25' "$css"; then
-  echo "Expected prototype titles to match the desktop home card title line-height." >&2
+if ! grep -q 'line-height: var(--type-section-title-line-height)' "$css"; then
+  echo "Expected prototype titles to match the shared section/card title line-height token." >&2
   exit 1
 fi
 

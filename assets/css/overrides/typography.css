@@ -10,8 +10,11 @@
   width: 1px;
 }
 
-/* Typography */
 body,
+button,
+input,
+select,
+textarea,
 .nav-collapse,
 .button,
 .button-secondary,
@@ -22,38 +25,19 @@ body,
 .post .meta,
 .postNav .next,
 .postNav .prev {
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-family-ui);
 }
 
-body,
-body p,
-body ul,
-.post p,
-.posts .post-card-content p,
-.posts .description,
-.post ul ul,
-.post ul ol,
-.post ol ul,
-.post ol ol,
-ul.list-of-items li,
-ol.list-of-items li,
-.post .meta,
-.posts .date,
-.pageTitle-helper {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.posts .post-card-link,
-.posts .post-card-link:hover,
-.posts .post-card-link:focus,
-.posts .post-card-link:active {
-  color: rgba(0, 0, 0, 0.9);
-  text-decoration: none;
+body {
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+  line-height: var(--type-body-line-height);
 }
 
 .posts .post-card-link {
   display: block;
   height: 100%;
+  text-decoration: none;
 }
 
 .posts .post-card-content {
@@ -66,8 +50,9 @@ ol.list-of-items li,
 
 .posts .post-card-content p {
   margin-bottom: 0;
-  font-size: 0.8em;
-  font-weight: 300;
+  font-size: var(--type-meta-size);
+  font-weight: var(--type-body-weight);
+  line-height: var(--type-meta-line-height);
 }
 
 .h1,
@@ -82,16 +67,58 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "EB Garamond", serif;
-  letter-spacing: -0.02em;
+  font-family: var(--font-family-heading);
 }
 
-.post .postTitle-subTitle {
-  font-family: "Google Sans Flex", sans-serif;
-  font-size: 1em;
-  font-weight: 300;
+h1,
+.h1,
+.pageTitle,
+.post-header h1 {
+  font-size: var(--type-page-title-size);
+  font-weight: var(--type-heading-weight);
+  line-height: var(--type-page-title-line-height);
+}
+
+h2,
+.h2,
+h3,
+.h3,
+.posts .post-card-content h3,
+.case-study-content > section > h3,
+.case-study-content > h3 {
+  font-size: var(--type-section-title-size);
+  font-weight: var(--type-heading-weight);
+  line-height: var(--type-section-title-line-height);
+}
+
+h4,
+.h4,
+.case-study-content > section > h4,
+.case-study-content > h4 {
+  font-size: var(--type-subsection-title-size);
+  font-weight: var(--type-subheading-weight);
+  line-height: var(--type-subsection-title-line-height);
+}
+
+h5,
+.h5,
+h6,
+.h6,
+.case-study-content > section > h5,
+.case-study-content > h5,
+.case-study-content > section > h6,
+.case-study-content > h6 {
+  font-size: var(--type-small-title-size);
+  font-weight: var(--type-small-weight);
+  line-height: var(--type-small-title-line-height);
+}
+
+.post-header > p:last-child {
+  font-family: var(--font-family-ui);
+  font-size: var(--type-meta-size);
+  font-weight: var(--type-body-weight);
   font-style: normal;
-  line-height: 1.75;
+  line-height: var(--type-meta-line-height);
 }
 
 .page-title-block .pageTitle {
@@ -108,8 +135,9 @@ h6 {
 
 .post .meta,
 .posts .date {
-  font-family: "Google Sans Flex", sans-serif;
-  font-size: 1em;
-  font-weight: 300;
+  font-family: var(--font-family-ui);
+  font-size: var(--type-meta-size);
+  font-weight: var(--type-body-weight);
   font-style: normal;
+  line-height: var(--type-meta-line-height);
 }

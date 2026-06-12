@@ -37,7 +37,7 @@
 .header .logo,
 .header h1,
 .header h1 a {
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-family-ui);
 }
 
 .header .logo {
@@ -109,12 +109,12 @@
 }
 
 .header .top-nav .top-nav__item .top-nav__link:hover {
-  background: rgba(255, 255, 255, 0.14);
+  background: var(--header-nav-hover-bg);
   color: #fff;
 }
 
 .header .top-nav .top-nav__item .top-nav__link.is-current {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--header-nav-selected-bg);
 }
 
 .top-nav__external-icon {
@@ -139,7 +139,7 @@
   justify-content: center;
   border: 0;
   border-radius: 0.5rem;
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--header-nav-selected-bg);
   color: #fff;
   line-height: 1;
   cursor: pointer;
@@ -148,7 +148,7 @@
 
 .theme-toggle:hover,
 .theme-toggle:focus-visible {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--header-nav-selected-bg);
   transform: none;
 }
 
@@ -180,6 +180,7 @@
     position: relative;
     top: auto;
     transform: none;
+    padding: 0;
     overflow: visible;
   }
 
@@ -220,6 +221,13 @@
 
   .mobile-nav-toggle {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1247px) {
+  .header .container {
+    max-width: none;
+    padding: 0 20px;
   }
 }
 

@@ -167,12 +167,17 @@ POST STYLING
 		margin: 0 auto 2rem; 
 	}
 
-	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-		margin: 1rem auto; 
-	}
+		h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+			margin: 1rem auto;
+		}
 
-	.pageTitle {
-		margin: 2rem auto 1em;
+		.post-header h1 {
+			width: auto;
+			margin: .5rem 0 1.5rem;
+		}
+
+		.pageTitle {
+			margin: 2rem auto 1em;
 	}
 
 	.featuredImage {

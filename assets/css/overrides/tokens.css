@@ -1,0 +1,100 @@
+/* Design tokens */
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+  color-scheme: light;
+
+  --font-family-base: Inter, sans-serif;
+  --font-family-ui: var(--font-family-base);
+  --font-family-sans: var(--font-family-ui);
+  --font-family-heading: var(--font-family-base);
+
+  --type-body-size: 16px;
+  --type-body-line-height: 1.5;
+  --type-body-weight: 400;
+  --type-page-title-size: 2rem;
+  --type-page-title-line-height: 1.2;
+  --type-section-title-size: 1.375rem;
+  --type-section-title-line-height: 1.5;
+  --type-subsection-title-size: 1rem;
+  --type-subsection-title-line-height: 1.5;
+  --type-small-title-size: 0.8125rem;
+  --type-small-title-line-height: 1.5;
+  --type-heading-weight: 550;
+  --type-subheading-weight: 450;
+  --type-small-weight: 400;
+  --type-meta-size: 0.875rem;
+  --type-meta-line-height: 1.285714;
+  --type-caption-size: 0.875rem;
+  --type-caption-line-height: 1.571429;
+  --primary: #9896ff;
+  --bg-max: #fff;
+  --bg-1: #faf9f9;
+  --bg-2: #f0efef;
+  --bg-3: #f5f5f5;
+  --bg-4: #e1dfdf;
+  --bg-5: #d2d0d0;
+  --bg-6: #c3c0c0;
+  --bg-translucent-1: #e7e7e7db;
+  --border-0: #2e0f0f05;
+  --border-1: #2e0f0f14;
+  --border-2: #0003;
+  --fg-max: #000;
+  --fg-1: #000;
+  --fg-2: #5a5858;
+  --fg-3: #727274;
+  --fg-4: #a8a8a8;
+  --fg-5: #cfcece;
+  --selected: #2e0f0f0a;
+  --header-nav-hover-bg: rgba(255, 255, 255, 0.14);
+  --header-nav-selected-bg: rgba(255, 255, 255, 0.26);
+  --shadow-low: #2e0f0f03;
+  --shadow-medium: #2e0f0f0d;
+  --shadow-high: #2e0f0f12;
+  --shadow-strong: #2e0f0f1f;
+  --shadow-stroke-1: #2e0f0f14;
+  --shadow-stroke-2: #2e0f0f0f;
+  --body-bg: var(--bg-max);
+  --body-color: var(--fg-1);
+  --card-bg: var(--bg-1);
+  --separator-color: var(--border-1);
+  --selection-color: var(--primary);
+  --selection-bg: color-mix(in srgb, var(--primary) 20%, transparent);
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, Inter, sans-serif;
+    --font-family-base: InterVariable, Inter, sans-serif;
+  }
+}
+
+html.theme-dark {
+  color-scheme: dark;
+  --bg-max: #0a0a0a;
+  --bg-1: #100f0f;
+  --bg-2: #1a1919;
+  --bg-3: #1f1e1e;
+  --bg-4: #2a2828;
+  --bg-5: #393737;
+  --bg-6: #494646;
+  --bg-translucent-1: #181616db;
+  --border-0: #ffffff0f;
+  --border-1: #ffffff14;
+  --border-2: #ffffff38;
+  --fg-max: #fff;
+  --fg-1: #fff;
+  --fg-2: #bcbbbb;
+  --fg-3: #8f8e8e;
+  --fg-4: #636161;
+  --fg-5: #383838;
+  --selected: #ffffff0f;
+  --header-nav-hover-bg: rgba(255, 255, 255, 0.12);
+  --header-nav-selected-bg: rgba(255, 255, 255, 0.18);
+  --shadow-low: #00000026;
+  --shadow-medium: #0000004d;
+  --shadow-high: #00000059;
+  --shadow-strong: #00000080;
+  --shadow-stroke-1: #ffffff14;
+  --shadow-stroke-2: #ffffff1a;
+}

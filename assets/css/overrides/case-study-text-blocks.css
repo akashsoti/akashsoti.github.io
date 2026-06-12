@@ -59,7 +59,7 @@
   width: 100%;
   max-width: 960px;
   margin: 4rem auto;
-  font-family: "Google Sans Flex", sans-serif;
+  font-family: var(--font-family-ui);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 2rem;
@@ -69,8 +69,8 @@
 
 .case-study-impact-metrics__item dt {
   margin: 0 0 1.25rem;
-  color: rgba(0, 0, 0, 0.9);
-  font-family: "Google Sans Flex", sans-serif;
+  color: var(--fg-1);
+  font-family: var(--font-family-ui);
   font-size: 4.8rem;
   font-weight: 800;
   line-height: 0.95;
@@ -79,8 +79,8 @@
 
 .case-study-impact-metrics__item dd {
   margin: 0;
-  color: rgba(0, 0, 0, 0.9);
-  font-family: "Google Sans Flex", sans-serif;
+  color: var(--fg-2);
+  font-family: var(--font-family-ui);
   font-size: 1.05rem;
   font-weight: 400;
   line-height: 1.25;
@@ -90,7 +90,7 @@
 
 html.theme-dark .case-study-impact-metrics__item dt,
 html.theme-dark .case-study-impact-metrics__item dd {
-  color: #ECE7E2;
+  color: var(--fg-1);
 }
 
 @media only screen and (max-width: 799px) {

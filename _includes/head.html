@@ -6,6 +6,15 @@
 
     <script>
       (function () {
+        document.documentElement.classList.remove("no-js");
+        document.documentElement.classList.add("js", "page-entering");
+
+        try {
+          if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            document.documentElement.classList.remove("page-entering");
+          }
+        } catch (e) {}
+
         try {
           var storedTheme = localStorage.getItem("theme");
           if (storedTheme === "dark") {
@@ -21,23 +30,25 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/favicon-16x16.png" | prepend: site.baseurl }}" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ "/assets/img/apple-touch-icon.png" | prepend: site.baseurl }}" />
 
-    <!-- Google Fonts: Google Sans Flex + EB Garamond -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    <!-- Inter -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
     <!-- Come and get me RSS readers -->
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
     
     <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ "/assets/css/overrides/tokens.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/overrides/typography.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/overrides/header.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/overrides/theme.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/overrides/work-cards.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/overrides/post-nav.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/overrides/wide-image.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/overrides/journey-map.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/overrides/case-study-text-blocks.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/assets/css/overrides/case-study-nav.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/overrides/prototypes.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/assets/css/overrides/footer.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

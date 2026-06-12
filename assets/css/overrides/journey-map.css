@@ -1,4 +1,5 @@
-.post figure.retailer-journey-map {
+.post figure.retailer-journey-map,
+.post figure.journey-map {
   width: min(80vw, 1280px);
   max-width: none;
   margin: 2.5rem auto;
@@ -7,16 +8,18 @@
   transform: translateX(-50%);
 }
 
-.retailer-journey-map__scroller {
+.retailer-journey-map__scroller,
+.journey-map__scroller {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  border: 1px solid #d8d8d8;
+  border: 1px solid var(--separator-color);
   border-radius: 8px;
-  background: #fff;
+  background: var(--bg-max);
 }
 
-.retailer-journey-map__table {
+.retailer-journey-map__table,
+.journey-map__table {
   width: 100%;
   min-width: 1120px;
   margin: 0;
@@ -24,12 +27,13 @@
   border-collapse: separate;
   border-spacing: 0;
   table-layout: fixed;
-  color: rgba(0, 0, 0, 0.9);
+  color: var(--fg-1);
   font-size: 0.78rem;
   line-height: 1.35;
 }
 
-.retailer-journey-map__table caption {
+.retailer-journey-map__table caption,
+.journey-map__table caption {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -42,104 +46,131 @@
 }
 
 .retailer-journey-map__table tr,
-.retailer-journey-map__table tr:nth-child(2n) {
+.retailer-journey-map__table tr:nth-child(2n),
+.journey-map__table tr,
+.journey-map__table tr:nth-child(2n) {
   background: transparent;
   border: 0;
 }
 
 .retailer-journey-map__table th,
-.retailer-journey-map__table td {
+.retailer-journey-map__table td,
+.journey-map__table th,
+.journey-map__table td {
   width: 21.25%;
   padding: 0.8rem 0.9rem;
   border: 0;
-  border-right: 1px solid #d8d8d8;
-  border-bottom: 1px solid #d8d8d8;
+  border-right: 1px solid var(--separator-color);
+  border-bottom: 1px solid var(--separator-color);
   vertical-align: top;
 }
 
 .retailer-journey-map__table th:last-child,
-.retailer-journey-map__table td:last-child {
+.retailer-journey-map__table td:last-child,
+.journey-map__table th:last-child,
+.journey-map__table td:last-child {
   border-right: 0;
 }
 
 .retailer-journey-map__table tbody tr:last-child th,
-.retailer-journey-map__table tbody tr:last-child td {
+.retailer-journey-map__table tbody tr:last-child td,
+.journey-map__table tbody tr:last-child th,
+.journey-map__table tbody tr:last-child td {
   border-bottom: 0;
 }
 
-.retailer-journey-map__table thead th {
+.retailer-journey-map__table thead th,
+.journey-map__table thead th {
   background: #a8a5f4;
-  color: #111;
+  color: var(--fg-max);
   font-weight: 500;
   text-align: left;
 }
 
 .retailer-journey-map__table thead th:first-child,
-.retailer-journey-map__table tbody th {
+.retailer-journey-map__table tbody th,
+.journey-map__table thead th:first-child,
+.journey-map__table tbody th {
   width: 15%;
-  background: #f5f5f5;
-  color: #111;
+  background: var(--bg-3);
+  color: var(--fg-1);
   font-weight: 500;
 }
 
 .retailer-journey-map__table ul,
-.retailer-journey-map__table p {
+.retailer-journey-map__table p,
+.journey-map__table ul,
+.journey-map__table p {
   width: auto;
   margin: 0;
   color: inherit;
   font-weight: 300;
 }
 
-.retailer-journey-map__table ul {
+.retailer-journey-map__table ul,
+.journey-map__table ul {
   padding-left: 1rem;
 }
 
-.retailer-journey-map__table li {
+.retailer-journey-map__table li,
+.journey-map__table li {
   margin: 0 0 0.25rem;
 }
 
-.retailer-journey-map__table li:last-child {
+.retailer-journey-map__table li:last-child,
+.journey-map__table li:last-child {
   margin-bottom: 0;
 }
 
-html.theme-dark .retailer-journey-map__scroller {
-  border-color: #242424;
-  background: #111;
+html.theme-dark .retailer-journey-map__scroller,
+html.theme-dark .journey-map__scroller {
+  border-color: var(--separator-color);
+  background: var(--bg-max);
 }
 
-html.theme-dark .retailer-journey-map__table {
-  color: #ECE7E2;
+html.theme-dark .retailer-journey-map__table,
+html.theme-dark .journey-map__table {
+  color: var(--fg-1);
 }
 
 html.theme-dark .retailer-journey-map__table th,
-html.theme-dark .retailer-journey-map__table td {
-  border-color: #242424;
+html.theme-dark .retailer-journey-map__table td,
+html.theme-dark .journey-map__table th,
+html.theme-dark .journey-map__table td {
+  border-color: var(--separator-color);
 }
 
-html.theme-dark .retailer-journey-map__table thead th {
+html.theme-dark .retailer-journey-map__table thead th,
+html.theme-dark .journey-map__table thead th {
   background: #6f6ad7;
-  color: #f7f4f0;
+  color: var(--fg-max);
 }
 
 html.theme-dark .retailer-journey-map__table thead th:first-child,
-html.theme-dark .retailer-journey-map__table tbody th {
-  background: #161616;
-  color: #ECE7E2;
+html.theme-dark .retailer-journey-map__table tbody th,
+html.theme-dark .journey-map__table thead th:first-child,
+html.theme-dark .journey-map__table tbody th {
+  background: var(--bg-1);
+  color: var(--fg-1);
 }
 
 @media only screen and (max-width: 799px) {
-  .post figure.retailer-journey-map {
+  .post figure.retailer-journey-map,
+  .post figure.journey-map {
     width: calc(100vw - 32px);
     margin: 2rem auto;
   }
 
-  .retailer-journey-map__table {
+  .retailer-journey-map__table,
+  .journey-map__table {
     min-width: 980px;
     font-size: 0.72rem;
   }
 
   .retailer-journey-map__table th,
-  .retailer-journey-map__table td {
+  .retailer-journey-map__table td,
+  .journey-map__table th,
+  .journey-map__table td {
     padding: 0.7rem 0.75rem;
   }
 }

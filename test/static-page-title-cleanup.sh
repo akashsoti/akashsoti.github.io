@@ -33,7 +33,7 @@ for text in \
   fi
 done
 
-if ! grep -q 'border-top: 1px solid rgba(0, 0, 0, 0.12)' "$css"; then
+if ! grep -q 'border-top: 1px solid var(--separator-color)' "$css"; then
   echo "Expected prototype row separator color to stay defined." >&2
   exit 1
 fi
@@ -43,12 +43,12 @@ if ! grep -q '.prototype-list__item:first-child' "$css"; then
   exit 1
 fi
 
-if ! grep -q 'border: 1px solid rgba(0, 0, 0, 0.12)' "$css"; then
+if ! grep -q 'border: 1px solid var(--separator-color)' "$css"; then
   echo "Expected prototype thumbnail cards to use a stroke matching the light separator." >&2
   exit 1
 fi
 
-if ! grep -q 'border-color: #242424' "$css"; then
-  echo "Expected prototype thumbnail cards to use the dark separator stroke." >&2
+if ! grep -q 'border-color: var(--separator-color)' "$css"; then
+  echo "Expected prototype thumbnail cards to use the theme separator stroke." >&2
   exit 1
 fi

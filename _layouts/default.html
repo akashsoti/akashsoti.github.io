@@ -7,7 +7,7 @@
    {% include header.html %}
 
    <div class="content">
-      <div class="container">
+      <div class="container{% if page.layout == 'post' %} container--post{% endif %}">
          {{ content }}
       </div>
    </div><!-- end .content -->

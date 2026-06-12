@@ -3,27 +3,28 @@ set -euo pipefail
 
 bundle exec jekyll build >/tmp/dark-mode-separator-color-jekyll.log
 
+tokens_css="assets/css/overrides/tokens.css"
 theme_css="assets/css/overrides/theme.css"
 prototype_css="assets/css/overrides/prototypes.css"
 journey_css="assets/css/overrides/journey-map.css"
 
-if ! grep -q 'html.theme-dark .postNav,' "$theme_css" || ! grep -q 'border-color: #242424' "$theme_css"; then
-  echo "Expected dark theme post/footer separators to use #242424." >&2
+if ! grep -q -- '--border-1: #ffffff14;' "$tokens_css" || ! grep -q 'border-color: var(--border-1)' "$theme_css"; then
+  echo "Expected dark theme post/footer separators to use Aave border token." >&2
   exit 1
 fi
 
-if ! grep -q 'html.theme-dark table,' "$theme_css" || ! grep -q 'border-color: #242424' "$theme_css"; then
-  echo "Expected dark theme table separators to use #242424." >&2
+if ! grep -q 'table,' "$theme_css" || ! grep -q 'border-color: var(--border-1)' "$theme_css"; then
+  echo "Expected dark theme table separators to use Aave border token." >&2
   exit 1
 fi
 
-if ! grep -q 'html.theme-dark .prototype-list__item' "$prototype_css" || ! grep -q 'border-color: #242424' "$prototype_css"; then
-  echo "Expected dark theme prototype separators to use #242424." >&2
+if ! grep -q 'border-top: 1px solid var(--separator-color)' "$prototype_css" || ! grep -q 'border-color: var(--separator-color)' "$prototype_css"; then
+  echo "Expected dark theme prototype separators to use theme separator token." >&2
   exit 1
 fi
 
-if ! grep -q 'html.theme-dark .retailer-journey-map__scroller' "$journey_css" || ! grep -q 'border-color: #242424' "$journey_css"; then
-  echo "Expected dark theme journey-map separators to use #242424." >&2
+if ! grep -q 'html.theme-dark .retailer-journey-map__scroller' "$journey_css" || ! grep -q 'border-color: var(--separator-color)' "$journey_css"; then
+  echo "Expected dark theme journey-map separators to use theme separator token." >&2
   exit 1
 fi
 

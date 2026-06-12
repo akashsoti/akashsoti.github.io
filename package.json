@@ -5,7 +5,11 @@
   "description": "Personal site powered by Jekyll",
   "scripts": {
     "build": "bundle exec jekyll build",
-    "serve": "bundle exec jekyll serve --host 127.0.0.1 --port 4000"
+    "serve": "bundle exec jekyll serve --host 127.0.0.1 --port 4000",
+    "test": "bash test/run-static.sh",
+    "test:static": "bash test/run-static.sh",
+    "test:browser": "bash test/run-browser.sh",
+    "test:all": "bash test/run-all.sh"
   },
   "license": "MIT"
 }

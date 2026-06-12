@@ -62,7 +62,7 @@ description: "Daily commute in India is a challenge where existing transportatio
 	</ul>
 	<p><b>The above set of questions helped us map the current user journey and its challenges.</b></p>
 
-	<p class="hero-image" style="text-align:center;"><img src="{{ '/assets/img/userjourney.jpg' | prepend: site.baseurl }}" alt=""></p>
+	{% include shuttle-journey-map.html %}
 </section>
 
 <section class="section-bottom-margin">
@@ -106,14 +106,6 @@ description: "Daily commute in India is a challenge where existing transportatio
 	<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/process1.png' | prepend: site.baseurl }}" alt=""></p>
 	<p class="full-width" style="text-align:center;"><img src="{{ '/assets/img/process2.png' | prepend: site.baseurl }}" alt=""></p>
 	<p class="hero-image" style="text-align:center;"><img src="{{ '/assets/img/artboards.jpg' | prepend: site.baseurl }}" alt=""></p>
-</section>
-
-<section class="section-bottom-margin">
-	<h3>
-	Prototype
-	</h3>
-	<p>We obsessed on making a perfect flow for our users, this is one of them divided into different tasks that a user will go through while interacting with the product.</p>
-	<p class="full-width" style="text-align:center;"><iframe src="https://marvelapp.com/1853h31?emb=1" width="402" height="823" allowTransparency="true" frameborder="0"></iframe></p>
 </section>
 
 <section class="section-bottom-margin">

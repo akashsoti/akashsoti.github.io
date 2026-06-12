@@ -1,0 +1,48 @@
+#home .row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+#home .row::after {
+  content: none;
+}
+
+#home .row > [class^="col"] {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  float: none;
+}
+
+#home .posts {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  float: none;
+  overflow: hidden;
+}
+
+#home .posts .post-card-link {
+  display: flex;
+  flex-direction: column;
+}
+
+#home .posts .post-card-content {
+  flex: 1;
+}
+
+#home .posts .description {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+@media only screen and (min-width: 720px) {
+  #home .row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

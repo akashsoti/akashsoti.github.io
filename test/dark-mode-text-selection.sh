@@ -1,96 +1,12 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-bundle exec jekyll build >/tmp/dark-mode-text-selection-jekyll.log
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/support/browser-cdp.sh"
 
-site_port="${DARK_MODE_SELECTION_SITE_PORT:-4117}"
-chrome_port="${DARK_MODE_SELECTION_CHROME_PORT:-9235}"
-site_log="/tmp/dark-mode-text-selection-site.log"
-chrome_log="/tmp/dark-mode-text-selection-chrome.log"
-chrome_tmp="$(mktemp -d)"
+browser_cdp_setup "dark-mode-text-selection" "${DARK_MODE_SELECTION_SITE_PORT:-4117}" "${DARK_MODE_SELECTION_CHROME_PORT:-9235}" "/blog/feet-on-street-app/"
 
-cleanup() {
-  if [[ -n "${site_pid:-}" ]]; then
-    kill "$site_pid" >/dev/null 2>&1 || true
-    wait "$site_pid" 2>/dev/null || true
-  fi
-  if [[ -n "${chrome_pid:-}" ]]; then
-    kill "$chrome_pid" >/dev/null 2>&1 || true
-    wait "$chrome_pid" 2>/dev/null || true
-  fi
-  rm -rf "$chrome_tmp"
-}
-trap cleanup EXIT
-
-ruby -run -e httpd _site -p "$site_port" >"$site_log" 2>&1 &
-site_pid=$!
-
-for _ in $(seq 1 80); do
-  if curl -fsS "http://127.0.0.1:$site_port/blog/feet-on-street-app/" >/dev/null 2>&1; then
-    break
-  fi
-  sleep 0.1
-done
-
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
-  --headless=new \
-  --disable-gpu \
-  --hide-scrollbars \
-  --remote-debugging-port="$chrome_port" \
-  --user-data-dir="$chrome_tmp" \
-  about:blank >"$chrome_log" 2>&1 &
-chrome_pid=$!
-
-for _ in $(seq 1 80); do
-  if curl -fsS "http://127.0.0.1:$chrome_port/json/version" >/dev/null 2>&1; then
-    break
-  fi
-  sleep 0.1
-done
-
-SELECTION_TEST_SITE_PORT="$site_port" SELECTION_TEST_CHROME_PORT="$chrome_port" node <<'NODE'
-const sitePort = process.env.SELECTION_TEST_SITE_PORT;
-const chromePort = process.env.SELECTION_TEST_CHROME_PORT;
-const targets = await fetch(`http://127.0.0.1:${chromePort}/json`).then((response) => response.json());
-const page = targets.find((target) => target.type === "page");
-
-if (!page) {
-  throw new Error("No Chrome page target found");
-}
-
-const ws = new WebSocket(page.webSocketDebuggerUrl);
-await new Promise((resolve, reject) => {
-  ws.addEventListener("open", resolve, { once: true });
-  ws.addEventListener("error", reject, { once: true });
-});
-
-let id = 1;
-function send(method, params = {}) {
-  const messageId = id++;
-  return new Promise((resolve, reject) => {
-    const onMessage = (event) => {
-      const payload = JSON.parse(event.data);
-      if (payload.id !== messageId) return;
-      ws.removeEventListener("message", onMessage);
-      if (payload.error) reject(new Error(JSON.stringify(payload.error)));
-      else resolve(payload.result);
-    };
-    ws.addEventListener("message", onMessage);
-    ws.send(JSON.stringify({ id: messageId, method, params }));
-  });
-}
-
-async function waitReady() {
-  for (let attempt = 0; attempt < 80; attempt++) {
-    const result = await send("Runtime.evaluate", {
-      expression: "document.readyState",
-      returnByValue: true,
-    });
-    if (result.result.value === "complete") return;
-    await new Promise((resolve) => setTimeout(resolve, 100));
-  }
-  throw new Error("Page did not finish loading");
-}
+browser_cdp_node <<'NODE'
+const { sitePort, send, waitReady, delay } = globalThis.browserCdp;
 
 await send("Emulation.setDeviceMetricsOverride", {
   width: 1280,
@@ -128,10 +44,10 @@ if (!actual.found) {
   throw new Error("Expected sample post text to exist.");
 }
 
-const expectedLightBackground = "rgba(0, 0, 0, 0.9)";
-const expectedLightColor = "rgb(255, 255, 255)";
-const expectedDarkBackground = "rgb(236, 231, 226)";
-const expectedDarkColor = "rgb(11, 11, 11)";
+const expectedLightBackground = "rgba(152, 150, 255, 0.2)";
+const expectedLightColor = "rgb(152, 150, 255)";
+const expectedDarkBackground = "rgba(152, 150, 255, 0.2)";
+const expectedDarkColor = "rgb(152, 150, 255)";
 
 for (const [name, expected] of Object.entries({
   lightBackground: expectedLightBackground,

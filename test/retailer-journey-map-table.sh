@@ -35,8 +35,13 @@ if ! grep -q '/assets/css/overrides/journey-map.css' "$post"; then
   exit 1
 fi
 
+if ! grep -Fq -- '--case-study-wide-shift: 120px' assets/css/overrides/case-study-nav.css; then
+  echo "Expected the journey map table to keep its wide viewport behavior when section nav is visible." >&2
+  exit 1
+fi
+
 if ! grep -q 'width: min(80vw, 1280px)' assets/css/overrides/journey-map.css; then
-  echo "Expected the journey map table to use the wide 80vw layout." >&2
+  echo "Expected the journey map table to use the restored wide viewport width." >&2
   exit 1
 fi
 

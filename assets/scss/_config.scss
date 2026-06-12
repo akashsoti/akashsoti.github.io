@@ -52,5 +52,5 @@ $line-height: 44px; // Consistent height for buttons, inputs etc.
 TYPE SETTINGS
 ***************/
 
-$sans-serif: "Google Sans Flex", sans-serif;
-$serif: "EB Garamond", serif;
+$sans-serif: var(--font-family-ui);
+$serif: var(--font-family-heading);

@@ -20,7 +20,7 @@
 				{% assign page_url = page.url | replace: '/index.html', '/' %}
 				{% assign link_url = link.url | replace: '/index.html', '/' %}
 				{% if link_url == '/' %}
-					{% if page_url == '/' %}
+					{% if page_url == '/' or page.layout == 'post' %}
 						{% assign current = 'is-current' %}
 					{% endif %}
 				{% elsif page_url contains link_url %}
