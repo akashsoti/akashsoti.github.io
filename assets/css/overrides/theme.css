@@ -3,6 +3,11 @@ body {
   color: var(--body-color);
 }
 
+html.theme-dark body {
+  background: var(--body-bg);
+  color: var(--body-color);
+}
+
 ::-moz-selection {
   background: var(--selection-bg);
   color: var(--selection-color);

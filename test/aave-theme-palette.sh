@@ -70,6 +70,7 @@ done
 
 for expected in \
   "background: var(--body-bg);" \
+  "html.theme-dark body" \
   "color: var(--body-color);" \
   "background: var(--bg-1);" \
   "color: var(--fg-1);" \

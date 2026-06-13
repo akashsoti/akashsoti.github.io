@@ -5,6 +5,7 @@ head="_includes/head.html"
 tokens_css="assets/css/overrides/tokens.css"
 typography_css="assets/css/overrides/typography.css"
 theme_css="assets/css/overrides/theme.css"
+soehne_font="assets/fonts/test-soehne-buch.woff2"
 
 if [[ ! -f "$tokens_css" ]]; then
   echo "Expected centralized design tokens at $tokens_css." >&2
@@ -26,11 +27,23 @@ if (( tokens_line >= base_line || tokens_line >= typography_line || tokens_line 
   exit 1
 fi
 
+if [[ -e "$soehne_font" ]]; then
+  echo "Expected Test Soehne font file to be removed; the site should use Inter again." >&2
+  exit 1
+fi
+
+if git grep -n -E 'Test Soehne|test-soehne|Soehne' -- assets/css _includes _layouts _posts >/tmp/soehne-grep.log 2>/dev/null; then
+  cat /tmp/soehne-grep.log >&2
+  echo "Expected Test Soehne references to be removed from site code." >&2
+  exit 1
+fi
+
 for expected in \
   ':root {' \
   'html.theme-dark {' \
   '--font-family-base: Inter, "Inter Fallback", sans-serif;' \
   '--font-family-sans: var(--font-family-ui);' \
+  '--font-family-heading: var(--font-family-base);' \
   '--type-body-size: 16px;' \
   '--primary: #9896ff;' \
   '@supports (color: color(display-p3 1 1 1))' \
@@ -50,6 +63,11 @@ fi
 
 if grep -q -- '--primary:\\|--bg-[a-z0-9-]*:\\|--fg-[a-z0-9-]*:\\|--shadow-[a-z0-9-]*:\\|--selected:' "$theme_css"; then
   echo "Expected theme.css to consume theme tokens, not define them." >&2
+  exit 1
+fi
+
+if ! awk '/html\.theme-dark body \{/ { in_rule = 1 } in_rule && /background: var\(--body-bg\);/ { found = 1 } in_rule && /\}/ { in_rule = 0 } END { exit found ? 0 : 1 }' "$theme_css"; then
+  echo "Expected dark-mode body background to override the legacy compiled black background." >&2
   exit 1
 fi
 
