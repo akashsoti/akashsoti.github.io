@@ -129,3 +129,66 @@ html.theme-dark {
   --shadow-stroke-1: #ffffff14;
   --shadow-stroke-2: #ffffff1a;
 }
+
+@supports (color: color(display-p3 1 1 1)) {
+  @media (color-gamut: p3) {
+    :root {
+      --primary: color(display-p3 0.5961 0.5882 1);
+      --bg-max: color(display-p3 1 1 1);
+      --bg-1: color(display-p3 0.9804 0.9765 0.9765);
+      --bg-2: color(display-p3 0.9412 0.9373 0.9373);
+      --bg-3: color(display-p3 0.9608 0.9608 0.9608);
+      --bg-4: color(display-p3 0.8824 0.8745 0.8745);
+      --bg-5: color(display-p3 0.8235 0.8157 0.8157);
+      --bg-6: color(display-p3 0.7647 0.7529 0.7529);
+      --bg-translucent-1: color(display-p3 0.9059 0.9059 0.9059 / 0.8588);
+      --border-0: color(display-p3 0.1804 0.0588 0.0588 / 0.0196);
+      --border-1: color(display-p3 0.1804 0.0588 0.0588 / 0.0784);
+      --border-2: color(display-p3 0 0 0 / 0.2);
+      --fg-max: color(display-p3 0 0 0);
+      --fg-1: color(display-p3 0 0 0);
+      --fg-2: color(display-p3 0.3529 0.3451 0.3451);
+      --fg-3: color(display-p3 0.4471 0.4471 0.4549);
+      --fg-4: color(display-p3 0.6588 0.6588 0.6588);
+      --fg-5: color(display-p3 0.8118 0.8078 0.8078);
+      --selected: color(display-p3 0.1804 0.0588 0.0588 / 0.0392);
+      --header-nav-hover-bg: color(display-p3 1 1 1 / 0.14);
+      --header-nav-selected-bg: color(display-p3 1 1 1 / 0.26);
+      --shadow-low: color(display-p3 0.1804 0.0588 0.0588 / 0.0118);
+      --shadow-medium: color(display-p3 0.1804 0.0588 0.0588 / 0.051);
+      --shadow-high: color(display-p3 0.1804 0.0588 0.0588 / 0.0706);
+      --shadow-strong: color(display-p3 0.1804 0.0588 0.0588 / 0.1216);
+      --shadow-stroke-1: color(display-p3 0.1804 0.0588 0.0588 / 0.0784);
+      --shadow-stroke-2: color(display-p3 0.1804 0.0588 0.0588 / 0.0588);
+    }
+
+    html.theme-dark {
+      --bg-max: color(display-p3 0.0392 0.0392 0.0392);
+      --bg-1: color(display-p3 0.0627 0.0588 0.0588);
+      --bg-2: color(display-p3 0.102 0.098 0.098);
+      --bg-3: color(display-p3 0.1216 0.1176 0.1176);
+      --bg-4: color(display-p3 0.1647 0.1569 0.1569);
+      --bg-5: color(display-p3 0.2235 0.2157 0.2157);
+      --bg-6: color(display-p3 0.2863 0.2745 0.2745);
+      --bg-translucent-1: color(display-p3 0.0941 0.0863 0.0863 / 0.8588);
+      --border-0: color(display-p3 1 1 1 / 0.0588);
+      --border-1: color(display-p3 1 1 1 / 0.0784);
+      --border-2: color(display-p3 1 1 1 / 0.2196);
+      --fg-max: color(display-p3 1 1 1);
+      --fg-1: color(display-p3 1 1 1);
+      --fg-2: color(display-p3 0.7373 0.7333 0.7333);
+      --fg-3: color(display-p3 0.5608 0.5569 0.5569);
+      --fg-4: color(display-p3 0.3882 0.3804 0.3804);
+      --fg-5: color(display-p3 0.2196 0.2196 0.2196);
+      --selected: color(display-p3 1 1 1 / 0.0588);
+      --header-nav-hover-bg: color(display-p3 1 1 1 / 0.12);
+      --header-nav-selected-bg: color(display-p3 1 1 1 / 0.18);
+      --shadow-low: color(display-p3 0 0 0 / 0.149);
+      --shadow-medium: color(display-p3 0 0 0 / 0.302);
+      --shadow-high: color(display-p3 0 0 0 / 0.349);
+      --shadow-strong: color(display-p3 0 0 0 / 0.502);
+      --shadow-stroke-1: color(display-p3 1 1 1 / 0.0784);
+      --shadow-stroke-2: color(display-p3 1 1 1 / 0.102);
+    }
+  }
+}

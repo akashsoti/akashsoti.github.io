@@ -33,6 +33,8 @@ for expected in \
   '--font-family-sans: var(--font-family-ui);' \
   '--type-body-size: 16px;' \
   '--primary: #9896ff;' \
+  '@supports (color: color(display-p3 1 1 1))' \
+  '@media (color-gamut: p3)' \
   '--body-bg: var(--bg-max);' \
   '--card-bg: var(--bg-1);'; do
   if ! grep -q -- "$expected" "$tokens_css"; then

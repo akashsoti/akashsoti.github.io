@@ -55,3 +55,23 @@ for expected in \
     exit 1
   fi
 done
+
+if ! grep -q -- 'html.theme-dark .posts {' "$theme_css"; then
+  echo "Expected theme.css to override the legacy dark-mode card rule." >&2
+  exit 1
+fi
+
+if ! awk '/html\.theme-dark \.posts \{/ { in_rule = 1 } in_rule && /transform: none;/ { found = 1 } in_rule && /\}/ { in_rule = 0 } END { exit found ? 0 : 1 }' "$theme_css"; then
+  echo "Expected dark-mode cards to keep transform: none at rest." >&2
+  exit 1
+fi
+
+if ! awk '/html\.theme-dark \.posts \{/ { in_rule = 1 } in_rule && /transition: box-shadow 0\.2s cubic-bezier\(0\.25, 0\.8, 0\.25, 1\);/ { found = 1 } in_rule && /\}/ { in_rule = 0 } END { exit found ? 0 : 1 }' "$theme_css"; then
+  echo "Expected dark-mode cards to transition only box-shadow." >&2
+  exit 1
+fi
+
+if ! awk '/html\.theme-dark \.posts:hover \{/ { in_rule = 1 } in_rule && /transform: none;/ { found = 1 } in_rule && /\}/ { in_rule = 0 } END { exit found ? 0 : 1 }' "$theme_css"; then
+  echo "Expected dark-mode card hover to avoid transform lift." >&2
+  exit 1
+fi

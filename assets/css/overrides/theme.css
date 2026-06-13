@@ -80,13 +80,17 @@ h6,
   box-shadow: 0 0 0 1px var(--post-card-shadow-stroke), 0 2.5px 7.5px var(--post-card-shadow-high), 0 1.5px 3px var(--post-card-shadow-medium);
   -webkit-box-shadow: 0 0 0 1px var(--post-card-shadow-stroke), 0 2.5px 7.5px var(--post-card-shadow-high), 0 1.5px 3px var(--post-card-shadow-medium);
   -moz-box-shadow: 0 0 0 1px var(--post-card-shadow-stroke), 0 2.5px 7.5px var(--post-card-shadow-high), 0 1.5px 3px var(--post-card-shadow-medium);
-  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: none;
+  transition: box-shadow 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 html.theme-dark .posts {
-  --post-card-shadow-stroke: rgba(255, 255, 255, 0.04);
+  --post-card-shadow-stroke: rgba(0, 0, 0, 0.24);
   --post-card-shadow-high: rgba(0, 0, 0, 0.2575);
   --post-card-shadow-medium: rgba(0, 0, 0, 0.315);
+
+  transform: none;
+  transition: box-shadow 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .posts:hover {
@@ -94,6 +98,13 @@ html.theme-dark .posts {
   box-shadow: 0 0 0 1px var(--shadow-stroke-1), 0 4px 12px var(--shadow-high), 0 2px 4px var(--shadow-medium);
   -webkit-box-shadow: 0 0 0 1px var(--shadow-stroke-1), 0 4px 12px var(--shadow-high), 0 2px 4px var(--shadow-medium);
   -moz-box-shadow: 0 0 0 1px var(--shadow-stroke-1), 0 4px 12px var(--shadow-high), 0 2px 4px var(--shadow-medium);
+}
+
+html.theme-dark .posts:hover {
+  transform: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.38), 0 4px 12px rgba(0, 0, 0, 0.48), 0 2px 4px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.38), 0 4px 12px rgba(0, 0, 0, 0.48), 0 2px 4px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.38), 0 4px 12px rgba(0, 0, 0, 0.48), 0 2px 4px rgba(0, 0, 0, 0.38);
 }
 
 .posts .post-feature-image,

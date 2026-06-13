@@ -1,9 +1,5 @@
 /* Header layout */
 .header {
-  --header-wash: rgba(246, 238, 219, 0.22);
-  --header-grain-light: rgba(255, 255, 255, 0.28);
-  --header-grain-dark: rgba(46, 15, 15, 0.16);
-
   background-image: url("../../img/akash-banner.png");
   background-position: 50% 40%;
   background-size: cover;
@@ -29,27 +25,6 @@
   z-index: 0;
   background: rgba(0, 0, 0, 0.56);
   pointer-events: none;
-}
-
-.header::after {
-  content: "";
-  position: absolute;
-  inset: 0 0 -2.25rem;
-  z-index: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(to bottom, transparent 0%, transparent 58%, var(--body-bg) 100%),
-    linear-gradient(0deg, var(--header-wash), var(--header-wash)),
-    radial-gradient(circle at 24% 32%, var(--header-grain-light) 0 0.45px, transparent 0.95px),
-    radial-gradient(circle at 78% 68%, var(--header-grain-dark) 0 0.55px, transparent 1px);
-  background-size: auto, auto, 3px 3px, 4px 4px;
-  opacity: 0.86;
-}
-
-html.theme-dark .header {
-  --header-wash: rgba(236, 231, 226, 0.1);
-  --header-grain-light: rgba(255, 255, 255, 0.12);
-  --header-grain-dark: rgba(0, 0, 0, 0.28);
 }
 
 .header .logo,

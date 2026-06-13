@@ -53,6 +53,22 @@ for expected in \
 done
 
 for expected in \
+  "@supports (color: color(display-p3 1 1 1))" \
+  "@media (color-gamut: p3)" \
+  "--primary: color(display-p3 0.5961 0.5882 1);" \
+  "--bg-max: color(display-p3 1 1 1);" \
+  "--bg-1: color(display-p3 0.9804 0.9765 0.9765);" \
+  "--fg-1: color(display-p3 0 0 0);" \
+  "--bg-max: color(display-p3 0.0392 0.0392 0.0392);" \
+  "--bg-1: color(display-p3 0.0627 0.0588 0.0588);" \
+  "--fg-1: color(display-p3 1 1 1);"; do
+  if ! grep -q -- "$expected" "$tokens_css"; then
+    echo "Expected P3-capable theme token '$expected'." >&2
+    exit 1
+  fi
+done
+
+for expected in \
   "background: var(--body-bg);" \
   "color: var(--body-color);" \
   "background: var(--bg-1);" \
