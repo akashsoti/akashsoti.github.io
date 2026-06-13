@@ -48,7 +48,7 @@ for expected in \
   ".posts .post-card-link:active," \
   ".posts .post-card-content," \
   "color: var(--fg-1);" \
-  ".posts .description" \
+  ".posts .post-card-content p" \
   "color: var(--fg-2);"; do
   if ! grep -q -- "$expected" "$theme_css"; then
     echo "Expected theme.css to own card text color with token '$expected'." >&2

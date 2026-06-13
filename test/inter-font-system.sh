@@ -5,13 +5,8 @@ head="_includes/head.html"
 tokens_css="assets/css/overrides/tokens.css"
 scss_config="assets/scss/_config.scss"
 
-if ! grep -q '<link rel="preconnect" href="https://rsms.me/">' "$head"; then
-  echo "Expected head to preconnect to rsms.me for Inter." >&2
-  exit 1
-fi
-
-if ! grep -q '<link rel="stylesheet" href="https://rsms.me/inter/inter.css">' "$head"; then
-  echo "Expected head to load Inter from rsms.me." >&2
+if grep -q 'rsms.me' "$head"; then
+  echo "Expected Inter to be self-hosted, not loaded from rsms.me." >&2
   exit 1
 fi
 
@@ -22,12 +17,25 @@ for old_font in 'fonts.googleapis.com' 'fonts.gstatic.com' 'Google Sans Flex' 'E
   fi
 done
 
+for font_file in assets/fonts/InterVariable.woff2 assets/fonts/InterVariable-Italic.woff2; do
+  if [[ ! -s "$font_file" ]]; then
+    echo "Expected self-hosted Inter font file at $font_file." >&2
+    exit 1
+  fi
+done
+
 for expected in \
-  'font-family: Inter, sans-serif;' \
+  '@font-face {' \
+  'font-family: Inter;' \
+  'font-weight: 100 900;' \
+  'src: url("../../fonts/InterVariable.woff2") format("woff2");' \
+  'src: url("../../fonts/InterVariable-Italic.woff2") format("woff2");' \
+  'font-family: "Inter Fallback";' \
+  'ascent-override: 89.79%;' \
+  'size-adjust: 107.89%;' \
+  'font-family: Inter, "Inter Fallback", sans-serif;' \
   "font-feature-settings: 'liga' 1, 'calt' 1;" \
-  '@supports (font-variation-settings: normal)' \
-  'font-family: InterVariable, Inter, sans-serif;' \
-  '--font-family-base: Inter, sans-serif;' \
+  '--font-family-base: Inter, "Inter Fallback", sans-serif;' \
   '--font-family-ui: var(--font-family-base);' \
   '--font-family-sans: var(--font-family-ui);' \
   '--font-family-heading: var(--font-family-base);'; do

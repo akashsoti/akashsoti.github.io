@@ -1,10 +1,48 @@
 /* Design tokens */
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../../fonts/InterVariable.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../../fonts/InterVariable-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Fallback";
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Arial");
+  ascent-override: 89.79%;
+  descent-override: 22.36%;
+  line-gap-override: 0%;
+  size-adjust: 107.89%;
+}
+
+@font-face {
+  font-family: "Inter Fallback";
+  font-style: italic;
+  font-weight: 100 900;
+  src: local("Arial Italic");
+  ascent-override: 89.79%;
+  descent-override: 22.36%;
+  line-gap-override: 0%;
+  size-adjust: 107.89%;
+}
+
 :root {
-  font-family: Inter, sans-serif;
+  font-family: Inter, "Inter Fallback", sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1;
   color-scheme: light;
 
-  --font-family-base: Inter, sans-serif;
+  --font-family-base: Inter, "Inter Fallback", sans-serif;
   --font-family-ui: var(--font-family-base);
   --font-family-sans: var(--font-family-ui);
   --font-family-heading: var(--font-family-base);
@@ -60,13 +98,6 @@
   --separator-color: var(--border-1);
   --selection-color: var(--primary);
   --selection-bg: color-mix(in srgb, var(--primary) 20%, transparent);
-}
-
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: InterVariable, Inter, sans-serif;
-    --font-family-base: InterVariable, Inter, sans-serif;
-  }
 }
 
 html.theme-dark {

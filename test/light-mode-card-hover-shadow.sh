@@ -78,7 +78,7 @@ if (!actual.found) {
   throw new Error("Expected a project card to exist.");
 }
 
-const expectedCardBoxShadow = "rgba(46, 15, 15, 0.01) 0px 1px 3px 0px, rgba(46, 15, 15, 0.05) 0px 1px 2px 0px";
+const expectedCardBoxShadow = "rgba(46, 15, 15, 0.04) 0px 0px 0px 1px, rgba(46, 15, 15, 0.0405) 0px 2.5px 7.5px 0px, rgba(46, 15, 15, 0.0525) 0px 1.5px 3px 0px";
 if (actual.cardBoxShadow !== expectedCardBoxShadow) {
   throw new Error(`Expected light-mode default card shadow ${expectedCardBoxShadow}, got ${actual.cardBoxShadow}.`);
 }

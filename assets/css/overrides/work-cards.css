@@ -24,6 +24,10 @@
   overflow: hidden;
 }
 
+html:not(.theme-dark) #home .posts {
+  background: var(--bg-max);
+}
+
 #home .posts .post-card-link {
   display: flex;
   flex-direction: column;
@@ -31,14 +35,16 @@
 
 #home .posts .post-card-content {
   flex: 1;
+  padding-bottom: calc(1.4rem + 10px);
 }
 
-#home .posts .description {
+#home .posts .post-card-content p {
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   line-clamp: 2;
+  line-height: var(--type-body-line-height);
 }
 
 @media only screen and (min-width: 720px) {

@@ -29,7 +29,7 @@ fi
 for expected in \
   ':root {' \
   'html.theme-dark {' \
-  '--font-family-base: Inter, sans-serif;' \
+  '--font-family-base: Inter, "Inter Fallback", sans-serif;' \
   '--font-family-sans: var(--font-family-ui);' \
   '--type-body-size: 16px;' \
   '--primary: #9896ff;' \

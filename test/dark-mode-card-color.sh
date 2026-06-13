@@ -86,7 +86,7 @@ if (actual.cardBackground !== expectedCardBackground) {
   throw new Error(`Expected dark-mode card background ${expectedCardBackground}, got ${actual.cardBackground}.`);
 }
 
-const expectedCardBoxShadow = "rgba(0, 0, 0, 0.15) 0px 1px 3px 0px, rgba(0, 0, 0, 0.3) 0px 1px 2px 0px";
+const expectedCardBoxShadow = "rgba(255, 255, 255, 0.04) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2575) 0px 2.5px 7.5px 0px, rgba(0, 0, 0, 0.315) 0px 1.5px 3px 0px";
 if (actual.cardBoxShadow !== expectedCardBoxShadow) {
   throw new Error(`Expected dark-mode default card drop shadow ${expectedCardBoxShadow}, got ${actual.cardBoxShadow}.`);
 }

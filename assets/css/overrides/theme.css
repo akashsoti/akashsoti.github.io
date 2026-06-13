@@ -25,7 +25,7 @@ body ul,
 .post ol ol,
 ul.list-of-items li,
 ol.list-of-items li,
-.posts .description {
+.posts .post-card-content p {
   color: var(--fg-2);
 }
 
@@ -72,11 +72,21 @@ h6,
 }
 
 .posts {
+  --post-card-shadow-stroke: rgba(46, 15, 15, 0.04);
+  --post-card-shadow-high: rgba(46, 15, 15, 0.0405);
+  --post-card-shadow-medium: rgba(46, 15, 15, 0.0525);
+
   background: var(--card-bg);
-  box-shadow: 0 1px 3px var(--shadow-low), 0 1px 2px var(--shadow-medium);
-  -webkit-box-shadow: 0 1px 3px var(--shadow-low), 0 1px 2px var(--shadow-medium);
-  -moz-box-shadow: 0 1px 3px var(--shadow-low), 0 1px 2px var(--shadow-medium);
+  box-shadow: 0 0 0 1px var(--post-card-shadow-stroke), 0 2.5px 7.5px var(--post-card-shadow-high), 0 1.5px 3px var(--post-card-shadow-medium);
+  -webkit-box-shadow: 0 0 0 1px var(--post-card-shadow-stroke), 0 2.5px 7.5px var(--post-card-shadow-high), 0 1.5px 3px var(--post-card-shadow-medium);
+  -moz-box-shadow: 0 0 0 1px var(--post-card-shadow-stroke), 0 2.5px 7.5px var(--post-card-shadow-high), 0 1.5px 3px var(--post-card-shadow-medium);
   transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+html.theme-dark .posts {
+  --post-card-shadow-stroke: rgba(255, 255, 255, 0.04);
+  --post-card-shadow-high: rgba(0, 0, 0, 0.2575);
+  --post-card-shadow-medium: rgba(0, 0, 0, 0.315);
 }
 
 .posts:hover {

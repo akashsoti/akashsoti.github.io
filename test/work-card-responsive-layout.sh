@@ -11,6 +11,11 @@ if ! grep -q '/assets/css/overrides/work-cards.css' "$home"; then
   exit 1
 fi
 
+if grep -Eq 'class="(post-link|description)"' "$home"; then
+  echo "Expected Work card title and description markup to avoid extra text classes." >&2
+  exit 1
+fi
+
 if [[ ! -f "$css" ]]; then
   echo "Expected the Work card responsive stylesheet to exist." >&2
   exit 1
@@ -25,8 +30,13 @@ for expected in \
   'float: none' \
   '#home .posts {' \
   'height: 100%' \
-  '#home .posts .description' \
+  'html:not(.theme-dark) #home .posts' \
+  'background: var(--bg-max)' \
+  '#home .posts .post-card-content' \
+  'padding-bottom: calc(1.4rem + 10px)' \
+  '#home .posts .post-card-content p' \
   '-webkit-line-clamp: 2' \
+  'line-height: var(--type-body-line-height)' \
   '@media only screen and (min-width: 720px)' \
   'grid-template-columns: repeat(2, minmax(0, 1fr))'; do
   if ! grep -Fq -- "$expected" "$css"; then

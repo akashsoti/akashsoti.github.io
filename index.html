@@ -14,8 +14,8 @@ title: Akash Soti
             </div>
             <div class="post-card-content">
               <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-              <h3 class="post-link">{{ post.title }}</h3>
-              <p class="description">{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 80 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
+              <h3>{{ post.title }}</h3>
+              <p>{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 80 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
             </div>
           </a>
         </article>
