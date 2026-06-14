@@ -2,7 +2,6 @@
 set -euo pipefail
 
 css="assets/css/overrides/case-study-nav.css"
-js="assets/js/scripts.js"
 
 bundle exec jekyll build >/tmp/case-study-legacy-wide-media-jekyll.log
 
@@ -13,11 +12,6 @@ fi
 
 if ! grep -q 'class="full-width"' _site/blog/ola-shuttle-case-study/index.html; then
   echo "Expected older case studies to still render legacy full-width blocks." >&2
-  exit 1
-fi
-
-if ! grep -Fq 'p.hero-image, p.full-width' "$js"; then
-  echo "Expected legacy full-width image blocks to participate in side-nav overlap handling." >&2
   exit 1
 fi
 

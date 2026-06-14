@@ -43,7 +43,9 @@ const desktopResult = await send("Runtime.evaluate", {
     const links = Array.from(document.querySelectorAll(".case-study-section-nav__link"));
     const headings = Array.from(document.querySelectorAll(".case-study-content > section > h3"));
     const sidebarStyle = sidebar ? getComputedStyle(sidebar) : null;
+    const mainStyle = main ? getComputedStyle(main) : null;
     const shellStyle = shell ? getComputedStyle(shell) : null;
+    const journeyStyle = journey ? getComputedStyle(journey) : null;
     const dotStyle = dot ? getComputedStyle(dot) : null;
     const sidebarRect = sidebar && sidebar.getBoundingClientRect();
     const mainRect = main && main.getBoundingClientRect();
@@ -56,6 +58,10 @@ const desktopResult = await send("Runtime.evaluate", {
       backIconFound: Boolean(backIcon),
       sidebarDisplay: sidebarStyle && sidebarStyle.display,
       sidebarPosition: sidebarStyle && sidebarStyle.position,
+      sidebarZIndex: sidebarStyle && sidebarStyle.zIndex,
+      mainPosition: mainStyle && mainStyle.position,
+      mainZIndex: mainStyle && mainStyle.zIndex,
+      journeyZIndex: journeyStyle && journeyStyle.zIndex,
       sidebarHeight: sidebarStyle && sidebarStyle.height,
       shellGridColumns: shellStyle && shellStyle.gridTemplateColumns,
       shellGap: shellStyle && shellStyle.columnGap,
@@ -278,6 +284,10 @@ if (!desktop.journeyWiderThanMain) {
   throw new Error(`Expected journey map to be wider than the case-study content column, got journey ${desktop.journeyWidth}px and main ${desktop.mainWidth}px.`);
 }
 
+if (desktop.sidebarZIndex !== "1" || desktop.mainPosition !== "relative" || desktop.mainZIndex !== "2" || desktop.journeyZIndex !== "3") {
+  throw new Error(`Expected wide media to stack above the side nav, got ${JSON.stringify({ sidebarZIndex: desktop.sidebarZIndex, mainPosition: desktop.mainPosition, mainZIndex: desktop.mainZIndex, journeyZIndex: desktop.journeyZIndex })}.`);
+}
+
 if (desktop.shellHasWideOverlap || desktop.sidebarInnerOpacity !== "1" || desktop.sidebarInnerVisibility !== "visible") {
   throw new Error(`Expected side nav to be visible before wide content overlaps it, got ${JSON.stringify({ shellHasWideOverlap: desktop.shellHasWideOverlap, sidebarInnerOpacity: desktop.sidebarInnerOpacity, sidebarInnerVisibility: desktop.sidebarInnerVisibility })}.`);
 }
@@ -298,12 +308,12 @@ if (after.scrollY <= 0) {
   throw new Error("Expected clicking a nav item to move the page.");
 }
 
-if (!wideOverlap.overlap.shellHasWideOverlap || Number(wideOverlap.overlap.navOpacity) > 0.05 || wideOverlap.overlap.navVisibility !== "hidden") {
-  throw new Error(`Expected side nav to hide while the journey map overlaps it, got ${JSON.stringify(wideOverlap.overlap)}.`);
+if (wideOverlap.overlap.shellHasWideOverlap || wideOverlap.overlap.navOpacity !== "1" || wideOverlap.overlap.navVisibility !== "visible") {
+  throw new Error(`Expected side nav to remain visible while the journey map overlaps it, got ${JSON.stringify(wideOverlap.overlap)}.`);
 }
 
 if (wideOverlap.afterClear.shellHasWideOverlap || wideOverlap.afterClear.navOpacity !== "1" || wideOverlap.afterClear.navVisibility !== "visible") {
-  throw new Error(`Expected side nav to reappear after the journey map clears it, got ${JSON.stringify(wideOverlap.afterClear)}.`);
+  throw new Error(`Expected side nav state to stay visible after the journey map clears it, got ${JSON.stringify(wideOverlap.afterClear)}.`);
 }
 
 if (mobile.sidebarDisplay !== "none") {

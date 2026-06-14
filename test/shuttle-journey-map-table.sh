@@ -50,7 +50,12 @@ if ! grep -q '.post figure.journey-map' assets/css/overrides/journey-map.css; th
   exit 1
 fi
 
-if ! grep -Fq 'figure.journey-map' assets/js/scripts.js; then
-  echo "Expected generic journey maps to participate in side-nav overlap handling." >&2
+if ! grep -Fq 'figure.journey-map' assets/css/overrides/case-study-nav.css; then
+  echo "Expected generic journey maps to receive side-nav wide layout." >&2
+  exit 1
+fi
+
+if ! grep -Fq 'z-index: 3;' assets/css/overrides/case-study-nav.css; then
+  echo "Expected wide journey maps to stack above the side nav when they overlap." >&2
   exit 1
 fi

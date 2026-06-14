@@ -157,20 +157,16 @@ html.js.page-entering.page-ready .case-study-section-nav__item {
     top: 0;
     height: 100vh;
     align-self: start;
+    z-index: 1;
   }
 
   .case-study-sidebar__inner {
     padding-top: 2rem;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 180ms ease, visibility 0ms linear 0ms;
   }
 
-  .case-study-shell--wide-overlap .case-study-sidebar__inner {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 160ms ease, visibility 0ms linear 160ms;
+  .case-study-main {
+    position: relative;
+    z-index: 2;
   }
 
   .case-study-sidebar__back {
@@ -331,6 +327,7 @@ html.js.page-entering.page-ready .case-study-section-nav__item {
     margin-left: 0;
     margin-right: 0;
     transform: translateX(calc(-50% - var(--case-study-wide-shift)));
+    z-index: 3;
   }
 
   .case-study-main figure.wide-image {
@@ -390,10 +387,5 @@ html.theme-dark .case-study-section-nav__dot {
     transition-delay: 0ms;
     transform: none;
     filter: none;
-  }
-
-  .case-study-shell--wide-overlap .case-study-sidebar__inner {
-    transition: none;
-    transition-delay: 0ms;
   }
 }

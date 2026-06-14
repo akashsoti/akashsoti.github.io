@@ -401,76 +401,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setActive(items[0].id);
   }
 
-  function initCaseStudyWideOverlapNav() {
-    var shell = document.querySelector("[data-case-study-shell]");
-    var content = document.querySelector("[data-case-study-content]");
-    var sidebar = document.querySelector(".case-study-sidebar");
-    var navPanel = document.querySelector(".case-study-sidebar__inner");
-    var wideBlockSelector = "figure.retailer-journey-map, figure.journey-map, figure.wide-image, [data-case-study-wide], p.hero-image, p.full-width";
-
-    if (!shell || !content || !sidebar || !navPanel) {
-      return;
-    }
-
-    var wideBlocks = Array.prototype.slice.call(content.querySelectorAll(wideBlockSelector));
-
-    if (!wideBlocks.length) {
-      return;
-    }
-
-    function isSidebarVisible() {
-      var sidebarStyle = window.getComputedStyle(sidebar);
-      return sidebarStyle.display !== "none" && sidebarStyle.visibility !== "hidden";
-    }
-
-    function updateWideOverlapState() {
-      if (!isSidebarVisible()) {
-        shell.classList.remove("case-study-shell--wide-overlap");
-        return;
-      }
-
-      var navRect = navPanel.getBoundingClientRect();
-      var hasOverlap = wideBlocks.some(function (wideBlock) {
-        var wideRect = wideBlock.getBoundingClientRect();
-
-        return wideRect.width > 0 &&
-          wideRect.height > 0 &&
-          wideRect.top <= navRect.bottom && wideRect.bottom >= navRect.top;
-      });
-
-      shell.classList.toggle("case-study-shell--wide-overlap", hasOverlap);
-    }
-
-    var updateQueued = false;
-    function queueWideOverlapUpdate() {
-      if (updateQueued) {
-        return;
-      }
-
-      updateQueued = true;
-      window.requestAnimationFrame(function () {
-        updateQueued = false;
-        updateWideOverlapState();
-      });
-    }
-
-    window.addEventListener("scroll", queueWideOverlapUpdate, { passive: true });
-    window.addEventListener("resize", queueWideOverlapUpdate);
-
-    if ("ResizeObserver" in window) {
-      var resizeObserver = new ResizeObserver(queueWideOverlapUpdate);
-      resizeObserver.observe(navPanel);
-
-      wideBlocks.forEach(function (wideBlock) {
-        resizeObserver.observe(wideBlock);
-      });
-    }
-
-    updateWideOverlapState();
-  }
-
   initCaseStudySectionNav();
-  initCaseStudyWideOverlapNav();
   initPageEntrance();
 
   // Round reading time
