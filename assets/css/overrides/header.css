@@ -6,6 +6,11 @@
   position: relative;
 }
 
+html.theme-dark .header {
+  background-color: var(--bg-max);
+  background-image: url("../../img/akash-banner.png");
+}
+
 .header .container {
   max-width: 960px;
   padding: 0 1.4rem;
