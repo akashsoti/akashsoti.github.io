@@ -65,6 +65,8 @@
   --type-meta-line-height: 1.285714;
   --type-caption-size: 0.875rem;
   --type-caption-line-height: 1.571429;
+  --duration-snappy: 0.22s;
+  --ease-snappy: cubic-bezier(0.175, 0.885, 0.32, 1.1);
   --primary: #9896ff;
   --bg-max: #fff;
   --bg-1: #faf9f9;

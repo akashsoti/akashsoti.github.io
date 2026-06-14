@@ -3,6 +3,7 @@ layout: post
 title:  "Farmerboys restaurant app"
 subtitle: "Loyalty app design proposal for Farmerboys"
 date:   2013-02-15
+company: "Punchh"
 image: "punchh/main-visual-baby-shoulders.jpg"
 description: "Designs for Farmerboys loyalty app program which made use of modern UI components and was received well with stakeholders in the US."
 ---

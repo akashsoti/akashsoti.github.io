@@ -3,6 +3,7 @@ layout: post
 title:  "Punchh mobile app redesign"
 subtitle: "A case study"
 date:   2013-6-15
+company: "Punchh"
 published: false
 image: "punchh/punchh_hero.jpg"
 description: "We obsessed over making life easier for the user. Users already have so much to handle when they enter a restaurant. Punchh is built in a way so that the most essential things, punching and redeeming restaurant cards, are fast and straightforward."

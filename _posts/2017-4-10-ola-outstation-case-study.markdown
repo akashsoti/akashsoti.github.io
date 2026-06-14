@@ -3,6 +3,7 @@ layout: post
 title:  "Ola Outstation"
 subtitle: "Helping people travel across cities hassle free"
 date:   2017-8-15
+company: "Ola"
 image: "outstation/outstation.jpg"
 description: "An affordable way for intercity travel. A range of AC cabs driven by top partners, available in 1 hour or book upto 7 days in advance. We have you covered across India with presence in 90+ cities with over 500 one way routes."
 ---

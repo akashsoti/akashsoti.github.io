@@ -2,7 +2,8 @@
 layout: post
 title: "Feet on Street app"
 subtitle: "A field-sales app for Amazon Distribution"
-date: 2025-02-19
+date: 2019-02-19
+company: "Amazon Distribution"
 image: "fos-app/hero-image.png"
 description: "A mobile app designed from scratch to help field-sales teams manage retailer tasks, reconcile invoices, and unblock retailer credit faster."
 ---

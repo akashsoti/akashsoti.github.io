@@ -3,6 +3,7 @@ layout: post
 title:  "Shake Shack Loyalty app"
 subtitle: "Loyalty app design proposal for ShakeShack"
 date:   2013-02-15
+company: "Shake Shack"
 published: false
 image: "punchh/ss-logo.png"
 description: "Designs for ShakeShack's loyalty app program. The brand is well known in the US, especially in New York, where it first started its journey from a hot dog cart in Madison Square Park"

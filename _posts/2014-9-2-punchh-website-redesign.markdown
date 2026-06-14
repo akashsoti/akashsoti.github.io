@@ -3,6 +3,7 @@ layout: post
 title:  "Punchh website redesign"
 subtitle: "A design overhaul"
 date:   2013-1-14
+company: "Punchh"
 image: "punchh/home_punchh_website.jpg"
 description: "Design overhaul of the brand and website. The main objective was..."
 ---

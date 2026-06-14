@@ -135,33 +135,80 @@ html.theme-dark .header {
 }
 
 .theme-toggle {
-  width: 1.9rem;
-  height: 1.9rem;
+  width: 40px;
+  height: 40px;
   margin: 0;
   padding: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 0;
-  border-radius: 0.5rem;
-  background: var(--header-nav-selected-bg);
-  color: #fff;
+  border-radius: 999px;
+  background: var(--bg-1);
+  color: var(--fg-3);
   line-height: 1;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  touch-action: manipulation;
+  transition: transform var(--duration-snappy) var(--ease-snappy), background-color var(--duration-snappy) var(--ease-snappy), color var(--duration-snappy) var(--ease-snappy);
 }
 
 .theme-toggle:hover,
 .theme-toggle:focus-visible {
-  background: var(--header-nav-selected-bg);
+  background: var(--bg-3);
+  color: var(--fg-1);
   transform: none;
 }
 
+.theme-toggle:active {
+  transform: scale(0.92);
+}
+
+.theme-toggle:focus-visible {
+  box-shadow: 0 0 0 1px var(--primary);
+  outline: none;
+}
+
+.theme-toggle__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: opacity, transform;
+}
+
 .theme-toggle__icon {
-  display: block;
-  font-size: 0.95rem;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
   line-height: 1;
   margin-right: 0;
+  display: block;
+}
+
+.theme-toggle.is-icon-swapping .theme-toggle__icon-wrap {
+  animation: theme-toggle-icon-enter 0.42s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+@keyframes theme-toggle-icon-enter {
+  from {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle,
+  .theme-toggle__icon-wrap {
+    animation: none;
+    transition: none;
+  }
 }
 
 /* Desktop header/nav */
@@ -219,8 +266,6 @@ html.theme-dark .header {
   }
 
   .theme-toggle--desktop {
-    width: 2.45rem;
-    height: 2.45rem;
     margin-left: 0.4rem;
   }
 

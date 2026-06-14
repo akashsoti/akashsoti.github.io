@@ -36,6 +36,7 @@ ol.list-of-items li,
 
 .post .meta,
 .posts .date,
+.posts .post-card-company,
 .pageTitle-helper,
 .post-header > p:last-child,
 .case-study-sidebar__back,
@@ -173,23 +174,16 @@ textarea {
 
 .header .top-nav .top-nav__item .top-nav__link,
 .header .top-nav .top-nav__item .top-nav__link:hover,
-.header .top-nav .top-nav__item .top-nav__link.is-current,
-.header .theme-toggle,
-.header .theme-toggle:hover,
-.header .theme-toggle:focus-visible {
+.header .top-nav .top-nav__item .top-nav__link.is-current {
   color: #fff;
 }
 
 .header .top-nav .top-nav__item .top-nav__link:hover,
-.theme-toggle:hover,
-.theme-toggle:focus-visible {
+.header .top-nav .top-nav__item .top-nav__link:focus-visible {
   background: var(--header-nav-hover-bg);
 }
 
-.header .top-nav .top-nav__item .top-nav__link.is-current,
-.header .theme-toggle,
-.header .theme-toggle:hover,
-.header .theme-toggle:focus-visible {
+.header .top-nav .top-nav__item .top-nav__link.is-current {
   background: var(--header-nav-selected-bg);
 }
 

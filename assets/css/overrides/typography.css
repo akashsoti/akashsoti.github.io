@@ -153,7 +153,8 @@ h6,
 }
 
 .post .meta,
-.posts .date {
+.posts .date,
+.posts .post-card-company {
   font-family: var(--font-family-ui);
   font-size: var(--type-meta-size);
   font-weight: var(--type-body-weight);

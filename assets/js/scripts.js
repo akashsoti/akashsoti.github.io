@@ -30,7 +30,93 @@ document.addEventListener("DOMContentLoaded", function () {
     return document.querySelectorAll(".theme-toggle");
   }
 
-  function applyTheme(theme) {
+  var themeAudioContext = null;
+
+  function getThemeAudioContext() {
+    var AudioContextConstructor = window.AudioContext || window.webkitAudioContext;
+
+    if (!AudioContextConstructor) {
+      return null;
+    }
+
+    if (!themeAudioContext) {
+      themeAudioContext = new AudioContextConstructor();
+    }
+
+    return themeAudioContext;
+  }
+
+  function playThemeToggleSound() {
+    var context = getThemeAudioContext();
+
+    if (!context) {
+      return;
+    }
+
+    function play() {
+      var now = context.currentTime;
+      var oscillator = context.createOscillator();
+      var gain = context.createGain();
+      var noiseBuffer = context.createBuffer(1, Math.floor(context.sampleRate * 0.045), context.sampleRate);
+      var noiseData = noiseBuffer.getChannelData(0);
+      var noise = context.createBufferSource();
+      var noiseGain = context.createGain();
+      var filter = context.createBiquadFilter();
+
+      for (var i = 0; i < noiseData.length; i += 1) {
+        noiseData[i] = (Math.random() * 2 - 1) * (1 - i / noiseData.length);
+      }
+
+      oscillator.type = "sine";
+      oscillator.frequency.setValueAtTime(520, now);
+      oscillator.frequency.exponentialRampToValueAtTime(320, now + 0.07);
+
+      gain.gain.setValueAtTime(0.0001, now);
+      gain.gain.exponentialRampToValueAtTime(0.026, now + 0.008);
+      gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.075);
+
+      filter.type = "bandpass";
+      filter.frequency.setValueAtTime(1800, now);
+      filter.Q.setValueAtTime(0.7, now);
+
+      noise.buffer = noiseBuffer;
+      noiseGain.gain.setValueAtTime(0.0001, now);
+      noiseGain.gain.exponentialRampToValueAtTime(0.018, now + 0.006);
+      noiseGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.04);
+
+      oscillator.connect(gain);
+      gain.connect(context.destination);
+      noise.connect(filter);
+      filter.connect(noiseGain);
+      noiseGain.connect(context.destination);
+      oscillator.start(now);
+      oscillator.stop(now + 0.08);
+      noise.start(now);
+      noise.stop(now + 0.045);
+    }
+
+    try {
+      if (context.state === "suspended") {
+        context.resume().then(play).catch(function () {});
+      } else {
+        play();
+      }
+    } catch (e) {
+      // no-op when browser audio is unavailable
+    }
+  }
+
+  function animateThemeToggleIcon(toggle) {
+    toggle.classList.remove("is-icon-swapping");
+    void toggle.offsetWidth;
+    toggle.classList.add("is-icon-swapping");
+
+    window.setTimeout(function () {
+      toggle.classList.remove("is-icon-swapping");
+    }, 460);
+  }
+
+  function applyTheme(theme, animateIcon) {
     var isDark = theme === "dark";
     document.documentElement.classList.toggle("theme-dark", isDark);
 
@@ -38,17 +124,22 @@ document.addEventListener("DOMContentLoaded", function () {
     getThemeToggles().forEach(function (toggle) {
       toggle.setAttribute("aria-pressed", isDark ? "true" : "false");
       toggle.setAttribute("aria-label", toggleLabel);
+      toggle.setAttribute("title", toggleLabel);
 
-      var toggleText = toggle.querySelector(".theme-toggle__text");
       var toggleIcon = toggle.querySelector(".theme-toggle__icon");
+      var toggleText = toggle.querySelector(".theme-toggle__text");
+
+      if (toggleIcon) {
+        toggleIcon.classList.remove("ph-moon", "ph-sun");
+        toggleIcon.classList.add(isDark ? "ph-moon" : "ph-sun");
+      }
 
       if (toggleText) {
         toggleText.textContent = toggleLabel;
       }
 
-      if (toggleIcon) {
-        toggleIcon.classList.remove("ph-moon", "ph-sun");
-        toggleIcon.classList.add(isDark ? "ph-sun" : "ph-moon");
+      if (animateIcon && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        animateThemeToggleIcon(toggle);
       }
     });
   }
@@ -70,7 +161,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var isDark = document.documentElement.classList.contains("theme-dark");
     var nextTheme = isDark ? "light" : "dark";
-    applyTheme(nextTheme);
+    applyTheme(nextTheme, true);
+    playThemeToggleSound();
 
     try {
       localStorage.setItem("theme", nextTheme);

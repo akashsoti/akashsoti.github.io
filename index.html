@@ -13,7 +13,10 @@ title: Akash Soti
               <img src="{{ '/assets/img/' | prepend: site.baseurl | append: post.image }}" alt="{{ post.title }}" />
             </div>
             <div class="post-card-content">
-              <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
+              <div class="post-card-meta">
+                <span class="post-card-company">{{ post.company | default: post.subtitle }}</span>
+                <span class="date">{{ post.date | date: '%Y' }}</span>
+              </div>
               <h3>{{ post.title }}</h3>
               <p>{% if post.description %}{{ post.description | strip_html | strip_newlines | truncate: 80 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
             </div>
