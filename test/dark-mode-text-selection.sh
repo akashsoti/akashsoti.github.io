@@ -44,10 +44,10 @@ if (!actual.found) {
   throw new Error("Expected sample post text to exist.");
 }
 
-const expectedLightBackground = "rgba(152, 150, 255, 0.2)";
-const expectedLightColor = "rgb(152, 150, 255)";
-const expectedDarkBackground = "rgba(152, 150, 255, 0.2)";
-const expectedDarkColor = "rgb(152, 150, 255)";
+const expectedLightBackground = "rgb(0, 0, 0)";
+const expectedLightColor = "rgb(255, 255, 255)";
+const expectedDarkBackground = "rgb(255, 255, 255)";
+const expectedDarkColor = "rgb(0, 0, 0)";
 
 for (const [name, expected] of Object.entries({
   lightBackground: expectedLightBackground,
@@ -63,7 +63,12 @@ for (const [name, expected] of Object.entries({
 console.log(JSON.stringify(actual, null, 2));
 NODE
 
-if ! grep -q 'html.theme-dark ::-moz-selection' assets/css/overrides/theme.css; then
-  echo "Expected Firefox dark-mode selection override." >&2
+if ! grep -q -- '--selection-bg: #fff;' assets/css/overrides/tokens.css; then
+  echo "Expected dark-mode selection background token to be white." >&2
+  exit 1
+fi
+
+if ! grep -q -- '--selection-color: #000;' assets/css/overrides/tokens.css; then
+  echo "Expected dark-mode selection text token to be black." >&2
   exit 1
 fi

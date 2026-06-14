@@ -98,8 +98,8 @@
   --body-color: var(--fg-1);
   --card-bg: var(--bg-1);
   --separator-color: var(--border-1);
-  --selection-color: var(--primary);
-  --selection-bg: color-mix(in srgb, var(--primary) 20%, transparent);
+  --selection-color: #fff;
+  --selection-bg: #000;
 }
 
 html.theme-dark {
@@ -130,6 +130,8 @@ html.theme-dark {
   --shadow-strong: #00000080;
   --shadow-stroke-1: #ffffff14;
   --shadow-stroke-2: #ffffff1a;
+  --selection-color: #000;
+  --selection-bg: #fff;
 }
 
 @supports (color: color(display-p3 1 1 1)) {
